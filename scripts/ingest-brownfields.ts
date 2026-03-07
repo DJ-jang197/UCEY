@@ -13,6 +13,16 @@ const sourceName =
   process.env.BROWNFIELD_SOURCE_NAME ?? "federal_contaminated_sites_inventory";
 const csvPath =
   process.env.BROWNFIELD_CSV_PATH ?? "./data/raw/federal_contaminated_sites.csv";
+const allowedCities = new Set(
+  (process.env.ALLOWED_CITIES ?? "Toronto,Vancouver,Montreal")
+    .split(",")
+    .map((value) => value.trim().toLowerCase()),
+);
+const allowedProvinceCodes = new Set(
+  (process.env.ALLOWED_PROVINCES ?? "ON,BC,QC")
+    .split(",")
+    .map((value) => value.trim().toUpperCase()),
+);
 
 if (!url || !key) {
   console.error(
@@ -57,6 +67,129 @@ function toNumber(value: string | null): number | null {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function normalizeProvinceCode(value: string | null): string | null {
+  if (!value) return null;
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "on" || normalized === "ontario") return "ON";
+  if (
+    normalized === "bc" ||
+    normalized === "british columbia" ||
+    normalized === "colombie-britannique"
+  ) {
+    return "BC";
+  }
+  if (normalized === "qc" || normalized === "quebec" || normalized === "québec") {
+    return "QC";
+  }
+  return value.trim().toUpperCase();
+}
+
+function normalizeCity(value: string | null): string | null {
+  if (!value) return null;
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "toronto") return "Toronto";
+  if (normalized === "vancouver") return "Vancouver";
+  if (normalized === "montreal" || normalized === "montréal") return "Montreal";
+  return value.trim();
+}
+
+function toFraction(value: number | null): number | null {
+  if (value === null) return null;
+  if (value > 1) return Math.max(0, Math.min(1, value / 100));
+  return Math.max(0, Math.min(1, value));
+}
+
+function computeSoilScore(row: CsvRow) {
+  const sandScore = toFraction(
+    toNumber(first(row, ["sand_score", "Sand Score", "sand", "sand_pct"])),
+  );
+  const clayScore = toFraction(
+    toNumber(first(row, ["clay_score", "Clay Score", "clay", "clay_pct"])),
+  );
+  const drainageScore = toFraction(
+    toNumber(
+      first(row, [
+        "drainage_score",
+        "Drainage Score",
+        "drainage",
+        "drainage_pct",
+      ]),
+    ),
+  );
+  const organicScore = toFraction(
+    toNumber(
+      first(row, [
+        "organic_score",
+        "Organic Score",
+        "organic_matter",
+        "organic_pct",
+      ]),
+    ),
+  );
+
+  if (
+    sandScore === null ||
+    clayScore === null ||
+    drainageScore === null ||
+    organicScore === null
+  ) {
+    return null;
+  }
+
+  const score =
+    sandScore * 0.3 +
+    clayScore * 0.25 +
+    drainageScore * 0.25 +
+    organicScore * 0.2;
+  return Math.round(score * 10000) / 100;
+}
+
+function inferContaminantType(row: CsvRow) {
+  const text = [
+    first(row, ["contaminant_type", "Contaminant Type", "contaminant"]),
+    first(row, ["contamination_status", "Contamination Status", "status"]),
+    first(row, ["former_use", "Former Use", "land_use"]),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  if (text.includes("pfas") || text.includes("forever chemical")) return "PFAS";
+  if (text.includes("acid") || text.includes("solvent")) return "Industrial Acids/Solvents";
+  if (text.includes("asbestos") || text.includes("lead")) return "Asbestos/Lead Paint";
+  if (text.includes("oil") || text.includes("petroleum") || text.includes("phc")) {
+    return "Oil/Petroleum (PHCs)";
+  }
+  return "Unknown";
+}
+
+function estimateRemediationCostPerTonne(contaminantType: string, city: string | null) {
+  const contaminantRateByType: Record<string, number> = {
+    "Oil/Petroleum (PHCs)": 230,
+    "Industrial Acids/Solvents": 675,
+    PFAS: 1200,
+    "Asbestos/Lead Paint": 262.5,
+  };
+
+  const cityBaseRate: Record<string, number> = {
+    Toronto: 189.86,
+    Vancouver: 160,
+  };
+
+  const base = contaminantRateByType[contaminantType] ?? (city ? cityBaseRate[city] : null);
+  if (base === null || base === undefined) {
+    return null;
+  }
+
+  if (city === "Toronto") {
+    return Math.round(base * 1.0375 * 100) / 100;
+  }
+  if (city === "Vancouver") {
+    return Math.round((base + 70) * 100) / 100;
+  }
+  return Math.round(base * 100) / 100;
+}
+
 function slugify(value: string): string {
   return value
     .toLowerCase()
@@ -67,7 +200,8 @@ function slugify(value: string): string {
 
 async function main() {
   const rows = readCsvRows(csvPath);
-  let skipped = 0;
+  let skippedMissingCoordinates = 0;
+  let skippedOutsideFilter = 0;
   let prepared = 0;
   const now = new Date().toISOString();
 
@@ -79,7 +213,23 @@ async function main() {
       );
 
       if (lat === null || lng === null) {
-        skipped += 1;
+        skippedMissingCoordinates += 1;
+        return null;
+      }
+
+      const city = normalizeCity(
+        first(row, ["city", "City", "municipality", "Municipality"]),
+      );
+      const provinceCode = normalizeProvinceCode(
+        first(row, ["province", "Province", "prov", "Prov"]),
+      );
+      if (
+        !city ||
+        !provinceCode ||
+        !allowedCities.has(city.toLowerCase()) ||
+        !allowedProvinceCodes.has(provinceCode)
+      ) {
+        skippedOutsideFilter += 1;
         return null;
       }
 
@@ -89,6 +239,12 @@ async function main() {
       const siteId =
         first(row, ["site_id", "Site ID", "id", "ID", "record_id"]) ??
         `${lat}:${lng}:${name}`;
+      const soilFinalPercentage = computeSoilScore(row);
+      const contaminantType = inferContaminantType(row);
+      const remediationCostPerTonne = estimateRemediationCostPerTonne(
+        contaminantType,
+        city,
+      );
 
       prepared += 1;
       return {
@@ -98,8 +254,8 @@ async function main() {
         source_id: siteId,
         site_type: "brownfield",
         status: "active",
-        city: first(row, ["city", "City", "municipality", "Municipality"]),
-        province: first(row, ["province", "Province", "prov", "Prov"]),
+        city,
+        province: provinceCode,
         country: "CA",
         address: first(row, ["address", "Address"]),
         postal_code: first(row, ["postal_code", "Postal Code", "postcode"]),
@@ -112,7 +268,18 @@ async function main() {
           "status",
         ]),
         former_use: first(row, ["former_use", "Former Use", "land_use"]),
-        raw_metadata: row,
+        viability_score: soilFinalPercentage,
+        raw_metadata: {
+          ...row,
+          filter_applied: {
+            provinces: Array.from(allowedProvinceCodes),
+            cities: Array.from(allowedCities),
+          },
+          soil_formula: "(sand*0.30)+(clay*0.25)+(drainage*0.25)+(organic*0.20)",
+          soil_final_percentage: soilFinalPercentage,
+          inferred_contaminant_type: contaminantType,
+          remediation_cost_per_tonne_estimate: remediationCostPerTonne,
+        },
         updated_at: now,
       };
     })
@@ -142,8 +309,11 @@ async function main() {
       `CSV: ${path.resolve(csvPath)}`,
       `Rows read: ${rows.length}`,
       `Rows prepared: ${prepared}`,
-      `Rows skipped (invalid coordinates): ${skipped}`,
+      `Rows skipped (invalid coordinates): ${skippedMissingCoordinates}`,
+      `Rows skipped (outside city/province filter): ${skippedOutsideFilter}`,
       `Rows upserted: ${payload.length}`,
+      `Filter provinces: ${Array.from(allowedProvinceCodes).join(", ")}`,
+      `Filter cities: ${Array.from(allowedCities).join(", ")}`,
     ].join("\n"),
   );
 }

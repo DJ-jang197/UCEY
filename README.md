@@ -81,6 +81,16 @@ Override path with:
 
 - `BROWNFIELD_CSV_PATH`
 
+City/province filter defaults:
+
+- `ALLOWED_PROVINCES=ON,BC,QC`
+- `ALLOWED_CITIES=Toronto,Vancouver,Montreal`
+
+Soil suitability score used during ingestion:
+
+- `score = (sand_score * 0.30) + (clay_score * 0.25) + (drainage_score * 0.25) + (organic_score * 0.20)`
+- `final_percentage = score * 100`
+
 ## API Endpoints
 
 - `GET /api/health`

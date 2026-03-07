@@ -176,6 +176,7 @@ Do these in order unless a blocking dependency forces a change:
 
 - If overlay strategy is unknown, ingest brownfields into `sites` and defer non-brownfield overlays into `site_overlays` later.
 - Real federal inventory CSV is not committed yet; ingestion script is ready but needs the dataset file in `data/raw/`.
+- Applied data filter and scoring logic on March 7, 2026: provinces `ON/BC/QC`, cities `Toronto/Vancouver/Montreal`, and soil formula weighting as specified.
 
 ## Phase 3: Read APIs for the app
 
