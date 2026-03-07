@@ -1,0 +1,6 @@
+contaminant_type,min_cost_cad_per_tonne,max_cost_cad_per_tonne,notes
+Oil/Petroleum (PHCs),180,280,Bio-piling or thermal treatment for hydrocarbons.
+Industrial Acids/Solvents,450,900,Neutralization or high-temperature incineration.
+PFAS,1200,,Strict 2026 regulations and limited facilities.
+Asbestos/Lead Paint,225,300,"Specialized PPE, disposal, and air monitoring."
+Unknown,,,No mapped contaminant cost range.

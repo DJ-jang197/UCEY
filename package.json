@@ -11,7 +11,8 @@
     "db:migrate": "echo \"Apply SQL migrations from supabase/migrations using Supabase SQL Editor or CLI.\"",
     "db:seed:demo": "tsx scripts/seed-demo-sites.ts",
     "ingest:brownfields": "tsx scripts/ingest-brownfields.ts",
-    "db:verify": "tsx scripts/verify-db.ts"
+    "db:verify": "tsx scripts/verify-db.ts",
+    "data:build": "tsx scripts/data/build-data-assets.ts"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^4.16.0",

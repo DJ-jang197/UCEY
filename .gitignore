@@ -43,3 +43,7 @@ env/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large source data artifacts
+*.xml
+*.zip

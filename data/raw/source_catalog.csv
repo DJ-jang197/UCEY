@@ -1,0 +1,18 @@
+category,name,url
+Contaminated Sites,Federal Contaminated Sites Inventory,https://open.canada.ca/data/en/dataset/1d42f7b9-1549-40aa-8ac6-0e0302ff2902
+Land Use,OpenStreetMap Overpass,https://overpass-turbo.eu
+Land Use,Toronto Zoning,https://open.toronto.ca/dataset/zoning-by-law/
+Land Use,Vancouver Open Data,https://opendata.vancouver.ca/pages/home/
+Land Use,Montreal Open Data,https://donnees.montreal.ca
+Transit,TTC GTFS,https://open.toronto.ca/dataset/ttc-routes-and-schedules/
+Transit,TransLink GTFS,https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs
+Transit,STM Developers,https://www.stm.info/en/about/developers
+Transit,OC Transpo Developers,https://www.octranspo.com/en/plan-your-trip/travel-tools/developers
+Housing,CMHC Data,https://www.cmhc-schl.gc.ca/en/data-and-research
+Housing,Statistics Canada Census,https://www12.statcan.gc.ca/census-recensement/index-eng.cfm
+Housing,MPAC Data,https://www.mpac.ca/en/OurData
+Housing,BC Assessment,https://info.bcassessment.ca
+Environment,Copernicus Sentinel-2,https://browser.dataspace.copernicus.eu
+Environment,Google Earth Engine,https://earthengine.google.com
+Environment,ECCC Open Data,https://open.canada.ca/en/open-data
+Soil,CanSIS NSDB,https://sis.agr.gc.ca/cansis/nsdb/index.html
