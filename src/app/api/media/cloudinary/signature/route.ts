@@ -14,7 +14,7 @@ const payloadSchema = z.object({
 });
 
 export async function POST(req: Request) {
-  const user = getRequestUser(req);
+  const user = await getRequestUser(req);
   if (!user) {
     return fail(401, {
       code: "UNAUTHORIZED",

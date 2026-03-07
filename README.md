@@ -104,7 +104,8 @@ Protected endpoints currently use request headers:
 - `x-user-id`
 - `x-user-role` (optional: `planner`, `architect`, `developer`)
 
-This keeps backend integration unblocked before full Auth0 session wiring is completed.
+If Auth0 env vars are configured, endpoints use the Auth0 session first and auto-provision users into the `users` table on first request.
+Header auth remains as a fallback for local integration and teammate testing.
 
 ## Deployment Decision
 

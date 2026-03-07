@@ -13,7 +13,7 @@ type Context = {
 };
 
 export async function POST(req: Request, context: Context) {
-  const user = getRequestUser(req);
+  const user = await getRequestUser(req);
   if (!user) {
     return fail(401, {
       code: "UNAUTHORIZED",
@@ -38,7 +38,7 @@ export async function POST(req: Request, context: Context) {
       siteId: parsed.data.siteId,
       userId: user.id,
     });
-    await addSiteToProject(user.id, id, parsed.data.siteId);
+    await addSiteToProject(user, id, parsed.data.siteId);
     return ok({ ok: true });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";

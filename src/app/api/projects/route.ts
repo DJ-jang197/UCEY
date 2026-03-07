@@ -10,7 +10,7 @@ const createProjectSchema = z.object({
 });
 
 export async function GET(req: Request) {
-  const user = getRequestUser(req);
+  const user = await getRequestUser(req);
   if (!user) {
     return fail(401, {
       code: "UNAUTHORIZED",
@@ -20,7 +20,7 @@ export async function GET(req: Request) {
 
   try {
     logApiRequest("GET", "/api/projects", { userId: user.id });
-    const projects = await listProjects(user.id);
+    const projects = await listProjects(user);
     return ok({ items: projects, meta: { count: projects.length } });
   } catch (error) {
     return fail(500, {
@@ -32,7 +32,7 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  const user = getRequestUser(req);
+  const user = await getRequestUser(req);
   if (!user) {
     return fail(401, {
       code: "UNAUTHORIZED",
@@ -54,7 +54,7 @@ export async function POST(req: Request) {
   try {
     logApiRequest("POST", "/api/projects", { userId: user.id, name: parsed.data.name });
     const project = await createProject(
-      user.id,
+      user,
       parsed.data.name,
       parsed.data.description ?? null,
     );

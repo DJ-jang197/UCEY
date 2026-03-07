@@ -8,7 +8,7 @@ type Context = {
 };
 
 export async function POST(req: Request, context: Context) {
-  const user = getRequestUser(req);
+  const user = await getRequestUser(req);
   if (!user) {
     return fail(401, {
       code: "UNAUTHORIZED",
@@ -20,7 +20,7 @@ export async function POST(req: Request, context: Context) {
 
   try {
     logApiRequest("POST", "/api/sites/:id/save", { id, userId: user.id });
-    await saveSiteForUser(user.id, id);
+    await saveSiteForUser(user, id);
     return ok({ ok: true });
   } catch (error) {
     return fail(500, {

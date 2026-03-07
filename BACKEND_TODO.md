@@ -218,12 +218,12 @@ Do these in order unless a blocking dependency forces a change:
 
 - [ ] Create Auth0 tenant/app
 - [ ] Configure callback URLs for local and deployed environments
-- [ ] Implement login and session validation
+- [x] Implement login and session validation
 - [x] Map roles:
   - [x] `planner`
   - [x] `architect`
   - [x] `developer`
-- [ ] Add user provisioning on first login
+- [x] Add user provisioning on first login
 - [x] Implement `POST /api/sites/:id/save`
 - [x] Implement `GET /api/projects`
 - [x] Implement `POST /api/projects`
@@ -244,7 +244,7 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If public vs private browsing is undecided, default to public map reads and authenticated saves.
-- Full Auth0 integration is blocked on tenant credentials and callback URLs; current protected endpoints use `x-user-id` and `x-user-role` headers as interim auth context.
+- Auth0 middleware and session checks are implemented in code, but tenant credentials and callback URL registration are still required for end-to-end login.
 
 ## Phase 5: Scores, reports, and analysis storage
 
@@ -483,7 +483,7 @@ Current completion status (March 7, 2026):
 - [x] 8. implement `GET /api/sites`
 - [x] 9. implement `GET /api/sites/:id`
 - [x] 10. implement `GET /api/sites/top`
-- [ ] 11. integrate Auth0
+- [x] 11. integrate Auth0
 - [x] 12. implement save and project endpoints
 - [x] 13. add score/report write and read endpoints
 - [x] 14. add demo fallback data and timeouts

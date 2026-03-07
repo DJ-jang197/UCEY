@@ -1,3 +1,4 @@
+import type { RequestUser } from "@/lib/auth/user";
 import { getEnv } from "@/lib/config/env";
 import { getDemoStore } from "@/lib/demo/state";
 import { withTimeout } from "@/lib/http/timeout";
@@ -67,6 +68,36 @@ function getTopSitesCache(): TopSitesCache {
 function getTimeoutMs() {
   const timeoutMs = getEnv().providerTimeoutMs;
   return Number.isFinite(timeoutMs) && timeoutMs > 0 ? timeoutMs : 6000;
+}
+
+async function resolveDatabaseUserId(user: RequestUser): Promise<string> {
+  const db = getSupabaseServerClient();
+  if (!db) return user.id;
+
+  const now = new Date().toISOString();
+  const { data, error } = await withTimeout(
+    db
+      .from("users")
+      .upsert(
+        {
+          auth0_sub: user.id,
+          email: user.email,
+          role: user.role,
+          updated_at: now,
+        },
+        { onConflict: "auth0_sub" },
+      )
+      .select("id")
+      .single(),
+    getTimeoutMs(),
+    "user provisioning query",
+  );
+
+  if (error) {
+    throw new Error(`Failed to provision user: ${error.message}`);
+  }
+
+  return String(data.id);
 }
 
 function parseBbox(value?: string) {
@@ -441,15 +472,17 @@ export async function upsertSiteReport(siteId: string, input: UpsertReportInput)
   if (error) throw new Error(`Failed to upsert report: ${error.message}`);
 }
 
-export async function saveSiteForUser(userId: string, siteId: string) {
+export async function saveSiteForUser(user: RequestUser, siteId: string) {
   const db = getSupabaseServerClient();
   if (!db) {
     const store = getDemoStore();
-    const saved = store.savedSitesByUser.get(userId) ?? new Set<string>();
+    const saved = store.savedSitesByUser.get(user.id) ?? new Set<string>();
     saved.add(siteId);
-    store.savedSitesByUser.set(userId, saved);
+    store.savedSitesByUser.set(user.id, saved);
     return;
   }
+
+  const userId = await resolveDatabaseUserId(user);
 
   const { error } = await withTimeout(
     db.from("saved_sites").upsert(
@@ -467,12 +500,14 @@ export async function saveSiteForUser(userId: string, siteId: string) {
   if (error) throw new Error(`Failed to save site: ${error.message}`);
 }
 
-export async function listProjects(userId: string): Promise<UserProject[]> {
+export async function listProjects(user: RequestUser): Promise<UserProject[]> {
   const db = getSupabaseServerClient();
   if (!db) {
     const store = getDemoStore();
-    return store.projectsByUser.get(userId) ?? [];
+    return store.projectsByUser.get(user.id) ?? [];
   }
+
+  const userId = await resolveDatabaseUserId(user);
 
   const { data: projects, error: projectError } = await withTimeout(
     db
@@ -515,7 +550,7 @@ export async function listProjects(userId: string): Promise<UserProject[]> {
 }
 
 export async function createProject(
-  userId: string,
+  user: RequestUser,
   name: string,
   description: string | null,
 ): Promise<UserProject> {
@@ -526,18 +561,20 @@ export async function createProject(
     const store = getDemoStore();
     const project: UserProject = {
       id: crypto.randomUUID(),
-      userId,
+      userId: user.id,
       name,
       description,
       siteIds: [],
       createdAt: now,
       updatedAt: now,
     };
-    const projects = store.projectsByUser.get(userId) ?? [];
+    const projects = store.projectsByUser.get(user.id) ?? [];
     projects.unshift(project);
-    store.projectsByUser.set(userId, projects);
+    store.projectsByUser.set(user.id, projects);
     return project;
   }
+
+  const userId = await resolveDatabaseUserId(user);
 
   const { data, error } = await withTimeout(
     db
@@ -569,14 +606,14 @@ export async function createProject(
 }
 
 export async function addSiteToProject(
-  userId: string,
+  user: RequestUser,
   projectId: string,
   siteId: string,
 ) {
   const db = getSupabaseServerClient();
   if (!db) {
     const store = getDemoStore();
-    const projects = store.projectsByUser.get(userId) ?? [];
+    const projects = store.projectsByUser.get(user.id) ?? [];
     const project = projects.find((item) => item.id === projectId);
     if (!project) {
       throw new Error("Project not found");
@@ -587,6 +624,8 @@ export async function addSiteToProject(
     }
     return;
   }
+
+  const userId = await resolveDatabaseUserId(user);
 
   const ownerCheck = await withTimeout(
     db
