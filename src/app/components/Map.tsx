@@ -19,6 +19,11 @@ type MapProps = {
   onSiteSelect: (siteId: string) => void;
 };
 
+const CANADA_BOUNDS: [[number, number], [number, number]] = [
+  [41, -141],
+  [84, -52],
+];
+
 function getMarkerColor(siteType: string): string {
   const normalized = siteType.toLowerCase();
   if (normalized.includes("brown")) return "#ef4444"; // red
@@ -69,21 +74,21 @@ export default function Map({
       const map = L.map(mapContainerRef.current, {
         center: [56.1304, -106.3468],
         zoom: 4,
-        minZoom: 3,
+        minZoom: 4,
         maxZoom: 18,
         zoomControl: true,
-        maxBounds: [
-          [41, -141],
-          [84, -52],
-        ],
+        maxBounds: CANADA_BOUNDS,
         maxBoundsViscosity: 1,
       });
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
+        noWrap: true,
+        bounds: CANADA_BOUNDS,
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
+      map.fitBounds(CANADA_BOUNDS, { padding: [12, 12] });
       mapRef.current = map;
     }
 

@@ -169,7 +169,7 @@ export default function MainMap() {
 
   return (
     <div className="map-shell">
-      <div className="absolute inset-0 z-20 flex items-start justify-center pt-10 pointer-events-none">
+      <div className="absolute inset-0 z-[1200] flex items-start justify-center pt-10 pointer-events-none">
         <div className="flex w-full max-w-4xl flex-col items-center gap-4 px-4 pointer-events-auto">
           <div className="w-full max-w-3xl rounded-2xl bg-gradient-to-r from-emerald-50/80 via-sky-50/80 to-indigo-50/80 px-6 py-5 shadow-xl border border-slate-200/80 backdrop-blur">
             <h1 className="text-center text-3xl font-semibold tracking-tight text-slate-900">
