@@ -15,6 +15,10 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
     const audio = audioRef.current;
     if (!audio) return;
 
+    const handlePause = () => {
+      setIsPlaying(false);
+    };
+
     const handleTimeUpdate = () => {
       if (!audio.duration) return;
       setProgress((audio.currentTime / audio.duration) * 100);
@@ -25,10 +29,12 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
       setProgress(0);
     };
 
+    audio.addEventListener("pause", handlePause);
     audio.addEventListener("timeupdate", handleTimeUpdate);
     audio.addEventListener("ended", handleEnded);
 
     return () => {
+      audio.removeEventListener("pause", handlePause);
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("ended", handleEnded);
     };
@@ -39,8 +45,7 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
     if (!audio) return;
     audio.pause();
     audio.currentTime = 0;
-    setIsPlaying(false);
-    setProgress(0);
+    queueMicrotask(() => setProgress(0));
   }, [audioUrl]);
 
   const togglePlayback = async () => {
@@ -55,7 +60,6 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
         await audio.play();
         setIsPlaying(true);
       } catch {
-        // eslint-disable-next-line no-console
         console.error("Unable to start audio playback");
       }
     }
@@ -94,4 +98,3 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
     </div>
   );
 }
-

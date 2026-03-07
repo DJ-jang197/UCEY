@@ -132,7 +132,7 @@ export default function MainMap() {
       if (json.lat && json.lng) {
         setCenter({ lat: json.lat, lng: json.lng, name: json.city ?? undefined });
       }
-    } catch (error) {
+    } catch {
       setSelectedSite(null);
     } finally {
       setLoadingSiteDetail(false);
@@ -220,4 +220,3 @@ export default function MainMap() {
     </div>
   );
 }
-

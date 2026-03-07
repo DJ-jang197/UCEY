@@ -18,7 +18,7 @@ declare global {
   }
 }
 
-const ALLOWED_CITIES = ["montreal", "ottawa", "toronto", "vancouver"];
+const ALLOWED_CITIES = ["montreal", "toronto", "vancouver"];
 
 export default function PlacesSearch({ onPlaceSelect }: PlacesSearchProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -31,7 +31,7 @@ export default function PlacesSearch({ onPlaceSelect }: PlacesSearchProps) {
 
     function initAutocomplete() {
       if (!window.google?.maps?.places) return;
-      autocomplete = new window.google.maps.places.Autocomplete(input, {
+      autocomplete = new window.google.maps.places.Autocomplete(input!, {
         types: ["(cities)"],
         componentRestrictions: { country: "ca" },
       });
@@ -40,8 +40,9 @@ export default function PlacesSearch({ onPlaceSelect }: PlacesSearchProps) {
         const place = autocomplete?.getPlace();
         if (!place || !place.geometry || !place.geometry.location) return;
 
-         const localityComponent = place.address_components?.find((component) =>
-          component.types.includes("locality"),
+        const localityComponent = place.address_components?.find(
+          (component: google.maps.GeocoderAddressComponent) =>
+            component.types.includes("locality"),
         );
         const rawName = localityComponent?.long_name ?? place.name ?? "";
         const normalized = rawName
@@ -51,7 +52,7 @@ export default function PlacesSearch({ onPlaceSelect }: PlacesSearchProps) {
 
         if (!ALLOWED_CITIES.includes(normalized)) {
           window.alert(
-            "For this demo, only Montreal, Ottawa, Toronto, and Vancouver are supported.",
+            "For this demo, only Montreal, Toronto, and Vancouver are supported.",
           );
           return;
         }
@@ -80,4 +81,3 @@ export default function PlacesSearch({ onPlaceSelect }: PlacesSearchProps) {
     />
   );
 }
-

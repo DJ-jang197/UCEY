@@ -66,7 +66,7 @@ export default function Map({
       if (!mapContainerRef.current || mapRef.current || !window.google?.maps) return;
 
       const map = new window.google.maps.Map(mapContainerRef.current, {
-        center: { lat: center.lat, lng: center.lng },
+        center: { lat: 56.1304, lng: -106.3468 },
         zoom: 4,
         disableDefaultUI: false,
         mapTypeControl: false,
@@ -168,4 +168,3 @@ export default function Map({
     </div>
   );
 }
-
