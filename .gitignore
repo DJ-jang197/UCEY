@@ -47,3 +47,10 @@ next-env.d.ts
 # large source data artifacts
 *.xml
 *.zip
+
+# internal planning / process docs
+BACKEND_TODO.md
+MERGE_SAFETY.md
+data/raw/README.md
+data/raw/fcsi/source_fetch_log.md
+scripts/data/README.md
