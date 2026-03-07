@@ -9,6 +9,7 @@ const env = {
   auth0ClientSecret: process.env.AUTH0_CLIENT_SECRET ?? "",
   auth0Secret: process.env.AUTH0_SECRET ?? "",
   auth0Audience: process.env.AUTH0_AUDIENCE ?? "",
+  providerTimeoutMs: Number.parseInt(process.env.PROVIDER_TIMEOUT_MS ?? "6000", 10),
 };
 
 export function getEnv() {

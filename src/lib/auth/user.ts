@@ -1,5 +1,3 @@
-import { type NextRequest } from "next/server";
-
 export type AppRole = "planner" | "architect" | "developer";
 
 export type RequestUser = {
@@ -14,7 +12,11 @@ function toRole(value: string | null): AppRole {
   return "planner";
 }
 
-export function getRequestUser(req: NextRequest): RequestUser | null {
+type RequestLike = {
+  headers: Pick<Headers, "get">;
+};
+
+export function getRequestUser(req: RequestLike): RequestUser | null {
   const id = req.headers.get("x-user-id");
   if (!id) {
     return null;

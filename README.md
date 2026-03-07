@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZonaViva Backend
 
-## Getting Started
+Backend scaffold for HackCanada 2026.
 
-First, run the development server:
+This branch is focused on:
+
+- geospatial-ready schema and ingestion
+- site discovery and detail APIs
+- report and score persistence endpoints
+- auth-gated save/project endpoints
+- demo fallback mode when Supabase is not configured
+
+## Stack
+
+- Next.js 16 App Router
+- TypeScript
+- Supabase + PostGIS
+- Tailwind (included from scaffold; frontend styling is out of scope here)
+
+## Local Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create local env:
+
+```bash
+cp .env.example .env.local
+```
+
+3. Fill Supabase keys in `.env.local`:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `PROVIDER_TIMEOUT_MS` (optional, defaults to `6000`)
+
+For signed Cloudinary uploads, also set:
+
+- `CLOUDINARY_CLOUD_NAME`
+- `CLOUDINARY_API_KEY`
+- `CLOUDINARY_API_SECRET`
+
+4. Start dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Verify health:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+curl http://localhost:3000/api/health
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Database Setup
 
-## Learn More
+Migration SQL is in:
 
-To learn more about Next.js, take a look at the following resources:
+- `supabase/migrations/20260307090000_init.sql`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Apply migration using Supabase SQL editor or CLI.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Optional commands:
 
-## Deploy on Vercel
+```bash
+npm run db:verify
+npm run db:seed:demo
+npm run ingest:brownfields
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Ingestion Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Brownfield ingestion expects a CSV at:
+
+- `./data/raw/federal_contaminated_sites.csv`
+
+Override path with:
+
+- `BROWNFIELD_CSV_PATH`
+
+## API Endpoints
+
+- `GET /api/health`
+- `GET /api/sites`
+- `GET /api/sites/:id`
+- `GET /api/sites/top?province=ON&limit=10`
+- `GET /api/sites/:id/report`
+- `POST /api/sites/:id/report`
+- `POST /api/sites/:id/score`
+- `GET /api/sites/:id/media`
+- `POST /api/sites/:id/save`
+- `GET /api/projects`
+- `POST /api/projects`
+- `POST /api/projects/:id/sites`
+- `POST /api/media/cloudinary/signature`
+
+### Auth behavior in this branch
+
+Protected endpoints currently use request headers:
+
+- `x-user-id`
+- `x-user-role` (optional: `planner`, `architect`, `developer`)
+
+This keeps backend integration unblocked before full Auth0 session wiring is completed.
+
+## Deployment Decision
+
+Current decision for speed:
+
+- single Next.js service for API + frontend app shell
+- optional separate worker can be introduced later for heavy ingestion jobs

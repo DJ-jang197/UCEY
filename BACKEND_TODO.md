@@ -60,12 +60,12 @@ Do these in order unless a blocking dependency forces a change:
 
 ### TODO
 
-- [ ] Create `Next.js` app with API route support
-- [ ] Add `TypeScript`, `Tailwind`, and env loading
-- [ ] Add package scripts for `dev`, `build`, `lint`, and `db`
-- [ ] Create `.env.example`
-- [ ] Create a short `README.md` with local setup
-- [ ] Decide whether deployment is direct from app repo or split app plus worker
+- [x] Create `Next.js` app with API route support
+- [x] Add `TypeScript`, `Tailwind`, and env loading
+- [x] Add package scripts for `dev`, `build`, `lint`, and `db`
+- [x] Create `.env.example`
+- [x] Create a short `README.md` with local setup
+- [x] Decide whether deployment is direct from app repo or split app plus worker
 
 ### Deliverables
 
@@ -87,25 +87,25 @@ Do these in order unless a blocking dependency forces a change:
 ### TODO
 
 - [ ] Create Supabase project
-- [ ] Enable `postgis`
-- [ ] Add migrations folder
-- [ ] Create core tables:
-  - [ ] `sites`
-  - [ ] `site_scores`
-  - [ ] `site_reports`
-  - [ ] `users`
-  - [ ] `saved_sites`
-  - [ ] `projects`
-  - [ ] `project_sites`
-  - [ ] `site_media`
-- [ ] Add indexes:
-  - [ ] spatial index on `sites.geom`
-  - [ ] index on `city`
-  - [ ] index on `province`
-  - [ ] index on `site_type`
-  - [ ] index on `viability_score` or equivalent materialized field if used
-- [ ] Decide whether parcel geometry is stored now or deferred
-- [ ] Add audit columns: `created_at`, `updated_at`, `source`, `source_id`
+- [x] Enable `postgis`
+- [x] Add migrations folder
+- [x] Create core tables:
+  - [x] `sites`
+  - [x] `site_scores`
+  - [x] `site_reports`
+  - [x] `users`
+  - [x] `saved_sites`
+  - [x] `projects`
+  - [x] `project_sites`
+  - [x] `site_media`
+- [x] Add indexes:
+  - [x] spatial index on `sites.geom`
+  - [x] index on `city`
+  - [x] index on `province`
+  - [x] index on `site_type`
+  - [x] index on `viability_score` or equivalent materialized field if used
+- [x] Decide whether parcel geometry is stored now or deferred
+- [x] Add audit columns: `created_at`, `updated_at`, `source`, `source_id`
 
 ### Suggested `sites` fields
 
@@ -146,18 +146,19 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If frontend has no panel field list yet, use the suggested fields above and treat the API response as provisional v1.
+- Supabase project and credentials are still needed to apply migrations and run production persistence.
 
 ## Phase 2: Real data ingestion
 
 ### TODO
 
-- [ ] Identify first ingest source: Federal Contaminated Sites Inventory
-- [ ] Build one repeatable ingestion script
-- [ ] Normalize source data into canonical `sites` records
-- [ ] Store unparsed source payload in `raw_metadata`
-- [ ] Seed at least 5 known demo sites manually if source data is messy
-- [ ] Add import logging
-- [ ] Add dedupe rule based on `source + source_id` or location tolerance
+- [x] Identify first ingest source: Federal Contaminated Sites Inventory
+- [x] Build one repeatable ingestion script
+- [x] Normalize source data into canonical `sites` records
+- [x] Store unparsed source payload in `raw_metadata`
+- [x] Seed at least 5 known demo sites manually if source data is messy
+- [x] Add import logging
+- [x] Add dedupe rule based on `source + source_id` or location tolerance
 - [ ] Confirm whether OSM-derived land types land in `sites` or a separate overlay table
 
 ### Deliverables
@@ -174,25 +175,26 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If overlay strategy is unknown, ingest brownfields into `sites` and defer non-brownfield overlays into `site_overlays` later.
+- Real federal inventory CSV is not committed yet; ingestion script is ready but needs the dataset file in `data/raw/`.
 
 ## Phase 3: Read APIs for the app
 
 ### TODO
 
-- [ ] Implement `GET /api/health`
-- [ ] Implement `GET /api/sites`
-- [ ] Implement `GET /api/sites/:id`
-- [ ] Implement `GET /api/sites/top`
-- [ ] Add query params to `GET /api/sites`:
-  - [ ] `bbox`
-  - [ ] `city`
-  - [ ] `province`
-  - [ ] `site_type`
-  - [ ] `limit`
-- [ ] Return lightweight list payloads for map markers
-- [ ] Return richer detail payload for one site
-- [ ] Add API error format and status code conventions
-- [ ] Add simple request logging
+- [x] Implement `GET /api/health`
+- [x] Implement `GET /api/sites`
+- [x] Implement `GET /api/sites/:id`
+- [x] Implement `GET /api/sites/top`
+- [x] Add query params to `GET /api/sites`:
+  - [x] `bbox`
+  - [x] `city`
+  - [x] `province`
+  - [x] `site_type`
+  - [x] `limit`
+- [x] Return lightweight list payloads for map markers
+- [x] Return richer detail payload for one site
+- [x] Add API error format and status code conventions
+- [x] Add simple request logging
 
 ### Deliverables
 
@@ -217,16 +219,16 @@ Do these in order unless a blocking dependency forces a change:
 - [ ] Create Auth0 tenant/app
 - [ ] Configure callback URLs for local and deployed environments
 - [ ] Implement login and session validation
-- [ ] Map roles:
-  - [ ] `planner`
-  - [ ] `architect`
-  - [ ] `developer`
+- [x] Map roles:
+  - [x] `planner`
+  - [x] `architect`
+  - [x] `developer`
 - [ ] Add user provisioning on first login
-- [ ] Implement `POST /api/sites/:id/save`
-- [ ] Implement `GET /api/projects`
-- [ ] Implement `POST /api/projects`
-- [ ] Implement `POST /api/projects/:id/sites`
-- [ ] Add row-level protection or service-side checks
+- [x] Implement `POST /api/sites/:id/save`
+- [x] Implement `GET /api/projects`
+- [x] Implement `POST /api/projects`
+- [x] Implement `POST /api/projects/:id/sites`
+- [x] Add row-level protection or service-side checks
 
 ### Deliverables
 
@@ -242,24 +244,25 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If public vs private browsing is undecided, default to public map reads and authenticated saves.
+- Full Auth0 integration is blocked on tenant credentials and callback URLs; current protected endpoints use `x-user-id` and `x-user-role` headers as interim auth context.
 
 ## Phase 5: Scores, reports, and analysis storage
 
 ### TODO
 
-- [ ] Add write endpoint for computed scores
-- [ ] Add write endpoint for generated reports
-- [ ] Persist status values: `pending`, `ready`, `failed`
-- [ ] Store provider metadata and timestamps
-- [ ] Decide whether scores live in `site_scores` only or are denormalized into `sites`
-- [ ] Add fetch endpoint for report reads
-- [ ] Add retry-safe update semantics
+- [x] Add write endpoint for computed scores
+- [x] Add write endpoint for generated reports
+- [x] Persist status values: `pending`, `ready`, `failed`
+- [x] Store provider metadata and timestamps
+- [x] Decide whether scores live in `site_scores` only or are denormalized into `sites`
+- [x] Add fetch endpoint for report reads
+- [x] Add retry-safe update semantics
 
 ### Candidate endpoints
 
-- [ ] `POST /api/sites/:id/score`
-- [ ] `POST /api/sites/:id/report`
-- [ ] `GET /api/sites/:id/report`
+- [x] `POST /api/sites/:id/score`
+- [x] `POST /api/sites/:id/report`
+- [x] `GET /api/sites/:id/report`
 
 ### Deliverables
 
@@ -285,11 +288,11 @@ Do these in order unless a blocking dependency forces a change:
 
 ### TODO
 
-- [ ] Integrate Cloudinary config
-- [ ] Store audio asset URLs from ElevenLabs output
-- [ ] Store generated image and render URLs
-- [ ] Add `site_media` lookup by site
-- [ ] Decide whether uploads are direct from frontend or proxied through backend
+- [x] Integrate Cloudinary config
+- [x] Store audio asset URLs from ElevenLabs output
+- [x] Store generated image and render URLs
+- [x] Add `site_media` lookup by site
+- [x] Decide whether uploads are direct from frontend or proxied through backend
 
 ### Deliverables
 
@@ -305,17 +308,18 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If upload flow is unknown, backend should store URL references only and defer upload orchestration.
+- Cloudinary SDK upload/signature integration is pending until frontend chooses direct upload or signed upload flow.
 
 ## Phase 7: Demo reliability and fallback path
 
 ### TODO
 
-- [ ] Pre-seed 5 to 10 polished demo sites
-- [ ] Precompute or cache top site rankings
-- [ ] Add fallback JSON for report and score payloads
-- [ ] Make sure no critical demo screen depends on a live external API call
-- [ ] Add timeout handling around third-party providers
-- [ ] Add a simple admin or script path to refresh demo data
+- [x] Pre-seed 5 to 10 polished demo sites
+- [x] Precompute or cache top site rankings
+- [x] Add fallback JSON for report and score payloads
+- [x] Make sure no critical demo screen depends on a live external API call
+- [x] Add timeout handling around third-party providers
+- [x] Add a simple admin or script path to refresh demo data
 
 ### Deliverables
 
@@ -363,13 +367,11 @@ These can be used until the frontend team asks for changes.
 {
   "id": "site_123",
   "name": "Hamilton Industrial Parcel",
+  "lat": 43.2557,
+  "lng": -79.8711,
   "siteType": "brownfield",
   "city": "Hamilton",
   "province": "ON",
-  "coordinates": {
-    "lat": 43.2557,
-    "lng": -79.8711
-  },
   "areaM2": 24000,
   "contaminationStatus": "moderate",
   "formerUse": "industrial",
@@ -469,6 +471,23 @@ If a new agent starts backend from zero, this is the immediate build order:
 13. add score/report write and read endpoints
 14. add demo fallback data and timeouts
 
+Current completion status (March 7, 2026):
+
+- [x] 1. scaffold Next.js app
+- [x] 2. create `.env.example`
+- [ ] 3. set up Supabase and enable PostGIS
+- [x] 4. write initial migration for core tables
+- [x] 5. add one ingestion script for brownfield data
+- [x] 6. seed 5 demo sites
+- [x] 7. implement `GET /api/health`
+- [x] 8. implement `GET /api/sites`
+- [x] 9. implement `GET /api/sites/:id`
+- [x] 10. implement `GET /api/sites/top`
+- [ ] 11. integrate Auth0
+- [x] 12. implement save and project endpoints
+- [x] 13. add score/report write and read endpoints
+- [x] 14. add demo fallback data and timeouts
+
 ## Update protocol
 
 When backend work starts, keep this file current:
@@ -477,4 +496,3 @@ When backend work starts, keep this file current:
 - add newly discovered blockers under the relevant phase
 - when another role must provide something, record it under `Requires from other roles`
 - if an assumption becomes wrong, update `Working assumptions`
-

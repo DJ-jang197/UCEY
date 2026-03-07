@@ -40,6 +40,17 @@ export type SiteReport = {
   rawJson: Record<string, unknown> | null;
 };
 
+export type SiteMedia = {
+  id: string;
+  siteId: string;
+  mediaType: "image" | "audio" | "render" | "ar";
+  provider: string;
+  url: string;
+  publicId: string | null;
+  metadata: Record<string, unknown> | null;
+  createdAt: string | null;
+};
+
 export type UserProject = {
   id: string;
   userId: string;
