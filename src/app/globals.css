@@ -24,3 +24,145 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Slide-in site panel */
+.site-panel {
+  position: fixed;
+  right: -40%;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  background: #f9fafb;
+  border-left: 1px solid #e5e7eb;
+  transition: right 0.3s ease;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.site-panel.open {
+  right: 0;
+}
+
+/* Viability score badge */
+.badge-high {
+  background: #22c55e;
+  color: #000;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.badge-medium {
+  background: #f59e0b;
+  color: #000;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.badge-low {
+  background: #ef4444;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+/* Skeleton loader */
+.skeleton {
+  background: linear-gradient(90deg, #1e1e2e 25%, #2a2a3a 50%, #1e1e2e 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+  height: 16px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Map marker pulse for high-viability sites */
+.marker-pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* Google Places search bar */
+.places-search {
+  width: 100%;
+  padding: 10px 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+}
+
+.places-search:focus {
+  border-color: #22c55e;
+}
+
+/* Audio player */
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #e5f3ff;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.play-btn {
+  background: #22c55e;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: #2a2a3a;
+  border-radius: 2px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* Map layout helpers */
+.map-shell {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.map-container {
+  position: absolute;
+  inset: 0;
+}
