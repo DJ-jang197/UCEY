@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import "leaflet/dist/leaflet.css";
 import type { SiteListItem } from "@/lib/types/site";
 
 type Center = {
@@ -18,12 +19,6 @@ type MapProps = {
   onSiteSelect: (siteId: string) => void;
 };
 
-declare global {
-  interface Window {
-    google?: typeof google;
-  }
-}
-
 function getMarkerColor(siteType: string): string {
   const normalized = siteType.toLowerCase();
   if (normalized.includes("brown")) return "#ef4444"; // red
@@ -39,12 +34,14 @@ function getOpacity(viabilityScore: number | null): number {
   return 0.4 + (clamped / 100) * 0.6;
 }
 
-const CANADA_BOUNDS: google.maps.LatLngBoundsLiteral = {
-  north: 84,
-  south: 41,
-  west: -141,
-  east: -52,
-};
+function getMarkerLabel(siteType: string): string {
+  const normalized = siteType.toLowerCase();
+  if (normalized.includes("brown")) return "B";
+  if (normalized.includes("parking")) return "P";
+  if (normalized.includes("rail")) return "R";
+  if (normalized.includes("mall")) return "M";
+  return "S";
+}
 
 export default function Map({
   sites,
@@ -55,52 +52,50 @@ export default function Map({
   onSiteSelect,
 }: MapProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const mapRef = useRef<google.maps.Map | null>(null);
-  const markersRef = useRef<google.maps.Marker[]>([]);
+  const leafletRef = useRef<typeof import("leaflet") | null>(null);
+  const mapRef = useRef<import("leaflet").Map | null>(null);
+  const markersRef = useRef<import("leaflet").Marker[]>([]);
 
   useEffect(() => {
     let cancelled = false;
 
-    function initMap() {
-      if (cancelled) return;
-      if (!mapContainerRef.current || mapRef.current || !window.google?.maps) return;
+    async function initMap() {
+      if (!mapContainerRef.current || mapRef.current) return;
 
-      const map = new window.google.maps.Map(mapContainerRef.current, {
-        center: { lat: 56.1304, lng: -106.3468 },
+      const L = await import("leaflet");
+      if (cancelled || !mapContainerRef.current || mapRef.current) return;
+
+      leafletRef.current = L;
+      const map = L.map(mapContainerRef.current, {
+        center: [56.1304, -106.3468],
         zoom: 4,
-        disableDefaultUI: false,
-        mapTypeControl: false,
-        restriction: {
-          latLngBounds: CANADA_BOUNDS,
-          strictBounds: true,
-        },
         minZoom: 3,
         maxZoom: 18,
+        zoomControl: true,
+        maxBounds: [
+          [41, -141],
+          [84, -52],
+        ],
+        maxBoundsViscosity: 1,
       });
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
 
       mapRef.current = map;
     }
 
-    if (window.google?.maps) {
-      initMap();
-    } else {
-      const interval = window.setInterval(() => {
-        if (window.google?.maps) {
-          window.clearInterval(interval);
-          initMap();
-        }
-      }, 400);
-
-      return () => {
-        cancelled = true;
-        window.clearInterval(interval);
-      };
-    }
+    initMap();
 
     return () => {
-      markersRef.current.forEach((marker) => marker.setMap(null));
+      cancelled = true;
+      markersRef.current.forEach((marker) => marker.remove());
       markersRef.current = [];
+      mapRef.current?.remove();
       mapRef.current = null;
+      leafletRef.current = null;
     };
   }, []);
 
@@ -108,40 +103,42 @@ export default function Map({
     const map = mapRef.current;
     if (!map) return;
 
-    map.panTo({ lat: center.lat, lng: center.lng });
-    map.setZoom(center.name ? 11 : 3.4);
+    map.setView([center.lat, center.lng], center.name ? 11 : 4);
   }, [center]);
 
   useEffect(() => {
+    const L = leafletRef.current;
     const map = mapRef.current;
-    if (!map) return;
+    if (!L || !map) return;
 
-    markersRef.current.forEach((marker) => marker.setMap(null));
+    markersRef.current.forEach((marker) => marker.remove());
     markersRef.current = [];
 
     sites.forEach((site) => {
       const isSelected = selectedSiteId === site.id;
       const color = getMarkerColor(site.siteType);
       const opacity = getOpacity(site.viabilityScore ?? null);
+      const label = getMarkerLabel(site.siteType);
+      const size = isSelected ? 30 : 24;
+      const anchor = isSelected ? 15 : 12;
 
-      const marker = new window.google!.maps.Marker({
-        position: { lat: site.lat, lng: site.lng },
-        map,
+      const marker = L.marker([site.lat, site.lng], {
         title: site.name,
-        icon: {
-          path: window.google!.maps.SymbolPath.CIRCLE,
-          scale: isSelected ? 6 : 4,
-          fillColor: color,
-          fillOpacity: opacity,
-          strokeColor: "#000000",
-          strokeOpacity: 0.6,
-          strokeWeight: 1,
-        },
-      });
+        icon: L.divIcon({
+          className: "map-sign-pin",
+          html: `<span class="map-sign" style="background:${color};opacity:${opacity}">${label}</span>`,
+          iconSize: [size, size],
+          iconAnchor: [anchor, anchor],
+          popupAnchor: [0, -anchor],
+        }),
+      }).addTo(map);
 
-      marker.addListener("click", () => {
-        onSiteSelect(site.id);
-      });
+      marker.on("click", () => onSiteSelect(site.id));
+      marker.bindTooltip(site.name, { direction: "top", offset: [0, -8] });
+
+      if (isSelected) {
+        marker.setZIndexOffset(1000);
+      }
 
       markersRef.current.push(marker);
     });
