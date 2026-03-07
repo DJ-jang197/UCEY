@@ -39,6 +39,7 @@ export default function MainMap() {
 
   const [isPanelOpen, setIsPanelOpen] = useState(false);
   const [center, setCenter] = useState<Center>(defaultCenter);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   const [filters, setFilters] = useState<FiltersState>({
     city: "",
@@ -46,6 +47,17 @@ export default function MainMap() {
     minViability: 0,
     minArea: 0,
   });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "dark") {
+      root.style.setProperty("--background", "#020617");
+      root.style.setProperty("--foreground", "#e5e7eb");
+    } else {
+      root.style.setProperty("--background", "#ffffff");
+      root.style.setProperty("--foreground", "#111827");
+    }
+  }, [theme]);
 
   useEffect(() => {
     let cancelled = false;
@@ -164,13 +176,26 @@ export default function MainMap() {
   };
 
   return (
-    <div className="map-shell">
-      <div className="absolute inset-0 z-20 flex items-start justify-center pt-10 pointer-events-none">
+    <div className={`map-shell ${isPanelOpen ? "panel-open" : ""}`}>
+      <div
+        className={`absolute inset-x-0 top-0 z-20 flex justify-center pt-10 pointer-events-none transition-all duration-300 ${
+          isPanelOpen ? "pr-[440px]" : ""
+        }`}
+      >
         <div className="flex w-full max-w-4xl flex-col items-center gap-4 px-4 pointer-events-auto">
-          <div className="w-full max-w-3xl rounded-2xl bg-gradient-to-r from-emerald-50/80 via-sky-50/80 to-indigo-50/80 px-6 py-5 shadow-xl border border-slate-200/80 backdrop-blur">
-            <h1 className="text-center text-3xl font-semibold tracking-tight text-slate-900">
-              ReZone — Canadian infill explorer
-            </h1>
+          <div className="w-full max-w-3xl rounded-2xl bg-gradient-to-r from-emerald-50/70 via-sky-50/70 to-indigo-50/70 px-6 py-5 shadow-xl border border-slate-200/70 backdrop-blur">
+            <div className="flex items-center justify-between gap-3">
+              <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-slate-900">
+                ReZone — Canadian infill explorer
+              </h1>
+              <button
+                type="button"
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="rounded-full border border-emerald-300 bg-white/80 px-3 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-emerald-50"
+              >
+                {theme === "light" ? "🌙 Dark mode" : "☀️ Light mode"}
+              </button>
+            </div>
             <p className="mt-2 text-center text-sm text-slate-600">
               Scan underused land across Canada, filter by viability, and open a site panel for
               scores, cost estimates, AI memo, and audio.

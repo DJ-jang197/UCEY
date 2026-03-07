@@ -25,22 +25,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Slide-in site panel */
+/* Slide-in site panel (detail analytics) */
 .site-panel {
   position: fixed;
-  right: -40%;
+  right: -420px;
   top: 0;
-  width: 40%;
+  width: 420px;
   height: 100vh;
-  background: #f9fafb;
+  background: rgba(255, 255, 255, 0.96);
   border-left: 1px solid #e5e7eb;
-  transition: right 0.3s ease;
-  z-index: 100;
+  transition: right 0.3s ease, box-shadow 0.3s ease;
+  z-index: 30;
   overflow-y: auto;
 }
 
 .site-panel.open {
   right: 0;
+  box-shadow: -16px 0 40px rgba(15, 23, 42, 0.25);
 }
 
 /* Viability score badge */

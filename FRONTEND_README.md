@@ -1,91 +1,191 @@
-## ReZone Frontend (HC\_FrontEnd)
+# 🍁 ReZone
 
-**ReZone** is a planner- and architect-facing interface for identifying underused Canadian land (brownfields, parking lots, dead malls, rail corridors) and exploring their conversion into housing.  
-This README describes the **frontend** implemented on the `HC_FrontEnd` branch.
+> **Canada doesn't have a land shortage. It has a land visibility shortage.**
 
-### Stack
+ReZone is a web platform built at **HackCanada 2026** that identifies underused Canadian land — brownfields, parking lots, dead malls, and decommissioned rail corridors — and simulates their conversion into housing. Built for urban planners, architects, and municipal governments.
 
-- **Next.js App Router** (`src/app`)
-- **TypeScript**
-- **Tailwind CSS v4** (utility classes from scaffold)
-- **Custom CSS** in `src/app/globals.css` (panel, badges, skeleton, pulse, audio, Places input)
-- **Google Maps JavaScript API + Places** for the interactive basemap, city search, and nearby transit enrichment
-- **Recharts** for cost / capacity bar charts
-- **Auth0 + Supabase** session and data are consumed via existing backend API routes
+---
 
-### Key Screens
+## 🏠 The Problem
 
-- **`/` – Map view**
-  - Full-screen dark Google map of Canada
-  - Colored dot markers per site type (brownfield, parking lot, rail corridor, dead mall)
-  - Pulse animation for top-viability sites (`.marker-pulse`)
-  - **Google Places city autocomplete** search bar (restricted to Canada)
-  - Filter bar (city, land type, min viability, min site size)
-  - Slide-in **site detail panel** (scores, estimates, AI memo, audio)
+Canada needs **3.5 million homes by 2030**. Meanwhile, over **30,000 abandoned and underused sites** sit inside existing cities, already connected to roads, water, and transit infrastructure. These sites go undeveloped not because they're unusable — but because no one has made it easy to assess, compare, and act on them.
 
-- **`/dashboard` – Planner dashboard**
-  - Project folders loaded from `/api/projects`
-  - Saved / bookmarked sites (resolved from `siteIds` and `/api/sites/:id`)
-  - Google Places Nearby Search to show nearest transit + neighborhood labels
-  - Placeholder PDF export buttons for per-site reports
+ReZone connects the dots.
 
-### Environment & API Keys
+---
 
-- **Google Maps + Places**
-  - The Places script is loaded in the root layout via:
-    - `https://maps.googleapis.com/maps/api/js?key=...&libraries=places`
-  - Autocomplete and Places services are used on the client only.
+## 💡 What It Does
 
-- **Backend APIs**
-  - All data comes from existing routes, e.g.:
-    - `GET /api/sites/top`
-    - `GET /api/sites/:id`
-    - `GET /api/sites/:id/report`
-    - `GET /api/projects`
+- **Discovers** underused land across Canada from public data sources — brownfields, surface parking lots, dying malls, decommissioned rail corridors, and golf courses
+- **Analyzes** each site's soil composition, contamination risk, and infrastructure readiness
+- **Simulates** how many housing units could be built, at what cost, and on what timeline
+- **Generates** AI-powered plain-English site reports with voice narration — ready to share with stakeholders
+- **Visualizes** proposed housing in 3D and AR directly on the site
 
-### Development
+---
 
-1. Install dependencies (requires Node + npm):
+## 🧱 Tech Stack
 
-   ```bash
-   npm install
-   ```
+### Frontend
+| Tool | Purpose |
+|---|---|
+| Next.js (App Router) | Framework |
+| TypeScript | Type safety |
+| Tailwind CSS v4 + Custom CSS | Styling |
+| Google Maps JS API + Places | Interactive map, city search, transit enrichment |
+| Recharts | Cost comparison charts |
+| Three.js / A-Frame | 3D building simulation + WebAR |
 
-2. Create `.env.local` from `.env.example` and fill:
+### Backend & Infrastructure
+| Tool | Purpose |
+|---|---|
+| Supabase + PostGIS | Database + geospatial queries |
+| Vultr | Cloud hosting + data pipeline compute |
+| Tailscale | Secure team networking during build |
+| Node.js | API routes + data ingestion |
 
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `SUPABASE_SERVICE_ROLE_KEY`
-   - Auth0 keys if you want real sessions
+### AI & Media
+| Tool | Purpose |
+|---|---|
+| Gemini (`gemini-2.0-flash`) | Site analysis + housing report generation |
+| ElevenLabs | Voice narration of AI-generated site reports |
+| Cloudinary | Image, audio, and AR render storage + optimization |
+| Backboard.io | Persistent AI memory per planner + per-site RAG knowledge base |
 
-3. Run the dev server:
+### Auth
+| Tool | Purpose |
+|---|---|
+| Auth0 | Authentication + role-based access (Planner / Architect / Developer) |
 
-   ```bash
-   npm run dev
-   ```
+### Data Sources (All Free & Public)
+| Source | Data |
+|---|---|
+| Federal Contaminated Sites Inventory | Brownfield locations across Canada |
+| OpenStreetMap Overpass API | Parking lots, rail corridors, golf courses, dead malls |
+| StatCan Open DB of Infrastructure | Railway and building data |
+| SoilGrids REST API | Soil composition per coordinate (clay, pH, bearing capacity) |
+| CanSIS / Agriculture Canada | Canadian-specific soil classification |
+| Google Earth Engine (Sentinel-2) | Satellite vegetation stress + surface anomaly detection |
+| Municipal Open Data Portals | Zoning rules + assessed land values (Toronto, Vancouver, Calgary) |
 
-4. Visit:
+---
 
-   - `http://localhost:3000/` for the map
-   - `http://localhost:3000/dashboard` for the planner dashboard
+## 🗺️ Key Features
 
-### Structure (frontend-relevant files)
+### Interactive Land Map
+Color-coded markers across Canada by site type and viability score. Filter by city, land type, contamination level, and site size. Pulse animation on highest-viability sites.
 
-- `src/app/page.tsx` – main map shell
-- `src/app/dashboard/page.tsx` – dashboard entry
-- `src/app/components/MainMap.tsx` – orchestrates map, filters, panel
-- `src/app/components/Map.tsx` – Google Maps wrapper + markers
-- `src/app/components/PlacesSearch.tsx` – Google Places city autocomplete
-- `src/app/components/FilterBar.tsx` – map filters
-- `src/app/components/SitePanel.tsx` – slide-in detail panel
-- `src/app/components/SiteCard.tsx` – summary of scores & badges
-- `src/app/components/CostChart.tsx` – Recharts bar chart
-- `src/app/components/ReportDisplay.tsx` – Gemini memo display (uses `/api/sites/:id/report`)
-- `src/app/components/AudioPlayer.tsx` – ElevenLabs audio player UI
-- `src/app/components/Dashboard.tsx` – saved sites + project folders
-- `src/app/globals.css` – global theme + panel, skeleton, pulse, audio, Places styles
+### Soil & Environmental Analysis
+Every site is cross-referenced with SoilGrids API data (clay content, pH, bearing capacity) and a contamination inference engine that estimates risk from the site's land use history. Sentinel-2 satellite imagery flags surface anomalies.
 
-### Notes
+### Housing Simulation Engine
+Calculates buildable housing units from lot size and local zoning density. Generates low / mid / high-rise layout options. Estimates remediation cost, construction cost, and timeline from site to shovel-ready.
 
-- Existing backend files and API logic remain untouched; the frontend only consumes them.
-- `todo.md` at the repo root tracks remaining frontend polish and integration tasks.
+### AI Site Reports (Gemini + ElevenLabs)
+One click generates a plain-English planner memo covering soil suitability, contamination risk, infrastructure readiness, housing potential, and cost comparison. Reports are narrated aloud via ElevenLabs voice synthesis.
 
+### 3D + AR Visualization
+Three.js renders proposed buildings directly on the map parcel. A-Frame WebAR lets planners point their phone camera at a real parking lot or brownfield and see the proposed development overlaid in real space.
+
+### Planner Dashboard
+Auth0-authenticated workspace with saved sites, custom project folders, role-based views, and PDF report export. Backboard.io persists AI memory per planner across sessions — the platform learns your preferences over time.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/your-team/rezone
+cd rezone
+npm install
+```
+
+### Environment Variables
+
+Create `.env.local` from `.env.example`:
+
+```bash
+cp .env.example .env.local
+```
+
+Fill in:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+NEXT_PUBLIC_GOOGLE_MAPS_KEY=AIzaSyCF0w2ff41nWt4F0YCNBJmdtKrjLSX62PY
+AUTH0_SECRET=
+AUTH0_BASE_URL=
+AUTH0_ISSUER_BASE_URL=
+AUTH0_CLIENT_ID=
+AUTH0_CLIENT_SECRET=
+GEMINI_API_KEY=
+ELEVENLABS_API_KEY=
+CLOUDINARY_URL=
+BACKBOARD_API_KEY=
+```
+
+### Run
+
+```bash
+npm run dev
+```
+
+Visit:
+- `http://localhost:3000` — Map view
+- `http://localhost:3000/dashboard` — Planner dashboard
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+  app/
+    page.tsx                  ← Map view entry
+    dashboard/page.tsx        ← Planner dashboard entry
+    components/
+      MainMap.tsx             ← Map orchestrator
+      Map.tsx                 ← Google Maps wrapper + markers
+      PlacesSearch.tsx        ← City autocomplete (Canada only)
+      FilterBar.tsx           ← Land type, viability, size filters
+      SitePanel.tsx           ← Slide-in site detail panel
+      SiteCard.tsx            ← Scores, badges, soil summary
+      CostChart.tsx           ← Recharts cost comparison
+      ReportDisplay.tsx       ← Gemini AI memo display
+      AudioPlayer.tsx         ← ElevenLabs voice narration player
+      Dashboard.tsx           ← Saved sites + project folders
+    globals.css               ← Custom CSS (panel, badges, skeleton, pulse, audio)
+    api/
+      sites/
+        top/route.ts          ← Top viability sites
+        [id]/route.ts         ← Site detail
+        [id]/report/route.ts  ← Gemini report + ElevenLabs audio
+      projects/route.ts       ← Planner project folders
+```
+
+---
+
+## 👥 Team
+
+| Role | Owns |
+|---|---|
+| Backend & Infrastructure | Supabase, Auth0, Vultr, Tailscale, API routes |
+| Data & AI | OSM ingestion, SoilGrids, Gemini, ElevenLabs, Backboard |
+| Frontend & Map | Google Maps, components, dashboard, Recharts |
+| 3D / AR & Pitch | Three.js, A-Frame WebAR, Cloudinary, demo video, pitch deck |
+
+---
+
+## 🏆 HackCanada 2026
+
+**Theme:** Solving Problems in Canada
+**Track:** Housing & Urban Infrastructure
+
+> *"30,000 sites. 3.5M homes needed. We connect the dots."*
