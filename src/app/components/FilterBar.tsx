@@ -12,37 +12,54 @@ export type FiltersState = {
 type FilterBarProps = {
   filters: FiltersState;
   onChange: (next: FiltersState) => void;
+  theme?: "light" | "dark";
 };
 
-export default function FilterBar({ filters, onChange }: FilterBarProps) {
+export default function FilterBar({ filters, onChange, theme = "light" }: FilterBarProps) {
   const handleChange =
     <K extends keyof FiltersState>(key: K) =>
     (value: FiltersState[K]) => {
       onChange({ ...filters, [key]: value });
     };
 
+  const isDark = theme === "dark";
+
   return (
-    <div className="pointer-events-auto flex flex-wrap items-center gap-3 rounded-xl bg-white/90 px-4 py-3 text-xs text-slate-900 shadow-lg border border-slate-200 backdrop-blur">
+    <div
+      className={`pointer-events-auto flex flex-wrap items-center gap-3 rounded-xl px-4 py-3 text-sm shadow-lg border backdrop-blur transition-colors duration-300 ease-out ${
+        isDark
+          ? "bg-slate-800/50 border-slate-600/60 text-slate-200"
+          : "bg-white/60 border-slate-200/70 text-slate-900"
+      }`}
+    >
       <div className="flex flex-col gap-1">
-        <span className="text-[11px] uppercase tracking-wide text-slate-500">
+        <span className={`text-xs uppercase tracking-wide ${isDark ? "text-slate-400" : "text-slate-500"}`}>
           City
         </span>
         <input
           value={filters.city}
           onChange={(e) => handleChange("city")(e.target.value)}
           placeholder="Filter by city"
-          className="h-8 w-40 rounded-md border border-slate-200 bg-white px-2 text-xs text-slate-900 outline-none focus:border-emerald-400"
+          className={`h-9 w-40 rounded-md border px-2.5 text-sm outline-none focus:border-emerald-400 ${
+            isDark
+              ? "border-slate-500 bg-slate-700/80 text-slate-100"
+              : "border-slate-200 bg-white/90 text-slate-900"
+          }`}
         />
       </div>
 
       <div className="flex flex-col gap-1">
-        <span className="text-[11px] uppercase tracking-wide text-slate-500">
+        <span className={`text-xs uppercase tracking-wide ${isDark ? "text-slate-400" : "text-slate-500"}`}>
           Land type
         </span>
         <select
           value={filters.landType}
           onChange={(e) => handleChange("landType")(e.target.value as LandTypeFilter)}
-          className="h-8 rounded-md border border-slate-200 bg-white px-2 text-xs text-slate-900 outline-none focus:border-emerald-400"
+          className={`h-9 rounded-md border px-2.5 text-sm outline-none focus:border-emerald-400 ${
+            isDark
+              ? "border-slate-500 bg-slate-700/80 text-slate-100"
+              : "border-slate-200 bg-white/90 text-slate-900"
+          }`}
         >
           <option value="all">All</option>
           <option value="brownfield">Brownfield</option>
@@ -53,7 +70,7 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
       </div>
 
       <div className="flex flex-col gap-1">
-        <span className="text-[11px] uppercase tracking-wide text-slate-500">
+        <span className={`text-xs uppercase tracking-wide ${isDark ? "text-slate-400" : "text-slate-500"}`}>
           Min. viability
         </span>
         <div className="flex items-center gap-2">
@@ -66,14 +83,14 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
             onChange={(e) => handleChange("minViability")(Number(e.target.value))}
             className="h-1 w-32 cursor-pointer accent-emerald-400"
           />
-          <span className="w-10 text-right text-[11px] tabular-nums text-slate-700">
+          <span className={`w-10 text-right text-xs tabular-nums ${isDark ? "text-slate-300" : "text-slate-700"}`}>
             {filters.minViability}
           </span>
         </div>
       </div>
 
       <div className="flex flex-col gap-1">
-        <span className="text-[11px] uppercase tracking-wide text-slate-500">
+        <span className={`text-xs uppercase tracking-wide ${isDark ? "text-slate-400" : "text-slate-500"}`}>
           Min. site size (m²)
         </span>
         <input
@@ -82,7 +99,11 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
           step={1000}
           value={filters.minArea}
           onChange={(e) => handleChange("minArea")(Number(e.target.value) || 0)}
-          className="h-8 w-28 rounded-md border border-slate-200 bg-white px-2 text-xs text-slate-900 outline-none focus:border-emerald-400"
+          className={`h-9 w-28 rounded-md border px-2.5 text-sm outline-none focus:border-emerald-400 ${
+            isDark
+              ? "border-slate-500 bg-slate-700/80 text-slate-100"
+              : "border-slate-200 bg-white/90 text-slate-900"
+          }`}
         />
       </div>
     </div>

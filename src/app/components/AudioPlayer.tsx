@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from "react";
 
 type AudioPlayerProps = {
   audioUrl: string | null;
+  theme?: "light" | "dark";
 };
 
-export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
+export default function AudioPlayer({ audioUrl, theme = "light" }: AudioPlayerProps) {
+  const isDark = theme === "dark";
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -67,10 +69,14 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
 
   if (!audioUrl) {
     return (
-      <div className="audio-player opacity-60">
+      <div
+        className={`audio-player mt-4 rounded-xl border p-3 opacity-70 ${
+          isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-slate-100/80"
+        }`}
+      >
         <button
           type="button"
-          className="play-btn cursor-not-allowed bg-zinc-700 text-zinc-300"
+          className="play-btn cursor-not-allowed bg-slate-500 text-slate-200"
           disabled
         >
           🔊 Audio unavailable
@@ -83,7 +89,11 @@ export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
   }
 
   return (
-    <div className="audio-player">
+    <div
+      className={`audio-player mt-4 rounded-xl border p-3 ${
+        isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-slate-100/80"
+      }`}
+    >
       <button type="button" id="play-btn" className="play-btn" onClick={togglePlayback}>
         {isPlaying ? "⏸ Pause" : "🔊 Listen to Report"}
       </button>

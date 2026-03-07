@@ -338,11 +338,20 @@ export async function getTopSites(
   return items;
 }
 
+/** Supabase site_reports.site_id is UUID (FK to sites.id). FCSI ids are "fcsi-..." so query would fail. */
+function isLikelyUuid(id: string): boolean {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id.trim());
+}
+
 export async function getSiteReport(siteId: string): Promise<SiteReport | null> {
   const db = getSupabaseServerClient();
   if (!db) {
     const store = getDemoStore();
     return store.reports.get(siteId) ?? null;
+  }
+
+  if (!isLikelyUuid(siteId)) {
+    return null;
   }
 
   const { data, error } = await withTimeout(

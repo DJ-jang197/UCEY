@@ -71,9 +71,10 @@ export default function Map({
       if (cancelled || !mapContainerRef.current || mapRef.current) return;
 
       leafletRef.current = L;
+      const torontoCenter: [number, number] = [43.6532, -79.3832];
       const map = L.map(mapContainerRef.current, {
-        center: [56.1304, -106.3468],
-        zoom: 4,
+        center: torontoCenter,
+        zoom: 6,
         minZoom: 4,
         maxZoom: 18,
         zoomControl: true,
@@ -88,7 +89,6 @@ export default function Map({
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
-      map.fitBounds(CANADA_BOUNDS, { padding: [12, 12] });
       mapRef.current = map;
     }
 
