@@ -1,0 +1,15 @@
+The soil contamination data contains 12,954 rows and is categorized by provinces, municipalities, mediums of contamination, types of contamination, and site counts. Here’s a high-level summary based on this structure:
+
+1. **Provinces and Municipalities**: 
+   - The data covers various provinces including Alberta, British Columbia, and Manitoba, as well as numerous municipalities such as Alexander 134, Alexander 134B, and Alexis 133.
+
+2. **Mediums of Contamination**:
+   - The primary mediums include 'Other medium', 'Soil', and 'Surface soil'.
+   
+3. **Types of Contamination**:
+   - The types of contamination recorded involve PAHs (polycyclic aromatic hydrocarbon), PHCs (petroleum hydrocarbons), and other physical/chemical factors like pH, temperature, dissolved solids, and turbidity.
+
+4. **Site Count**:
+   - The contamination data includes site counts ranging from 1 to 209, with an average site count of approximately 2.46.
+
+For more detailed analysis or specific queries about municipalities or contamination types, we can delve into specific aspects of the data.
