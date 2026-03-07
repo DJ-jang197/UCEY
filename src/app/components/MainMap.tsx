@@ -66,13 +66,17 @@ export default function MainMap() {
       setLoadingSites(true);
       setSitesError(null);
       try {
-        const res = await fetch("/api/sites/top?province=ON&limit=50");
+        const res = await fetch("/api/sites?limit=300");
         if (!res.ok) {
           throw new Error(`Failed to load sites (${res.status})`);
         }
         const json = await res.json();
+        const items = Array.isArray(json.items) ? json.items : [];
         if (!cancelled) {
-          setSites(json.items ?? []);
+          setSites(items);
+          if (items.length === 0) {
+            setSitesError("No site data found yet. Seed or ingest data to see markers.");
+          }
         }
       } catch (error) {
         if (!cancelled) {
@@ -144,7 +148,7 @@ export default function MainMap() {
       if (json.lat && json.lng) {
         setCenter({ lat: json.lat, lng: json.lng, name: json.city ?? undefined });
       }
-    } catch (error) {
+    } catch {
       setSelectedSite(null);
     } finally {
       setLoadingSiteDetail(false);
@@ -245,4 +249,3 @@ export default function MainMap() {
     </div>
   );
 }
-

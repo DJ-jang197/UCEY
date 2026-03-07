@@ -1,0 +1,1449 @@
+Province,Municipality,Site_Name,Latitude,Longitude,Medium,Contamination_Type,Site_Count
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Groundwater,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+British Columbia,Vancouver,555 - Squamish - 00009 - KITSILANO NO. 6 - 0901112102,49.273892,-123.143086,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Bessborough Armoury,49.262500,-123.151000,Soil,Halogenated Hydrocarbon,1
+British Columbia,Vancouver,Bessborough Armoury,49.262500,-123.151000,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Fairmont Complex,49.239470,-123.122000,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Fairmont Complex,49.239470,-123.122000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Fairmont Complex,49.239470,-123.122000,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Former POL Storage Site at HMCS Discovery,49.296900,-123.123000,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+British Columbia,Vancouver,Former POL Storage Site at HMCS Discovery,49.296900,-123.123000,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Former POL Storage Site at HMCS Discovery,49.296900,-123.123000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Former POL Storage Site at HMCS Discovery,49.296900,-123.123000,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Harry Stevens Office Building,49.262260,-123.102240,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Harry Stevens Office Building,49.262260,-123.102240,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Jericho Beach,49.267100,-123.191000,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Kitsilano Coast Guard Station,49.276252,-123.138445,Sediment,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Kitsilano Coast Guard Station,49.276252,-123.138445,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Seaforth Armoury,49.271100,-123.144000,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Standards Building,49.265167,-123.026964,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Standards Building,49.265167,-123.026964,Groundwater,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Standards Building,49.265167,-123.026964,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Standards Building,49.265167,-123.026964,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,VANCOUVER (FALSE CREEK),49.272828,-123.138939,Other medium,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,VANCOUVER (FALSE CREEK),49.272828,-123.138939,Sediment,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Groundwater,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Groundwater,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Surface soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+British Columbia,Vancouver,Vanier Park,49.276368,-123.142586,Surface soil,PHCs (petroleum hydrocarbons),1
+British Columbia,Vancouver,Workshop NE Corner of Building 21 at HMCS Discovery,49.296900,-123.123000,Soil,"Metal, metalloid, and organometallic",1
+British Columbia,Vancouver,Workshop NE Corner of Building 21 at HMCS Discovery,49.296900,-123.123000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,100 Bayview Road,45.407955,-75.725951,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,150 Middle Street,45.419895,-75.714145,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,150 Middle Street,45.419895,-75.714145,Other medium,Energetics,1
+Ontario,Ottawa,150 Middle Street,45.419895,-75.714145,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,150 Middle Street,45.419895,-75.714145,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,150 Middle Street,45.419895,-75.714145,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"1501 St. Joseph, Ottawa",45.460512,-75.563249,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,"1501 St. Joseph, Ottawa",45.460512,-75.563249,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"1501 St. Joseph, Ottawa",45.460512,-75.563249,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"1501 St. Joseph, Ottawa",45.460512,-75.563249,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,156 Middle Street,45.419899,-75.714421,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,156 Middle Street,45.419899,-75.714421,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,156 Middle Street,45.419899,-75.714421,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,156 Middle Street,45.419899,-75.714421,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,160 Middle Street,45.419112,-75.715639,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,160 Middle Street,45.419112,-75.715639,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,160 Middle Street,45.419112,-75.715639,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,160 Middle Street,45.419112,-75.715639,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,160 Middle Street,45.419711,-75.714739,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,160 Middle Street,45.419711,-75.714739,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,160 Middle Street,45.419711,-75.714739,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,160 Middle Street,45.419711,-75.714739,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,161 Middle Street,45.419577,-75.715977,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,161 Middle Street,45.419577,-75.715977,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,161 Middle Street,45.419577,-75.715977,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,161 Middle Street,45.419577,-75.715977,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,1645 Woodroffe,45.328627,-75.746669,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,1645 Woodroffe,45.328627,-75.746669,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,1645 Woodroffe,45.328627,-75.746669,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,191 Colonel By Drive,45.421265,-75.685347,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,191 Colonel By Drive,45.421265,-75.685347,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,191 Colonel By Drive,45.421265,-75.685347,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,234 Atlantis Ave,45.396481,-75.759673,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,234 Atlantis Ave,45.396481,-75.759673,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,234 Atlantis Ave,45.396481,-75.759673,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,25 George Street,45.426789,-75.693531,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,25 George Street,45.426789,-75.693531,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,250 Lanark - Graham Spry Building,45.397898,-75.752411,Groundwater,Other organics,1
+Ontario,Ottawa,250 Lanark - Graham Spry Building,45.397898,-75.752411,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,250 Lanark - Graham Spry Building,45.397898,-75.752411,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,2606 Prince of Wales,45.315025,-75.702612,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"3150 Davidson Road, Ottawa",45.344110,-75.616892,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"3150 Davidson Road, Ottawa",45.344110,-75.616892,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"3197 Davidson Road, Ottawa",45.345714,-75.614996,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Air,Halogenated Hydrocarbon,1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Groundwater,Other inorganics,1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Soil,Halogenated Hydrocarbon,1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,335 River Road,45.316091,-75.689987,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"3448 Richmond Road, Ottawa",45.337486,-75.810121,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"3448 Richmond Road, Ottawa",45.337486,-75.810121,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"3448 Richmond Road, Ottawa",45.337486,-75.810121,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,350 King Edward (Former Bank of Canada Bldg),45.429740,-75.687650,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,3637 Bank Street,45.340804,-75.614105,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,3637 Bank Street,45.340804,-75.614105,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,3637 Bank Street,45.340804,-75.614105,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,3659 Carling Avenue,45.350416,-75.868965,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"4727 Ridge Road, Ottawa, ON",45.394719,-75.562874,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"4727 Ridge Road, Ottawa, ON",45.394719,-75.562874,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"4727 Ridge Road, Ottawa, ON",45.394719,-75.562874,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,4787 Ridge Road,45.393740,-75.558366,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,4790 And 4800 Russell Rd,45.375192,-75.549854,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,555 Booth Street,45.402893,-75.705858,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,555 Booth Street,45.402893,-75.705858,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,555 Booth Street,45.402893,-75.705858,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,555 Booth Street,45.402893,-75.705858,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,597 Robertson Road,45.309102,-75.865360,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,597 Robertson Road,45.309102,-75.865360,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,605 Robertson Road,45.308952,-75.865724,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,80 Bayview Garage,45.408128,-75.726649,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,80 Bayview Main Building,45.408637,-75.726977,Air,Halogenated Hydrocarbon,1
+Ontario,Ottawa,80 Bayview Main Building,45.408637,-75.726977,Air,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,80 Bayview Main Building,45.408637,-75.726977,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,80 Bayview Shed,45.407989,-75.727162,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,80 Bayview Shed 2,45.408234,-75.726707,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,90 Bayview Rd,45.408126,-75.726464,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,979 Heron Rd (Sawmill Creek West),45.378876,-75.678583,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,979 Heron Rd (Sawmill Creek West),45.378876,-75.678583,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,979 Heron Rd (Sawmill Creek West),45.378876,-75.678583,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Anderson Rd (North Of Russell),45.379455,-75.539665,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Anderson Rd (North Of Russell),45.379455,-75.539665,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Anderson Rd (North Of Russell),45.379455,-75.539665,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Area T-99 (TC Aviation Services),45.322612,-75.660009,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Area T-99 (TC Aviation Services),45.322612,-75.660009,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Areas U-61 and U-62 (NRCan sublease),45.326082,-75.665352,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Aylmer Island LL 1299 - Vicinity of the previous lightstation and associated buildings,45.397222,-75.888556,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Bank St, Conroy Rd, Park Lane (next to 3637 Bank Street)",45.340196,-75.607168,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Bank St, Conroy Rd, Park Lane (next to 3637 Bank Street)",45.340196,-75.607168,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Bank St, Conroy Rd, Park Lane (next to 3637 Bank Street)",45.340196,-75.607168,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Bank Street/Highway 31 at Leitrim Road,45.334405,-75.599756,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Baskin's Beach Range - Front Range Tower,45.479611,-76.007139,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Baskin's Beach Range - Front Range Tower,45.479611,-76.007139,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Baskin's Beach Range - Rear Range Tower,45.478028,-76.003417,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Baskin's Beach Range - Rear Range Tower,45.478028,-76.003417,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Bate Island,45.408730,-75.756124,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Bate Island,45.408730,-75.756124,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Bayview,45.408458,-75.727086,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Bayview,45.408458,-75.727086,Soil,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Groundwater,PAHs (polycyclic aromatic hydrocarbon),2
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Sediment,"Metal, metalloid, and organometallic",2
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Bells Corners Complex,45.320459,-75.862178,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Air,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Air,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Birks Building,45.422840,-75.697992,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Booth Street,45.401974,-75.706879,Not Available,"Metal, metalloid, and organometallic",3
+Ontario,Ottawa,Booth Street,45.401974,-75.706879,Not Available,PAHs (polycyclic aromatic hydrocarbon),3
+Ontario,Ottawa,Booth Street,45.401974,-75.706879,Not Available,PHCs (petroleum hydrocarbons),3
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration ),45.399820,-75.705620,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration ),45.399820,-75.705620,Not Available,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration),45.399307,-75.705028,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration),45.399307,-75.705028,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration),45.399506,-75.705024,Not Available,"Metal, metalloid, and organometallic",2
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration),45.399506,-75.705024,Not Available,PAHs (polycyclic aromatic hydrocarbon),2
+Ontario,Ottawa,Booth Street Buildings (William Logan and Administration),45.399506,-75.705024,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Booth Street East, West of Wellington",45.421277,-75.715162,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Booth Street East, West of Wellington",45.421277,-75.715162,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,"Booth Street East, West of Wellington",45.421277,-75.715162,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Booth Street East, West of Wellington",45.421277,-75.715162,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,"Booth Street East, West of Wellington",45.421277,-75.715162,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,Other organics,1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Booth Street, West of LeBreton near Chaudiere Falls",45.418590,-75.720048,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Building T-96 (car rental facility) - Ottawa Macdonald-Cartier International Airport,45.324444,-75.661535,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Building T-96 (car rental facility) - Ottawa Macdonald-Cartier International Airport,45.324444,-75.661535,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Building T-96 (car rental facility) - Ottawa Macdonald-Cartier International Airport,45.324444,-75.661535,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Building T-96 (car rental facility) - Ottawa Macdonald-Cartier International Airport,45.324444,-75.661535,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Building T107 (Shell Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325433,-75.660996,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Building T107 (Shell Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325433,-75.660996,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Building T107 (Shell Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325433,-75.660996,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Bulk fuel storage facility (Esso Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325192,-75.659773,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Bulk fuel storage facility (Esso Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325192,-75.659773,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Bulk fuel storage facility (Esso Tank Farm) - Ottawa Macdonald-Cartier International Airport,45.325192,-75.659773,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Bureau of Medical Devices and Radiation Protection,45.374057,-75.685518,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Bureau of Medical Devices and Radiation Protection,45.374057,-75.685518,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Burnside Site,45.409746,-75.730867,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Burnside Site,45.409746,-75.730867,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"CFS Leitrim, Former UST site between buildings #250D & #138",45.340800,-75.587700,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"CFS Leitrim, Former UST site between buildings #250D & #138",45.340800,-75.587700,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,CFSU Uplands Alert Road former Dump,45.330300,-75.641700,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,CFSU Uplands Alert Road former Dump,45.330300,-75.641700,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,CFSU Uplands Alert Road former Dump,45.330300,-75.641700,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,CFSU Uplands Alert Road former Dump,45.330300,-75.641700,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"CFSU(O) Leitrim, PWGSC Office Area, Building 251.",45.336200,-75.591100,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,CFSU(O) Rockcliffe PMQ Trailer Storage Compound,45.453000,-75.634600,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,CFSU(O) Uplands PMQ Trailer Storage Compound,45.339400,-75.674100,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,CONSTANCE BAY -   No Contamination Identified,45.501426,-76.077566,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,CONSTANCE BAY -   No Contamination Identified,45.501426,-76.077566,Sediment,Other organics,1
+Ontario,Ottawa,CONSTANCE BAY -   No Contamination Identified,45.501426,-76.077566,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,CONSTANCE BAY -   No Contamination Identified,45.501426,-76.077566,Sediment,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,CONSTANCE BAY -   No Contamination Identified,45.501426,-76.077566,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Canadian Police College RCMP,45.458262,-75.655787,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Cartier Square Armoury,Frmr UST,along drill hall Queen E.Dr.",45.421600,-75.688600,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Cartier Square Armoury,Frmr UST,along drill hall Queen E.Dr.",45.421600,-75.688600,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Center for Surface Transportation Technology,45.329094,-75.647795,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology,45.329094,-75.647795,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Center for Surface Transportation Technology,45.329094,-75.647795,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Center for Surface Transportation Technology,45.329094,-75.647795,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Center for Surface Transportation Technology,45.329094,-75.647795,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Groundwater,Other organics,1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Center for Surface Transportation Technology - Landfill,45.331430,-75.646046,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Center for Surface Transportation Technology - Wetland,45.331903,-75.645504,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Wetland,45.331903,-75.645504,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Center for Surface Transportation Technology - Wetland,45.331903,-75.645504,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Center for Surface Transportation Technology - Wetland,45.331903,-75.645504,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.372951,-75.728213,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.372951,-75.728213,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.376532,-75.713571,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.376532,-75.713571,Soil,Pesticides,1
+Ontario,Ottawa,Central Experimental Farm,45.386410,-75.700845,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.388725,-75.721649,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.388725,-75.721649,Surface soil,Pesticides,1
+Ontario,Ottawa,Central Experimental Farm,45.388750,-75.711797,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.388750,-75.711797,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.388855,-75.718056,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.388855,-75.718056,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.388908,-75.711907,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.390595,-75.707163,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.390595,-75.707163,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.390665,-75.720183,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.390665,-75.720183,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.391030,-75.709620,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Experimental Farm,45.391030,-75.709620,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.391030,-75.709620,Surface soil,Pesticides,1
+Ontario,Ottawa,Central Experimental Farm,45.391510,-75.706541,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Experimental Farm,45.391510,-75.706541,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.392749,-75.715835,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Central Experimental Farm,45.392749,-75.715835,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central Experimental Farm,45.393817,-75.706101,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central Heating Plant in Rockcliffe - Disposed to NCC,45.453000,-75.634600,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Central Heating Plant in Rockcliffe - Disposed to NCC,45.453000,-75.634600,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central Heating Plant in Rockcliffe - Disposed to NCC,45.453000,-75.634600,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Central LeBreton,45.414467,-75.715856,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Central LeBreton,45.414467,-75.715856,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Central LeBreton,45.414467,-75.715856,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Soil,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Centre Block Building,45.425144,-75.699893,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Champagne Corridor, Breezehill Ave At Somerset Street",45.407810,-75.720065,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Champagne Corridor, Breezehill Ave At Somerset Street",45.407810,-75.720065,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Chaudiere Island Lot P,45.420810,-75.715523,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Chaudiere Island Lot P,45.420810,-75.715523,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Chaudiere Island Lot P,45.420810,-75.715523,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Chaudiere Island Lot P,45.420810,-75.715523,Soil,Other organics,1
+Ontario,Ottawa,Chaudiere Island Lot P,45.420810,-75.715523,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Chaudiere Island Lot Pa,45.421002,-75.715300,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Chaudiere Island Lot Pa,45.421002,-75.715300,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Chaudiere Island Lot Pa,45.421002,-75.715300,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Chaudiere Island Lot Pa,45.421002,-75.715300,Soil,Other organics,1
+Ontario,Ottawa,Chaudiere Island Lot Pa,45.421002,-75.715300,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Cliff Street,45.418727,-75.710658,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Cliff Street,45.418727,-75.710658,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Cliff Street,45.418727,-75.710658,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Cliff Street Central Heating Plant,45.421580,-75.706648,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Cliff Street Central Heating Plant,45.421580,-75.706648,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Cliff Street Central Heating Plant,45.421580,-75.706648,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Cliff Street Central Heating Plant,45.421580,-75.706648,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Colonel By Drive/Rideau Canal,45.419828,-75.681699,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Colonel By Drive/Rideau Canal,45.419828,-75.681699,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Colonel By Drive/Rideau Canal,45.419828,-75.681699,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Colonel By Drive/Rideau Canal,45.419828,-75.681699,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Colonel By Drive/Rideau Canal,45.419828,-75.681699,Surface soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,Biological/chemical warfare agents,1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Communications Research Centre,45.346724,-75.889448,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Communications Research Centre,45.353062,-75.902899,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Soil,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Confederation Heights Central Heating Plant,45.376350,-75.686890,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Groundwater,Other organics,1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Soil,Other organics,1
+Ontario,Ottawa,Confederation Heights Insurance Building,45.376754,-75.687976,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Confederation Park,45.419578,-75.683124,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Confederation Park,45.419578,-75.683124,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Confederation Park,45.419578,-75.683124,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Confederation Park,45.419578,-75.683124,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Range Primary Training Centre - Bldgs 142 & 143,45.357100,-75.901900,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Range Primary Training Centre - Building 36,45.358000,-75.898700,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Range Primary Training Centre - Building 36,45.358000,-75.898700,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Range Primary Training Centre Former Landfill Site,45.367100,-75.898700,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Connaught Range Primary Training Centre Former Landfill Site,45.367100,-75.898700,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Connaught Range Primary Training Centre Former Landfill Site,45.367100,-75.898700,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Connaught Range Primary Training Centre Former Landfill Site,45.367100,-75.898700,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Range Primary Training Ctre Former Transport Comp.,45.360000,-75.894800,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Ranges Range Butt Stop Stockpile,45.357200,-75.908700,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Connaught Rnge Primary Trng Ctre,Various Former Supply Wells",45.356900,-75.901300,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Connaught Rnge Primary Trng Ctre,Various Former Supply Wells",45.356900,-75.901300,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Connaught Rnge Primary Trng Ctre- 35 Shirley Blvd, B34 AST",45.378600,-75.913400,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Connaught Skeet Range,45.359900,-75.913600,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Connaught Skeet Range,45.359900,-75.913600,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Connaught Skeet Range,45.359900,-75.913600,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"DND's Petroleum, oils & lubricants (POL) Compound",45.327274,-75.668786,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"DND's Petroleum, oils & lubricants (POL) Compound",45.327274,-75.668786,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"DND's Petroleum, oils and lubricants (POL) tank farm",45.333474,-75.658014,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,DND's former fire fighting training area,45.311341,-75.650096,Groundwater,Other organics,1
+Ontario,Ottawa,DND's former fire fighting training area,45.311341,-75.650096,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,DUNROBIN (Waterlot SE portion of the South Basin),45.477204,-75.993352,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Dow's Lake Armoury and Drill Hall,45.395000,-75.706500,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Dow's Lake Armoury and Drill Hall,45.395000,-75.706500,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Dow's Lake Armoury and Drill Hall,45.395000,-75.706500,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Dow's Lake Armoury and Drill Hall,45.395000,-75.706500,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,East Block Building,45.424600,-75.697360,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,East Block Building,45.424600,-75.697360,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,East Part of Bank Street Valley (see 08835.005 for West Part),45.424300,-75.699190,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,East Part of Bank Street Valley (see 08835.005 for West Part),45.424300,-75.699190,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,East Part of Bank Street Valley (see 08835.005 for West Part),45.424300,-75.699190,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,East end of Building T-96,45.324755,-75.666661,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,East end of Building T-96,45.324755,-75.666661,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,East end of Building T-96 (National Car Rental facility),45.326414,-75.671888,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,East end of Building T-96 (National Car Rental facility),45.326414,-75.671888,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Environmental Health Centre,45.409269,-75.735275,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Environmental Health Centre,45.409269,-75.735275,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former 9000 litre heating oil UST - 0-115,45.321709,-75.663677,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former B164/79 and via Venus,45.453207,-75.628381,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former Bayview Landfill,45.411187,-75.727235,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Former Central Heating Plant (Building 309), Uplands",45.331000,-75.667800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former De-icing Area - Main Apron,45.326384,-75.676489,Groundwater,Other organics,1
+Ontario,Ottawa,"Former Disposal Area, South of Water Tower, Shirleys Bay",45.357100,-75.890400,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.396289,-75.707975,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.396289,-75.707975,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.396289,-75.707975,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.402906,-75.681406,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.402906,-75.681406,Groundwater,Other inorganics,1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.402906,-75.681406,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.402906,-75.681406,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Dow's Lake Landfill and Commissioner's Park,45.402906,-75.681406,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former John Street Landfill,45.442055,-75.693432,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former John Street Landfill,45.442055,-75.693432,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former John Street Landfill,45.442055,-75.693432,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former Maple Island Landfill,45.439378,-75.691249,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Maple Island Landfill,45.439378,-75.691249,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former Maple Island Landfill,45.440179,-75.691874,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Maple Island Landfill,45.440179,-75.691874,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former McGee Farm Landfill,45.370075,-75.783802,Groundwater,Other organics,1
+Ontario,Ottawa,Former McGee Farm Landfill,45.370075,-75.783802,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former McGee Farm Landfill,45.370075,-75.783802,Groundwater,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,Former McGee Farm Landfill,45.370075,-75.783802,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former McGee Farm Landfill,45.370075,-75.783802,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former NCC Building,45.400720,-75.703100,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former NCC Building,45.400720,-75.703100,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Former NCC Building,45.400720,-75.703100,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Former Sir John Carling Building,45.394120,-75.710870,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former USTs at the PMQs at Uplands,45.333800,-75.668800,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Former USTs at the PMQs at Uplands,45.333800,-75.668800,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Garden of Provinces et Territories,45.418555,-75.708310,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Garden of Provinces et Territories,45.418555,-75.708310,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Garden of Provinces et Territories,45.418555,-75.708310,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Garden of The Provinces,45.418647,-75.708272,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Garden of The Provinces,45.418647,-75.708272,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Gloucester Landfill,45.310088,-75.634646,Groundwater,Other organics,1
+Ontario,Ottawa,Gloucester Landfill,45.310088,-75.634646,Soil,Other organics,1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Golf Course Maintenance Compound (401), CFB Ottawa (south)",45.318000,-75.642300,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Government Conference Centre,45.424484,-75.693381,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Government Conference Centre,45.424484,-75.693381,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Government Conference Centre,45.424484,-75.693381,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Government Conference Centre,45.424484,-75.693381,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,HMCS Gloucester,45.305400,-75.524200,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,HMCS Gloucester,45.305400,-75.524200,Groundwater,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,HMCS Gloucester,45.305400,-75.524200,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,HMCS Gloucester,45.305400,-75.524200,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,HMCS Gloucester,45.305400,-75.524200,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Herzberg Road and Bayfield Road,45.335826,-75.891134,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hog's Back Park,45.373836,-75.695513,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hog's Back Park,45.373836,-75.695513,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Surface water,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hudrman North,45.412705,-75.667834,Surface water,Other inorganics,1
+Ontario,Ottawa,Hunt Club Road Pinestand - Ottawa Macdonald-Cartier International Airport,45.340744,-75.676060,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hunt Club Road Pinestand - Ottawa Macdonald-Cartier International Airport,45.340744,-75.676060,Soil,Other inorganics,1
+Ontario,Ottawa,"Hunt Club Road Pinestand Property, Ottawa Airport",45.339500,-75.676600,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Hunt Club Road Pinestand Property, Ottawa Airport",45.339500,-75.676600,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,Other organics,1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Soil,Other organics,1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman North,45.414439,-75.662794,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Groundwater,Other organics,1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Soil,Other organics,1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman South,45.394066,-75.673572,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Hurdman West,45.401697,-75.668112,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.401697,-75.668112,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hurdman West,45.401697,-75.668112,Groundwater,Other organics,1
+Ontario,Ottawa,Hurdman West,45.401697,-75.668112,Surface water,Other organics,1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Soil,Other organics,1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman West,45.407123,-75.666266,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Hurdman West,45.407200,-75.664610,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.407200,-75.664610,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Groundwater,Other inorganics,1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Soil,Other organics,1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Hurdman West,45.408174,-75.668914,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Jackson Building (122 Bank Street),45.419595,-75.700119,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Jackson Building (122 Bank Street),45.419595,-75.700119,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Jackson Building (122 Bank Street),45.419595,-75.700119,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Jackson Building (122 Bank Street),45.419595,-75.700119,Soil,Other inorganics,1
+Ontario,Ottawa,Jackson Building (122 Bank Street),45.419595,-75.700119,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Justice, Supreme Court, Confederation, Fed. Annex, Central Heating Plant Buildings",45.421610,-75.705498,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,King Edward Park,45.436606,-75.690949,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,King Edward Park,45.436606,-75.690949,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Kingsview Park, Ottawa",45.435483,-75.672177,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,L'Esplanade Laurier,45.419036,-75.696989,Groundwater,Other inorganics,1
+Ontario,Ottawa,L'Esplanade Laurier,45.419036,-75.696989,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,L'Esplanade Laurier,45.419036,-75.696989,Soil,Other inorganics,1
+Ontario,Ottawa,"LaSalle Academy, 373 Sussex Drive, Ottawa, Ontario",45.430484,-75.696491,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"LaSalle Academy, 373 Sussex Drive, Ottawa, Ontario",45.430484,-75.696491,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Land East of Tailrace - LeBreton,45.418036,-75.711087,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Land East of Tailrace - LeBreton,45.418036,-75.711087,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Land East of Tailrace - LeBreton,45.418036,-75.711087,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Land East of Tailrace - LeBreton,45.418036,-75.711087,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Land south of the Government of Canada Conference Center,45.424286,-75.693563,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton East,45.419061,-75.711709,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats,45.413000,-75.713000,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413000,-75.713000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,Other inorganics,1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,Other organics,1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,LeBreton Flats,45.413070,-75.714230,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats,45.413670,-75.711830,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413670,-75.711830,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413670,-75.711830,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413670,-75.711830,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413670,-75.711830,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats,45.413880,-75.712780,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413880,-75.712780,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413880,-75.712780,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.413880,-75.712780,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.413880,-75.712780,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats,45.414050,-75.711060,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414050,-75.711060,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414050,-75.711060,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.414350,-75.710770,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414350,-75.710770,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414350,-75.710770,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.414370,-75.712000,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414370,-75.712000,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.414370,-75.712000,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414370,-75.712000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.414370,-75.712000,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats,45.414870,-75.709380,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.414870,-75.709380,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.415360,-75.710850,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.415360,-75.710850,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.415360,-75.710850,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats,45.415360,-75.710850,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats,45.415360,-75.710850,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Air,Other organics,1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Soil,Other inorganics,1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Soil,Other organics,1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,LeBreton Flats - Nepean Bay,45.411530,-75.719880,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Lebreton - East,45.419258,-75.712579,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Lebreton - East,45.419258,-75.712579,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Lebreton - East,45.419258,-75.712579,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Library and Archives Canada Building,45.420160,-75.708390,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Library and Archives Canada Building,45.420160,-75.708390,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Library and Archives Canada Building,45.420160,-75.708390,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Limebank soil pile,45.316046,-75.687759,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Limebank soil pile,45.316046,-75.687759,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Long Island Campground,45.255550,-75.703293,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Long Island Campground,45.255550,-75.703293,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Long Island Campground,45.255550,-75.703293,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Long Island Campground,45.255550,-75.703293,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Long Island Campground,45.255550,-75.703293,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Major-General G.R. Pearkes Building,45.423624,-75.689175,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Mann Avenue,45.419400,-75.674430,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Middle Street,45.419715,-75.714040,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Middle Street,45.419715,-75.714040,Other medium,Energetics,1
+Ontario,Ottawa,Middle Street,45.419715,-75.714040,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Middle Street,45.419715,-75.714040,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Middle Street,45.419715,-75.714040,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Middle Street,45.419764,-75.715787,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Middle Street,45.419764,-75.715787,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Middle Street,45.419764,-75.715787,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Middle Street,45.419764,-75.715787,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Middle Street to Booth Street,45.419218,-75.716271,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Middle Street to Booth Street,45.419218,-75.716271,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Groundwater,Other organics,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Sediment,Pesticides,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Soil,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Soil,Other organics,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Surface water,Halogenated Hydrocarbon,1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Montreal Road Complex ON,45.453793,-75.621105,Surface water,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Mooney's Bay,45.368158,-75.691830,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Mooney's Bay,45.368158,-75.691830,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Mooney's Bay Marina (Hog's Back),45.370200,-75.699000,Groundwater,Other organics,1
+Ontario,Ottawa,National Press Block,45.421880,-75.700600,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Nearshore (Waterlot),45.352777,-75.826944,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Nearshore (Waterlot),45.352777,-75.826944,Sediment,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Nearshore (Waterlot),45.352777,-75.826944,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Nearshore (Waterlot),45.352777,-75.826944,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Nicholas and Queensway,45.416744,-75.676638,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Nicholas and Queensway,45.416744,-75.676638,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"North River Rd., W of Prince Albert",45.421220,-75.665799,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"North River Rd., W of Prince Albert",45.421220,-75.665799,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"North River Rd., W of Prince Albert",45.421220,-75.665799,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,North of the RA Centre,45.383336,-75.685168,Surface soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Ottawa Fallowfield Laboratory,45.295488,-75.780048,Groundwater,Other inorganics,1
+Ontario,Ottawa,Ottawa River,45.419233,-75.714592,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ottawa River,45.419233,-75.714592,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Ottawa River Parkway,45.371271,-75.785335,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Ottawa River Parkway,45.371271,-75.785335,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ottawa River Parkway,45.371271,-75.785335,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Air,Other organics,1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Groundwater,Other organics,1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Ottawa River Parkway, North of Bayview Road",45.410176,-75.725020,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Air,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Air,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Air,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Parliamentary Precinct Block 2,45.422720,-75.698640,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Pathway below Parliament Hill,45.422969,-75.704986,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Pathway below Parliament Hill,45.422969,-75.704986,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Pathway below Parliament Hill,45.424684,-75.702026,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Pathway below Parliament Hill,45.424684,-75.702026,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Pavilions Sussex, Rideau, Bytown",45.439700,-75.694960,Not Available,"Metal, metalloid, and organometallic",4
+Ontario,Ottawa,"Pavilions Sussex, Rideau, Bytown",45.439700,-75.694960,Not Available,PAHs (polycyclic aromatic hydrocarbon),4
+Ontario,Ottawa,"Pavilions Sussex, Rideau, Bytown",45.439700,-75.694960,Not Available,PHCs (petroleum hydrocarbons),4
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Groundwater,Pesticides,1
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Pine Grove, Ottawa",45.349408,-75.569577,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Pipeline (near Tank Farm), 7 Wing CFB Ottawa",45.333400,-75.658300,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Pipeline (near Tank Farm), 7 Wing CFB Ottawa",45.333400,-75.658300,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Prince of Wales at Fallowfield,45.309099,-75.699391,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Property North of 3880 Farmers Way,45.367343,-75.514018,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Queen Elizabeth Drive N of, W of Preston",45.396297,-75.707848,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Queen Elizabeth Drive N of, W of Preston",45.396297,-75.707848,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Queen Elizabeth Drive N of, W of Preston",45.396297,-75.707848,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,RA Centre,45.383152,-75.683303,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,RA Centre,45.383152,-75.683303,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,RA Centre,45.383152,-75.683303,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,RA Centre,45.383152,-75.683303,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,RA Centre,45.383152,-75.683303,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Ramsayville Rd at Ridge Rd NE corner (Ridge Road Landfill),45.399664,-75.577571,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ramsayville Rd at Ridge Rd NE corner (Ridge Road Landfill),45.399664,-75.577571,Surface water,Other organics,1
+Ontario,Ottawa,Ramsayville Road,45.366077,-75.561930,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ramsayville Road,45.366077,-75.561930,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ramsayville Road,45.366077,-75.561930,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Rideau Canal, Dow's Lake to Ottawa Locks",45.423358,-75.690900,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Rideau Canal, Dow's Lake to Ottawa Locks",45.423358,-75.690900,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Rideau Canal, Dow's Lake to Ottawa Locks",45.423358,-75.690900,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Rideau Canal, Dow's Lake to Ottawa Locks",45.423358,-75.690900,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Rideau Canal, Dow's Lake to Ottawa Locks",45.423358,-75.690900,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,Other organics,1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rideau Falls Dam & Central Heating NRC (Plant Site),45.441388,-75.695855,Soil,Pesticides,1
+Ontario,Ottawa,Ridge Road,45.394594,-75.561275,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ridge Road,45.394594,-75.561275,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Ridge Road,45.394594,-75.561275,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rifle Road East,45.358688,-75.878161,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Riverfront Park,45.415740,-75.717000,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Riverside Dr. E side N of Uplands to McCarthy,45.351960,-75.682408,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Riverside Drive at Neil Street, Southwest Corner",45.390232,-75.674517,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Riverside Drive at Neil Street, Southwest Corner",45.390232,-75.674517,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Riverside Drive at Neil Street, Southwest Corner",45.390232,-75.674517,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rockcliffe Compound,45.455838,-75.676330,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Compound,45.455838,-75.676330,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Compound,45.455838,-75.676330,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rockcliffe Compound,45.455838,-75.676330,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Compound,45.455838,-75.676330,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Park,45.450049,-75.688179,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Park,45.450049,-75.688179,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Park,45.450049,-75.688179,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rockcliffe Park,45.454266,-75.687323,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Park,45.454266,-75.687323,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Park,45.454266,-75.687323,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rockcliffe Park,45.456050,-75.684880,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Park,45.456050,-75.684880,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Park,45.456050,-75.684880,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Rockcliffe Yacht Club,45.456771,-75.638973,Other medium,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Rockcliffe Yacht Club,45.456771,-75.638973,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Rockcliffe Yacht Club,45.456771,-75.638973,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Rockcliffe Yacht Club,45.456771,-75.638973,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,Sandhills - Minor Shore Light,45.511278,-76.094167,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Shirleys Bay Campus, P9 parking",45.346745,-75.883873,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Shirleys Bay Campus, P9 parking",45.346745,-75.883873,Groundwater,Other organics,1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Groundwater,Other inorganics,1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Soil,Other inorganics,1
+Ontario,Ottawa,Sir Charles Tupper Building,45.376248,-75.692615,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Sir George Etienne Cartier Parkway, Land Around Aviation Museum",45.463205,-75.639129,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Sir George Etienne Cartier Parkway, Land Around Aviation Museum",45.463205,-75.639129,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Sir John A MacDonald Parkway - Westboro Beach,45.395760,-75.760770,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Sir John A MacDonald Parkway - Westboro Beach,45.395760,-75.760770,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Smith fall sub spill due to fire on adjacent land,45.326113,-75.716230,Surface soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Southwest Corner of Riverside Dr at Bank St,45.387369,-75.676564,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Southwest Corner of Riverside Dr at Bank St,45.387369,-75.676564,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Southwest Corner of Riverside Dr at Bank St,45.387369,-75.676564,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Southwest Corner of Riverside Dr at Bank St,45.387369,-75.676564,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Not Available,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Not Available,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,St. Laurent Square,45.421110,-75.706920,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Stanley Park,45.437978,-75.689985,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Stanley Park,45.437978,-75.689985,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Stanley Park,45.437978,-75.689985,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Stanley Park,45.438725,-75.689853,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Stanley Park,45.438725,-75.689853,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Stanley Park,45.438725,-75.689853,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Stanley Park,45.439520,-75.688970,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Stanley Park,45.439520,-75.688970,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Stanley Park,45.439520,-75.688970,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Stanley Park West,45.441098,-75.692136,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Stanley Park West,45.441098,-75.692136,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Stanley Park West,45.441098,-75.692136,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Stillwater Park (Graham Bay) - Close to the naviga,45.353389,-75.824639,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Stornoway,45.452704,-75.678883,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Sussex Alexander,45.442707,-75.693024,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Sussex Alexander,45.442707,-75.693024,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Sussex Alexander,45.442707,-75.693024,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Sussex-Alexander,45.442556,-75.693019,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Sussex-Alexander,45.442556,-75.693019,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Sussex-Alexander,45.442556,-75.693019,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Sediment,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Surface water,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Technical and Protective Operations Facility (TPOF),45.451928,-75.558483,Surface water,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Tin House Courtyard,45.428470,-75.695373,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Tin House Courtyard,45.428470,-75.695373,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.416774,-75.653640,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.417158,-75.651778,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.417648,-75.650872,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.419621,-75.637093,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Tremblay / Belfast / VIA station,45.419621,-75.637093,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Uniform #2 Building, 79 Bentley Avenue, Ottawa, Ontario",45.334837,-75.716535,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Unknown,45.334165,-75.599870,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Groundwater,Other inorganics,1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Soil,Other inorganics,1
+Ontario,Ottawa,Unknown,45.431099,-75.579237,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Uplands - decommissioned oil filled high voltage cables,45.331800,-75.675500,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Uplands - decommissioned oil filled high voltage cables,45.331800,-75.675500,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Uplands - decommissioned oil filled high voltage cables,45.331800,-75.675500,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Uplands - decommissioned oil filled high voltage cables,45.331800,-75.675500,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Ottawa,Uplands - decommissioned oil filled high voltage cables,45.331800,-75.675500,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Uplands Bldg 329 (Bell Building) Former UST,45.332100,-75.674600,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Uplands Bldg 329 (Bell Building) Former UST,45.332100,-75.674600,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Uplands Former Tank Farm,45.328200,-75.669300,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Uplands Former Tank Farm,45.328200,-75.669300,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Uplands Former Tank Farm,45.328200,-75.669300,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Uplands Former Tank Farm,45.328200,-75.669300,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Uplands Marina, CFSU Ottawa",45.344600,-75.696000,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Uplands Marina, CFSU Ottawa",45.344600,-75.696000,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Uplands Marina, CFSU(O)",Unknown,Unknown,Groundwater,Halogenated Hydrocarbon,1
+Ontario,Ottawa,"Uplands Marina, CFSU(O)",Unknown,Unknown,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Uplands Marina, CFSU(O)",Unknown,Unknown,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Uplands Marina, CFSU(O)",Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Uplands Self-Help Housing Maintenance Compound,45.330300,-75.641700,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Vacant Land (Former temporary Building # 8),45.395550,-75.709910,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Vacant Land (Former temporary Building # 8),45.395550,-75.709910,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Vacant Land near Sawmill Creek,45.384084,-75.675814,Surface water,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Soil,Other organics,1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Surface water,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Ottawa,"Vacant Land, Albion Road and Lester Road, Ottawa",45.332760,-75.637122,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Victoria Island,45.420801,-75.713746,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Victoria Island,45.420801,-75.713746,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Victoria Island,45.420801,-75.713746,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Victoria Island,45.420801,-75.713746,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Victoria Island,45.420801,-75.713746,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Victoria Island,45.421451,-75.711648,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Victoria Island,45.421451,-75.711648,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Ottawa,Victoria Island,45.421451,-75.711648,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Victoria Island,45.421451,-75.711648,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Victoria Island,45.421451,-75.711648,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Victory Hill,45.319349,-75.698159,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Vincent Massey Park,45.378957,-75.695695,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Vincent Massey Park,45.378957,-75.695695,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Vincent Massey Park,45.381186,-75.691391,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Vincent Massey Park,45.381186,-75.691391,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Walkley & Highway 417,45.403708,-75.599922,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Walkley & Highway 417,45.403708,-75.599922,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Walkley & Highway 417,45.403708,-75.599922,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Walkley & Highway 417,45.403708,-75.599922,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,Walkley/Holland POL Storage Area,45.384600,-75.623200,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Ottawa,Watts Creek Sewage Treatment Plant,45.345575,-75.869261,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Watts Creek Sewage Treatment Plant,45.345575,-75.869261,Other medium,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Watts Creek Sewage Treatment Plant,45.345575,-75.869261,Other medium,Other organics,1
+Ontario,Ottawa,Watts Creek Sewage Treatment Plant (Carling Ave at Rifle Rd),45.343386,-75.878296,Not Available,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,Watts Creek Sewage Treatment Plant (Carling Ave at Rifle Rd),45.343386,-75.878296,Not Available,Other organics,1
+Ontario,Ottawa,West Memorial Building,45.419307,-75.706606,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,West Memorial Building,45.419307,-75.706606,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,West Part of Bank Street Valley (see 08834.001 for East Part),45.421410,-75.706100,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Ottawa,West Part of Bank Street Valley (see 08834.001 for East Part),45.421410,-75.706100,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Ottawa,West Part of Bank Street Valley (see 08834.001 for East Part),45.421410,-75.706100,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Arthur Meighen Building,43.688074,-79.391774,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Surface water,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Auto Hobby Club Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Surface water,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Building 100 (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Building 103 (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,CFRC (Yonge Street),43.763300,-79.411900,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,CN Tower (301 Front Street),43.642600,-79.387100,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Canadian Forces Staff College,43.742800,-79.413100,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Canadian Forces Staff College,43.742800,-79.413100,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Central Heating Plant (Downsview),Unknown,Unknown,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Central Heating Plant (Downsview),Unknown,Unknown,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Central Heating Plant (Downsview),Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Central Heating Plant (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Construction Engineering Section (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,Other organics,1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,Other organics,1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Ontario,Toronto,Denison Armoury,Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Don River at York Mills,43.740250,-79.403139,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Downsview Closure,Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Downsview Closure,Unknown,Unknown,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Toronto,Downsview Closure,Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Groundwater,Other organics,1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Soil,Other organics,1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Etobicoke Armoury,43.604200,-79.501900,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Fire Fighting Training Area (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Former Building 115 (Downsview),Unknown,Unknown,Soil,Other inorganics,1
+Ontario,Toronto,Former Bunker 'C' DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,Other inorganics,1
+Ontario,Toronto,Former No.1 Canadian Forces Supply Depot (Downsview),Unknown,Unknown,Soil,Other inorganics,1
+Ontario,Toronto,Former POL Compound Building 107 (Downsview),Unknown,Unknown,Groundwater,Other organics,1
+Ontario,Toronto,Former POL Compound Building 107 (Downsview),Unknown,Unknown,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Former POL Compound Building 107 (Downsview),Unknown,Unknown,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Former POL Compound Building 107 (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Former Sewage Treatment Plant (Downsview),Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Former Sewage Treatment Plant (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Former USTs Building 107 (Downsview),Unknown,Unknown,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Former USTs Building 107 (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Former building 102 (Downsview),Unknown,Unknown,Soil,Other inorganics,1
+Ontario,Toronto,Former building 131 (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Groundwater,Other organics,1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Fort York //,43.636900,-79.407800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Gravel Parking Lot Construction Eng. Section (Downsview),Unknown,Unknown,Soil,Other inorganics,1
+Ontario,Toronto,HMCS York,43.633900,-79.401900,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,HMCS York,43.633900,-79.401900,Groundwater,Other organics,1
+Ontario,Toronto,HMCS York,43.633900,-79.401900,Groundwater,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,HMCS York,43.633900,-79.401900,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,HMCS York,43.633900,-79.401900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Health Canada Laboratory,43.776653,-79.272697,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Health Canada Laboratory,43.776653,-79.272697,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Little Rouge Creek at Scarborough,43.813889,-79.156944,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Little Rouge Creek at Scarborough,43.813889,-79.156944,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Moss Park Armoury,43.654700,-79.373100,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Moss Park Armoury,43.654700,-79.373100,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Moss Park Armoury,43.654700,-79.373100,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Passmore,43.832900,-79.238300,Not Available,Isotopes,1
+Ontario,Toronto,Plant 1 Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Plant 2 Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Plant 3 Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Plant 3 Former DeHavilland Plant Area (Downsview),Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Portland Slip,43.635800,-79.395500,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Portland Slip,43.635800,-79.395500,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Portland Slip,43.635800,-79.395500,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Portland Slip,43.635800,-79.395500,Sediment,Pesticides,1
+Ontario,Toronto,RCSU Warehouse,43.781512,-79.492002,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Rouge River at Scarborough,43.811111,-79.159722,Surface soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Scarborough Armoury,43.787200,-79.242500,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Spadina Quay Marina,43.636100,-79.393400,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Spadina Quay Marina,43.636100,-79.393400,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Spadina Quay Marina,43.636100,-79.393400,Sediment,Pesticides,1
+Ontario,Toronto,Spadina Slip,43.637300,-79.391500,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Spadina Slip,43.637300,-79.391500,Sediment,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Spadina Slip,43.637300,-79.391500,Sediment,Pesticides,1
+Ontario,Toronto,TMFRC,Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,TMFRC,Unknown,Unknown,Soil,Other organics,1
+Ontario,Toronto,TMFRC,Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,"TORONTO (BLUFFERS PARK) (Sediment, SW Corner of Property)",43.709165,-79.228343,Sediment,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,"TORONTO (BLUFFERS PARK) (Soil,Eastern Tip of West breakwater)",43.708028,-79.232611,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,"TORONTO (BLUFFERS PARK) (Soil,Eastern Tip of West breakwater)",43.708028,-79.232611,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Groundwater,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Groundwater,Other inorganics,1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Toronto Main Harbour Channel Front (Daybeacon),43.634837,-79.346986,Surface soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Toronto Maintenance Center,43.610556,-79.509444,Soil,Other inorganics,1
+Ontario,Toronto,Toronto Maintenance Center,43.610556,-79.509444,Soil,PHCs (petroleum hydrocarbons),1
+Ontario,Toronto,Toronto Training Area,Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,Unknown,Unknown,Unknown,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",2
+Ontario,Toronto,Unknown,Unknown,Unknown,Soil,"Metal, metalloid, and organometallic",2
+Ontario,Toronto,Unknown,Unknown,Unknown,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,Unknown,Unknown,Unknown,Soil,PHCs (petroleum hydrocarbons),2
+Ontario,Toronto,VIA TMC,43.610556,-79.509444,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Ontario,Toronto,VIA TMC,43.610556,-79.509444,Soil,"Metal, metalloid, and organometallic",1
+Ontario,Toronto,VIA TMC,43.610556,-79.509444,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Ontario,Toronto,VIA TMC,43.610556,-79.509444,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,100 tons balance,45.575800,-73.525800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"105 McGill Street and 400 Place D'Youville, Montreal",45.500001,-73.555956,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"105 McGill Street and 400 Place D'Youville, Montreal",45.500001,-73.555956,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"105 McGill Street and 400 Place D'Youville, Montreal",45.500001,-73.555956,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,200 places prkng Mtl Garrison,45.577100,-73.533100,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,200 places prkng Mtl Garrison,45.577100,-73.533100,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"46 St-Jacques, Montreal",45.506000,-73.557000,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"46 St-Jacques, Montreal",45.506000,-73.557000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"46 St-Jacques, Montreal",45.506000,-73.557000,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"643,645, 655 and 655A Montée de Liesse; Lots 1 892 534 and 1 892 535",45.482533,-73.710536,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,AB- Section 10,45.489590,-73.547610,Not Available,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,AB- Section 10,45.489590,-73.547610,Not Available,Other organics,1
+Quebec,Montréal,AB- Section 10,45.489590,-73.547610,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Access ramp and docks repairs Montréal Garrison,45.576700,-73.521900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Atwater Boulevard, North of HWY 15, Montreal",45.476146,-73.573801,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Atwater Boulevard, North of HWY 15, Montreal",45.476146,-73.573801,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Behind Kitchen (B155) - Montreal garrison,45.578600,-73.530800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Boulevard Atwater, South of HWY 15, Montreal",45.473089,-73.572386,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Boulevard Atwater, South of HWY 15, Montreal",45.473089,-73.572386,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Boulevard LaSalle, South of HWY 15, Montreal",45.474016,-73.570171,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Boulevard LaSalle, South of HWY 15, Montreal",45.474016,-73.570171,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Brossard,45.471036,-73.544213,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Brossard,45.471036,-73.544213,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Building E,45.515550,-73.660000,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Building E,45.515550,-73.660000,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Canal sediments,45.461390,-73.602971,Sediment,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Canal sediments,45.461390,-73.602971,Sediment,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Canal sediments,45.461390,-73.602971,Sediment,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Quebec,Montréal,Canal sediments,45.461390,-73.602971,Sediment,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Cathcart Armoury,45.502300,-73.569700,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Cathcart Armoury,45.502300,-73.569700,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Central thermal retaining wall, Bldg 37 Montreal Garrison",45.576400,-73.519200,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Central thermal retaining wall, Bldg 37 Montreal Garrison",45.576400,-73.519200,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Champlain Bridge,45.472740,-73.550920,Not Available,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Champlain Bridge,45.472740,-73.550920,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Champlain Bridge,45.472740,-73.550920,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Construction of CSC building Montréal,45.575800,-73.525800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Depot C - occupied by lessee,45.468865,-73.747621,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Depot C - occupied by lessee,45.468865,-73.747621,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Depot C - occupied by lessee,45.468865,-73.747621,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,ETAP_approche_nord,45.468240,-73.533170,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Enlargement of LAV III testing ramp at 202 WKP,45.573600,-73.528100,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Enlargement of LAV III testing ramp at 202 WKP,45.573600,-73.528100,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,FEC- Field Electrical Center,45.468865,-73.747621,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Quebec,Montréal,Former Biotechnology Research Institute - Montreal,45.486620,-73.673180,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Former Biotechnology Research Institute - Montreal,45.486620,-73.673180,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Former Building 12,45.579700,-73.524400,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Former Building 12,45.579700,-73.524400,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Former firefighter training site,45.468865,-73.747621,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Former firefighter training site,45.468865,-73.747621,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Gaetan-Laberge Boulevard, North of HWY 15",45.474891,-73.549443,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Gaetan-Laberge Boulevard, North of HWY 15",45.474891,-73.549443,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Gaetan-Laberge Boulevard, North of HWY 15",45.474891,-73.549443,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Gaetan-Laberge Boulevard, South of HWY 15, Montreal",45.470644,-73.561643,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Gaetan-Laberge Boulevard, South of HWY 15, Montreal",45.470644,-73.561643,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Garage Construction LAV III,45.579700,-73.524400,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Hangar 10 local 151 drilling in floor of an old shop,45.577500,-73.516900,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Highway 15, between Atwater and Gaetan-Laberge, Verdun, Montreal",45.471036,-73.544213,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Highway 15, between Atwater and Gaetan-Laberge, Verdun, Montreal",45.471036,-73.544213,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Ile Sainte-Hélène,45.520630,-73.535190,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Indoor Firing Range L-123, ASU LP",45.576000,-73.526000,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Installation of an APU at building L-193,45.576700,-73.521900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,JCP- section 7 (Terrains au sud de Viger),45.522265,-73.545678,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,JCP- section 7 (Terrains au sud de Viger),45.522265,-73.545678,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,JCP- section 8 (entre Viger et Maisonneuve Est),45.523996,-73.549640,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,JCP- section 8 (entre Viger et Maisonneuve Est),45.523996,-73.549640,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,JCP- section 8 (entre Viger et Maisonneuve Est),45.523996,-73.549640,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,JCP- section 9 (entre Ontario et Maisonneuve Est),45.525346,-73.553733,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,JCP- section 9 (entre Ontario et Maisonneuve Est),45.525346,-73.553733,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,JCP- section 9 (entre Ontario et Maisonneuve Est),45.525346,-73.553733,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"L-10 South, ASU LP",45.577500,-73.516900,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"L-10 South, ASU LP",45.577500,-73.516900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Lachine (rear range light),45.433130,-73.691960,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Lachine (rear range light),45.433130,-73.691960,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Layout of a salt shelter,45.575800,-73.525800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Loading platform, L-3 North, ASU LP",45.577800,-73.526700,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Loading platform, L-3 North, ASU LP",45.577800,-73.526700,Soil,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Quebec,Montréal,Longue Pointe Soil Clean-up,45.576100,-73.525200,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Lot 9 - former petroleum depot,45.468865,-73.747621,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Lot 9 - former petroleum depot,45.468865,-73.747621,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,MMC,45.477814,-73.551406,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,MMC,45.477814,-73.551406,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,MMC,45.477814,-73.551406,Groundwater,Other organics,1
+Quebec,Montréal,MMC,45.477814,-73.551406,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,MMC,45.477814,-73.551406,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,MMC,45.477814,-73.551406,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,MMC,45.477814,-73.551406,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,MMC,45.477814,-73.551406,Soil,Other organics,1
+Quebec,Montréal,MMC,45.477814,-73.551406,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,MMC,45.477814,-73.551406,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Mechanical Workshop L-3 North, ASU LP",45.576000,-73.526000,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Mechanical Workshop L-3 North, ASU LP",45.576000,-73.526000,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Mechanical Workshop, L-3, ASU Longue-Pointe South",45.576100,-73.525200,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Mechanical Workshop, L-3, ASU Longue-Pointe South",45.576100,-73.525200,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Montreal soccer pitch,45.576500,-73.533300,Soil,Halogenated Hydrocarbon,1
+Quebec,Montréal,Montreal soccer pitch,45.576500,-73.533300,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Montreal soccer pitch,45.576500,-73.533300,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Montreal soccer pitch,45.576500,-73.533300,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Multipurpose runway Montreal Garrison north side,45.575800,-73.525800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Multipurpose runway Montreal Garrison north side,45.575800,-73.525800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,New Storage Area in Back of the Building,45.429400,-73.644700,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,New Storage Area in Back of the Building,45.429400,-73.644700,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Normand-Maurice Building,45.482024,-73.584026,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Normand-Maurice Building,45.482024,-73.584026,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Normand-Maurice Building,45.482024,-73.584026,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Nun's Island Boulevard, Montreal",45.469234,-73.545800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Nun's Island, Montreal",45.471036,-73.544213,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Old Port of Montreal,45.505000,-73.550830,Not Available,"Metal, metalloid, and organometallic",10
+Quebec,Montréal,Old Port of Montreal,45.505000,-73.550830,Not Available,PAHs (polycyclic aromatic hydrocarbon),10
+Quebec,Montréal,Old Port of Montreal,45.505000,-73.550830,Not Available,PHCs (petroleum hydrocarbons),10
+Quebec,Montréal,Old Port of Montreal,45.505000,-73.550830,Soil,PAHs (polycyclic aromatic hydrocarbon),5
+Quebec,Montréal,Old Port of Montreal,45.505000,-73.550830,Soil,PHCs (petroleum hydrocarbons),5
+Quebec,Montréal,Old Port of Montreal - Confinement Cell,45.493272,-73.552467,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Old Port of Montreal - Confinement Cell,45.493272,-73.552467,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Old Port of Montreal - Confinement Cell,45.493272,-73.552467,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Old Port of Montreal - Confinement Cell,45.493272,-73.552467,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Old Port of Montreal - Horloge Basin,45.505000,-73.550830,Not Available,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Old Port of Montreal - Horloge Basin,45.505000,-73.550830,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Old Port of Montreal - Horloge Basin,45.505000,-73.550830,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Outdoor Firing Range L-139, ASU LP",45.576000,-73.526000,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Outside Building B,45.514878,-73.660694,Soil,Halogenated Hydrocarbon,1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Groundwater,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Quebec,Montréal,Parcel 1,45.480931,-73.538748,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Parcel 2,45.472620,-73.553790,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 2,45.472620,-73.553790,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 3,45.472620,-73.553790,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 3,45.472620,-73.553790,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 4,45.472620,-73.553790,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parcel 4,45.472620,-73.553790,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Parking - South Section (Notre Dame) ASU LP,45.576000,-73.526000,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Parking at south L-6, ASU LP",45.576000,-73.526000,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Pont Clément,45.475205,-73.541583,Groundwater,Other inorganics,1
+Quebec,Montréal,Pont Clément,45.475205,-73.541583,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Pont Clément,45.475205,-73.541583,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Pont Clément,45.475205,-73.541583,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Prairies River at Cheval Blanc Rapids,45.518300,-73.842500,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Putting drain arnd bldg L-42,45.574200,-73.519000,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Rene-Levesque Boulevard, North of HWY 15, Nun's Island",45.471000,-73.542000,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Rene-Levesque Boulevard, South of HWY 15, Nun's Island",45.469004,-73.535153,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Sector Slag Studies, ASU LP",45.576700,-73.521900,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 01.1,45.430100,-73.677550,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.1,45.430100,-73.677550,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 01.1,45.430100,-73.677550,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.1,45.430100,-73.677550,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 01.1,45.430100,-73.677550,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 01.2,45.432098,-73.679543,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 01.3,45.430801,-73.670532,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.3,45.430801,-73.670532,Soil,Other organics,1
+Quebec,Montréal,Site 01.3,45.430801,-73.670532,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 01.3,45.430801,-73.670532,Surface soil,Other organics,1
+Quebec,Montréal,Site 01.3,45.430801,-73.670532,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 02.1,45.431000,-73.666191,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 02.1,45.431000,-73.666191,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 02.1,45.431000,-73.666191,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 02.1,45.431000,-73.666191,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 02.2.0,45.431314,-73.668306,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 02.2.0,45.431314,-73.668306,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 02.2.0,45.431314,-73.668306,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 02.3,45.431599,-73.665421,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 02.3,45.431599,-73.665421,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.1,45.433498,-73.662918,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 03.2.1,45.435001,-73.659882,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.1,45.435001,-73.659882,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.1,45.435001,-73.659882,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.2.2,45.435600,-73.658173,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.2,45.435600,-73.658173,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.2.3,45.435200,-73.658836,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 03.2.4,45.436100,-73.657227,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.4,45.436100,-73.657227,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.2.4,45.436100,-73.657227,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.3,45.432701,-73.662392,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.3,45.432701,-73.662392,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 03.4,45.434399,-73.658562,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 03.5,45.435398,-73.656387,Other medium,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Quebec,Montréal,Site 04.1.1,45.437500,-73.653458,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.1.1,45.437500,-73.653458,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.1.1,45.437500,-73.653458,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.1.2,45.438599,-73.651550,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.1.2,45.438599,-73.651550,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.1.3,45.439499,-73.650681,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.1.3,45.439499,-73.650681,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.1.3,45.439499,-73.650681,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.1.3,45.439499,-73.650681,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Surface soil,PCBs (Polychlorinated Biphenyl) and PCDD/Fs (polychlorinated dibenzo-p-dioxin/dibenzofuran),1
+Quebec,Montréal,Site 04.2.1,45.439800,-73.649078,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.2.2,45.441002,-73.646759,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.2.2,45.441002,-73.646759,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.2.2,45.441002,-73.646759,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.2.3,45.441101,-73.646309,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.2.3,45.441101,-73.646309,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.2.3,45.441101,-73.646309,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.2.3,45.441101,-73.646309,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Groundwater,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.3,45.440800,-73.650078,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.4,45.435101,-73.656960,Not Available,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.5,45.436798,-73.652908,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.5,45.436798,-73.652908,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.5,45.436798,-73.652908,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.6,45.437801,-73.652618,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.6,45.437801,-73.652618,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.6,45.437801,-73.652618,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 04.7,45.441601,-73.644951,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 05.1,45.442101,-73.643867,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 05.2,45.441299,-73.644241,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 05.4,45.439400,-73.647987,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 06.1,45.444199,-73.638519,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 06.2,45.443600,-73.638023,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 06.2,45.443600,-73.638023,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 07.1 (north deposit site),45.448101,-73.630096,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 07.1 (north deposit site),45.448101,-73.630096,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 07.2,45.448200,-73.629692,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 07.2,45.448200,-73.629692,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 07.2,45.448200,-73.629692,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 07.2,45.448200,-73.629692,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 07.3,45.448299,-73.628464,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 07.3,45.448299,-73.628464,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.1,45.452900,-73.624130,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.1,45.452900,-73.624130,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.1,45.452900,-73.624130,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.2,45.453098,-73.622353,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.2,45.453098,-73.622353,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Soil,Other organics,1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Surface water,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Surface water,Other organics,1
+Quebec,Montréal,Site 08.3,45.453899,-73.621231,Surface water,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.5,45.457001,-73.615753,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.5,45.457001,-73.615753,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.5,45.457001,-73.615753,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 08.6  (north deposit site),45.457199,-73.616791,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 08.6  (north deposit site),45.457199,-73.616791,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.1 (North deposit site),45.460800,-73.606178,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.1 (North deposit site),45.460800,-73.606178,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.1 (North deposit site),45.460800,-73.606178,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.1 (North deposit site),45.460800,-73.606178,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.2,45.460602,-73.606361,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.2,45.460602,-73.606361,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.2,45.460602,-73.606361,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.2,45.460602,-73.606361,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.3.1,45.462200,-73.600121,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.3.2,45.461300,-73.602280,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.3.2,45.461300,-73.602280,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.3.2,45.461300,-73.602280,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 09.3.3,45.460400,-73.604538,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.3.3,45.460400,-73.604538,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.3.3,45.460400,-73.604538,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 09.4,45.458500,-73.610580,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 09.4,45.458500,-73.610580,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 1.2.1,45.431400,-73.672500,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 1.2.1,45.431400,-73.672500,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.1,45.463299,-73.597809,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 10.1,45.463299,-73.597809,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.2,45.462800,-73.598760,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.2,45.462800,-73.598760,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 10.2,45.462800,-73.598760,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.3,45.463402,-73.599159,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 10.4,45.463699,-73.598396,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 10.5,45.464600,-73.597130,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.6,45.464802,-73.595673,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 10.6,45.464802,-73.595673,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 10.6,45.464802,-73.595673,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 11.1,45.468102,-73.588188,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.1,45.468102,-73.588188,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.2,45.467700,-73.589289,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 11.2,45.467700,-73.589289,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.2,45.467700,-73.589289,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.3,45.468900,-73.586580,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.3,45.468900,-73.586580,Soil,Other organics,1
+Quebec,Montréal,Site 11.3,45.468900,-73.586580,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.3,45.468900,-73.586580,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.3,45.468900,-73.586580,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.4,45.467304,-73.588348,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.4,45.467304,-73.588348,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.4,45.467304,-73.588348,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 11.5,45.470299,-73.584038,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.5,45.470299,-73.584038,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.5,45.470299,-73.584038,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.6,45.469803,-73.583229,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.6,45.469803,-73.583229,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.6,45.469803,-73.583229,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.6,45.469803,-73.583229,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 11.7,45.468300,-73.585808,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 11.7,45.468300,-73.585808,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 12.2,45.472599,-73.581520,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 12.2,45.472599,-73.581520,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.1.1,45.472900,-73.579803,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.1.1,45.472900,-73.579803,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.1.2,45.473701,-73.579208,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.1.2,45.473701,-73.579208,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.1.2,45.473701,-73.579208,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.1.2,45.473701,-73.579208,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.1.3,45.477001,-73.575653,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.1.3,45.477001,-73.575653,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.1.3,45.477001,-73.575653,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.1.3,45.477001,-73.575653,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.10,45.484100,-73.567192,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.10,45.484100,-73.567192,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.10,45.484100,-73.567192,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.10,45.484100,-73.567192,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.11,45.485298,-73.565353,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.2,45.477402,-73.576820,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.2,45.477402,-73.576820,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.2,45.477402,-73.576820,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.2,45.477402,-73.576820,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Soil,Other organics,1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Surface soil,Other organics,1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.3,45.483822,-73.569274,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 13.4,45.476898,-73.576141,Not Available,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.5,45.478901,-73.573639,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.5,45.478901,-73.573639,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.5,45.478901,-73.573639,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.5,45.478901,-73.573639,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.6,45.481201,-73.570862,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.6,45.481201,-73.570862,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.6,45.481201,-73.570862,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.6,45.481201,-73.570862,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.7,45.480701,-73.571953,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.7,45.480701,-73.571953,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.7,45.480701,-73.571953,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.8,45.482498,-73.569283,Groundwater,Other organics,1
+Quebec,Montréal,Site 13.8,45.482498,-73.569283,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 13.8,45.482498,-73.569283,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.8,45.482498,-73.569283,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 13.9,45.483398,-73.568230,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 13.9,45.483398,-73.568230,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.1.1,45.484600,-73.568130,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 14.1.1,45.484600,-73.568130,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.1.1,45.484600,-73.568130,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 14.2,45.486198,-73.565140,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 14.3,45.488300,-73.561699,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 14.3,45.488300,-73.561699,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.3,45.488300,-73.561699,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 14.3,45.488300,-73.561699,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.4,45.486801,-73.562759,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 14.4,45.486801,-73.562759,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.7,45.488201,-73.560410,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 14.7,45.488201,-73.560410,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 14.7,45.488201,-73.560410,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.1,45.489899,-73.559280,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.1,45.489899,-73.559280,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.2,45.489799,-73.557060,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.2,45.489799,-73.557060,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.2,45.489799,-73.557060,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.4,45.490799,-73.554268,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.4,45.490799,-73.554268,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.4,45.490799,-73.554268,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 15.5,45.490299,-73.551117,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.5,45.490299,-73.551117,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.5,45.490299,-73.551117,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.6,45.490601,-73.557579,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Surface soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 15.7,45.490799,-73.552757,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 16.1 Peel Basin,45.492100,-73.554832,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 16.1 Peel Basin,45.492100,-73.554832,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 16.1 Peel Basin,45.492100,-73.554832,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 8.4,45.457100,-73.614342,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 8.4,45.457100,-73.614342,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Surface soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site 9.1.1,45.461464,-73.604558,Surface soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site H,45.468865,-73.747621,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Site H,45.468865,-73.747621,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Site H,45.468865,-73.747621,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Soil assessment building 166,45.576100,-73.531700,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,St-Grégoire Armoury,45.532600,-73.590900,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Technoparc (industrial park) - Saint-Laurent,45.489983,-73.758774,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Test banch building 15,45.574500,-73.522600,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Test banch building 15,45.574500,-73.522600,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Tétreaultville - front range light,45.597380,-73.510540,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Tétreaultville - front range light,45.597380,-73.510540,Surface soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Underground infrastructure replacement - Montréal Garrison,45.575800,-73.525800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,Underground infrastructure replacement - Montréal Garrison,45.575800,-73.525800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,Halogenated Hydrocarbon,1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,"Other Physical/Chemical (pH, temperature, dissolved solids, turbidity, etc.)",1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,Other inorganics,1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,Other organics,1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Groundwater,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Soil,Other organics,1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Soil,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,"Used snow sites, ASU LP",45.579700,-73.527800,Soil,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Vacant site (lot 12) -firefighter training site No. 2,45.468865,-73.747621,Not Available,PAHs (polycyclic aromatic hydrocarbon),1
+Quebec,Montréal,Vacant site (lot 12) -firefighter training site No. 2,45.468865,-73.747621,Not Available,PHCs (petroleum hydrocarbons),1
+Quebec,Montréal,Vacant site (lot 12) -firefighter training site No. 2,45.468865,-73.747621,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Wellington Street, North of HWY 15, Montreal",45.473453,-73.562516,Soil,"BTEXs (benzene, toluene, ethylbenzene, and xylene)",1
+Quebec,Montréal,"Wellington Street, North of HWY 15, Montreal",45.473453,-73.562516,Soil,"Metal, metalloid, and organometallic",1
+Quebec,Montréal,"Wellington Street, North of HWY 15, Montreal",45.473453,-73.562516,Soil,PAHs (polycyclic aromatic hydrocarbon),1

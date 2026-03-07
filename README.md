@@ -69,6 +69,7 @@ Optional commands:
 npm run db:verify
 npm run db:seed:demo
 npm run ingest:brownfields
+npm run data:build
 ```
 
 ## Ingestion Notes
@@ -80,6 +81,25 @@ Brownfield ingestion expects a CSV at:
 Override path with:
 
 - `BROWNFIELD_CSV_PATH`
+
+City/province filter defaults:
+
+- `ALLOWED_PROVINCES=ON,BC,QC`
+- `ALLOWED_CITIES=Toronto,Vancouver,Montreal`
+
+Soil suitability score used during ingestion:
+
+- `score = (sand_score * 0.30) + (clay_score * 0.25) + (drainage_score * 0.25) + (organic_score * 0.20)`
+- `final_percentage = score * 100`
+
+Generated data artifacts:
+
+- `data/raw/fcsi/fcsi_contamination_filtered.csv`
+- `data/raw/fcsi/fcsi_sites_filtered.csv`
+- `data/raw/fcsi/soil_score_input_template.csv`
+- `data/raw/contaminant_cost_reference_2026.csv`
+- `data/raw/city_disposal_rate_reference_2026.csv`
+- `data/raw/source_catalog.csv`
 
 ## API Endpoints
 

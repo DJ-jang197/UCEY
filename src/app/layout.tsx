@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,11 +29,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100 text-slate-900`}
       >
         {children}
-        <Script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB06kyLLXhELEmLY9WQ_DlPQZPJt3bxMpM&libraries=places"
-          async
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

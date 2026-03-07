@@ -280,7 +280,7 @@ async function enrichSiteWithPlaces(site: SiteDetail): Promise<DashboardSite> {
         radius: 500,
         type: "transit_station",
       },
-      (results) => {
+      (results: google.maps.places.PlaceResult[] | null) => {
         const nearestTransit = results?.[0]?.name ?? undefined;
         resolve(nearestTransit);
       },
@@ -288,18 +288,21 @@ async function enrichSiteWithPlaces(site: SiteDetail): Promise<DashboardSite> {
   });
 
   const neighborhoodPromise = new Promise<string | undefined>((resolve) => {
-    const geocoder = new window.google!.maps.Geocoder();
-    geocoder.geocode({ location }, (results, status) => {
+    const geocoder = new window.google.maps.Geocoder();
+    geocoder.geocode(
+      { location },
+      (results: google.maps.GeocoderResult[] | null, status: google.maps.GeocoderStatus) => {
       if (status !== "OK" || !results || results.length === 0) {
         resolve(undefined);
         return;
       }
       const neighborhoodResult =
-        results.find((r) =>
+          results.find((r: google.maps.GeocoderResult) =>
           r.types.includes("neighborhood"),
         ) ?? results[0];
       resolve(neighborhoodResult.formatted_address);
-    });
+      },
+    );
   });
 
   const [nearestTransit, neighborhood] = await Promise.all([
@@ -313,4 +316,3 @@ async function enrichSiteWithPlaces(site: SiteDetail): Promise<DashboardSite> {
     neighborhood,
   };
 }
-

@@ -1,0 +1,4 @@
+city,base_rate_cad_per_tonne,high_risk_rate_cad_per_tonne,hidden_cost
+Toronto,189.86,,3.75% annual fee increase
+Waterloo,102,204,Strict in-region only rule
+Vancouver,160,310,$70/tonne generator levy

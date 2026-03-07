@@ -1,6 +1,9 @@
-import "dotenv/config";
+import dotenv from "dotenv";
 import { createClient } from "@supabase/supabase-js";
 import { demoReports, demoSites } from "../src/lib/demo/demo-data";
+
+dotenv.config({ path: ".env.local" });
+dotenv.config();
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";
