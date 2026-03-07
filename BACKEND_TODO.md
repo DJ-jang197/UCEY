@@ -86,7 +86,7 @@ Do these in order unless a blocking dependency forces a change:
 
 ### TODO
 
-- [ ] Create Supabase project
+- [x] Create Supabase project
 - [x] Enable `postgis`
 - [x] Add migrations folder
 - [x] Create core tables:
@@ -146,7 +146,7 @@ Do these in order unless a blocking dependency forces a change:
 ### Blockers if missing
 
 - If frontend has no panel field list yet, use the suggested fields above and treat the API response as provisional v1.
-- Supabase project and credentials are still needed to apply migrations and run production persistence.
+- Supabase setup completed on March 7, 2026; keep `.env.local` keys available for local scripts.
 
 ## Phase 2: Real data ingestion
 
@@ -475,7 +475,7 @@ Current completion status (March 7, 2026):
 
 - [x] 1. scaffold Next.js app
 - [x] 2. create `.env.example`
-- [ ] 3. set up Supabase and enable PostGIS
+- [x] 3. set up Supabase and enable PostGIS
 - [x] 4. write initial migration for core tables
 - [x] 5. add one ingestion script for brownfield data
 - [x] 6. seed 5 demo sites
