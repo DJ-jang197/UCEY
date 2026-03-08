@@ -6,16 +6,36 @@ export default function ForgotPasswordForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email) {
       setError("Please enter your email address.");
       setMessage("");
-    } else {
-      setError("");
+      return;
+    } 
+
+    setError("");
+    setMessage("");
+    setIsLoading(true);
+
+    try {
+      const res = await fetch("/api/auth/forgot-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send reset email");
+      }
+
       setMessage("If an account exists for that email, we have sent password reset instructions.");
-      // In a real app, you would trigger the Auth0 password reset API here
+    } catch (err: any) {
+      setError("There was a problem sending the reset link. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -58,9 +78,10 @@ export default function ForgotPasswordForm() {
 
       <button
         type="submit"
-        className="mt-2 w-full bg-[#c8891e] hover:bg-[#d9991e] text-[#0d0d0b] font-semibold py-3 px-4 rounded-xl transition-all duration-200 shadow-[0_0_15px_rgba(200,137,30,0.1)] hover:shadow-[0_0_20px_rgba(200,137,30,0.2)] active:scale-[0.98]"
+        disabled={isLoading}
+        className="mt-2 w-full bg-[#c8891e] hover:bg-[#d9991e] disabled:opacity-50 disabled:cursor-not-allowed text-[#0d0d0b] font-semibold py-3 px-4 rounded-xl transition-all duration-200 shadow-[0_0_15px_rgba(200,137,30,0.1)] hover:shadow-[0_0_20px_rgba(200,137,30,0.2)] active:scale-[0.98]"
       >
-        Send reset link
+        {isLoading ? "Sending..." : "Send reset link"}
       </button>
       
       {/* Features List visualization block requested by user colors */}
