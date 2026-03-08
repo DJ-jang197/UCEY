@@ -1,14 +1,21 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import LoginForm from "./components/LoginForm";
 import SocialAuth from "./components/SocialAuth";
 import LoonCharacter from "./components/LoonCharacter";
+import { hasAppSession } from "@/lib/auth/session";
 
 export const metadata = {
   title: "Login | UCEY",
   description: "Sign in to your UCEY account",
 };
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  const authenticated = await hasAppSession();
+  if (authenticated) {
+    redirect("/");
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#0d0d0b] relative overflow-hidden font-sans selection:bg-[#c8891e] selection:text-[#0d0d0b]">
       {/* Glow Effects */}
@@ -75,4 +82,3 @@ export default function LoginPage() {
     </div>
   );
 }
-

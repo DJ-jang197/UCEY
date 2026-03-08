@@ -1,13 +1,20 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import SignupForm from "./components/SignupForm";
 import SocialAuth from "@/app/login/components/SocialAuth";
+import { hasAppSession } from "@/lib/auth/session";
 
 export const metadata = {
   title: "Sign Up | UCEY",
   description: "Create your UCEY account",
 };
 
-export default function SignupPage() {
+export default async function SignupPage() {
+  const authenticated = await hasAppSession();
+  if (authenticated) {
+    redirect("/");
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#0d0d0b] relative overflow-hidden font-sans selection:bg-[#c8891e] selection:text-[#0d0d0b]">
       {/* Glow Effects */}

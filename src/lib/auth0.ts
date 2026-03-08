@@ -14,6 +14,7 @@ export function getAuth0Client(): Auth0Client | null {
   }
 
   client = new Auth0Client({
+    signInReturnToPath: "/",
     authorizationParameters: {
       scope: 'openid profile email'
     }

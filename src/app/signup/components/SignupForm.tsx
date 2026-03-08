@@ -35,11 +35,14 @@ export default function SignupForm() {
         const loginRes = await fetch('/api/auth/custom-login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
+          credentials: 'same-origin',
           body: JSON.stringify({ email, password })
         });
-        
+
+        const loginData = await loginRes.json().catch(() => null);
+
         if (loginRes.ok) {
-          window.location.href = '/';
+          window.location.replace(loginData?.redirectTo || '/');
         } else {
           // If auto-login fails, send to login page
           window.location.href = '/login?registered=true';

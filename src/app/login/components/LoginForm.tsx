@@ -25,18 +25,18 @@ export default function LoginForm() {
       const res = await fetch('/api/auth/custom-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
         body: JSON.stringify({ email, password })
       });
       
       const data = await res.json();
       
       if (res.ok && data.success) {
-        // Redirect to main UI
-        window.location.href = '/';
+        window.location.replace(data.redirectTo || '/');
       } else {
         setError(data.error || "Login failed. Please verify your credentials.");
       }
-    } catch (err) {
+    } catch {
       setError("An unexpected error occurred. Please try again.");
     } finally {
       setIsLoading(false);
