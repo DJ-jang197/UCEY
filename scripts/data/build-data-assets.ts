@@ -18,7 +18,7 @@ const CITY_RATE_FILE = path.join(DATA_DIR, "city_disposal_rate_reference_2026.cs
 const SOURCE_CATALOG_FILE = path.join(DATA_DIR, "source_catalog.csv");
 const FETCH_LOG_FILE = path.join(FCSI_DIR, "source_fetch_log.md");
 
-const ALLOWED_CITIES = new Set(["toronto", "vancouver", "montreal", "montréal"]);
+const ALLOWED_CITIES = new Set(["toronto", "vancouver", "montreal", "montréal", "ottawa"]);
 const ALLOWED_PROVINCES = new Set(["on", "ontario", "bc", "british columbia", "qc", "quebec", "québec"]);
 
 type CostBand = {
@@ -87,12 +87,18 @@ const cityRates: CityRate[] = [
     highRiskRateCadPerTonne: 310.0,
     hiddenCost: "$70/tonne generator levy",
   },
+  {
+    city: "Ottawa",
+    baseRateCadPerTonne: 150.0,
+    highRiskRateCadPerTonne: null,
+    hiddenCost: "Provincial guidelines apply",
+  },
 ];
 
 type DetailedRecord = {
   provinceCode: "ON" | "BC" | "QC";
   provinceName: string;
-  city: "Toronto" | "Vancouver" | "Montreal";
+  city: "Toronto" | "Vancouver" | "Montreal" | "Ottawa";
   siteName: string;
   latitude: string;
   longitude: string;
@@ -137,11 +143,12 @@ function normalizeProvince(raw: string) {
   return { code: "QC" as const, name: "Quebec" };
 }
 
-function normalizeCity(raw: string): "Toronto" | "Vancouver" | "Montreal" | null {
+function normalizeCity(raw: string): "Toronto" | "Vancouver" | "Montreal" | "Ottawa" | null {
   const value = raw.trim().toLowerCase();
   if (value === "toronto") return "Toronto";
   if (value === "vancouver") return "Vancouver";
   if (value === "montreal" || value === "montréal") return "Montreal";
+  if (value === "ottawa") return "Ottawa";
   return null;
 }
 
@@ -182,6 +189,7 @@ function cityAdjust(city: string, mid: number | null): number | null {
   if (mid === null) return null;
   if (city === "Toronto") return Math.round(mid * 1.0375 * 100) / 100;
   if (city === "Vancouver") return Math.round((mid + 70) * 100) / 100;
+  if (city === "Ottawa") return Math.round(mid * 1.02 * 100) / 100;
   return Math.round(mid * 100) / 100;
 }
 

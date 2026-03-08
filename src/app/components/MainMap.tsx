@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { SiteDetail, SiteListItem, SiteReport } from "@/lib/types/site";
-import Map from "./Map";
+import MapView from "./Map";
 import SitePanel from "./SitePanel";
 import FilterBar, { FiltersState } from "./FilterBar";
+import LoadingScreen from "./LoadingScreen";
 
 type Center = {
   lat: number;
@@ -18,6 +19,9 @@ const defaultCenter: Center = {
   name: "Toronto",
 };
 
+/** Geographic center of Canada; used for "All cities" view at zoom 4. */
+const ALL_CITIES_CENTER: Center = { lat: 56, lng: -96 };
+
 const CITY_PRESETS: Center[] = [
   { name: "Montreal", lat: 45.5019, lng: -73.5674 },
   { name: "Ottawa", lat: 45.4215, lng: -75.6972 },
@@ -25,10 +29,13 @@ const CITY_PRESETS: Center[] = [
   { name: "Vancouver", lat: 49.2827, lng: -123.1207 },
 ];
 
+const LOADING_SCREEN_MIN_MS = 800;
+
 export default function MainMap() {
   const [sites, setSites] = useState<SiteListItem[]>([]);
   const [loadingSites, setLoadingSites] = useState(true);
   const [sitesError, setSitesError] = useState<string | null>(null);
+  const [showLoadingScreen, setShowLoadingScreen] = useState(true);
 
   const [selectedSite, setSelectedSite] = useState<SiteDetail | null>(null);
   const [loadingSiteDetail, setLoadingSiteDetail] = useState(false);
@@ -48,15 +55,18 @@ export default function MainMap() {
     minArea: 0,
   });
 
-  useEffect(() => {
+  // Per-session client-side cache so we don't call Gemini twice for the same site.
+  const reportCacheRef = useRef<Map<string, SiteReport>>(new Map());
+  const sitesRef = useRef<SiteListItem[]>([]);
+  sitesRef.current = sites;
+
+  useLayoutEffect(() => {
     const root = document.documentElement;
-    if (theme === "dark") {
-      root.style.setProperty("--background", "#020617");
-      root.style.setProperty("--foreground", "#e5e7eb");
-    } else {
-      root.style.setProperty("--background", "#ffffff");
-      root.style.setProperty("--foreground", "#111827");
-    }
+    root.style.setProperty("transition", "background-color 0.3s ease, color 0.3s ease");
+    root.classList.toggle("dark", theme === "dark");
+    try {
+      localStorage.setItem("rezone-theme", theme);
+    } catch (_) {}
   }, [theme]);
 
   useEffect(() => {
@@ -66,22 +76,39 @@ export default function MainMap() {
       setLoadingSites(true);
       setSitesError(null);
       try {
-        const res = await fetch("/api/sites?limit=300");
-        if (!res.ok) {
-          throw new Error(`Failed to load sites (${res.status})`);
+        const [sitesRes, fcsiRes] = await Promise.all([
+          fetch("/api/sites?limit=300"),
+          fetch("/api/sites/fcsi").catch(() => null),
+        ]);
+
+        const mainJson = sitesRes.ok ? await sitesRes.json() : { items: [] };
+        const mainItems = Array.isArray(mainJson.items) ? mainJson.items : [];
+
+        let fcsiItems: typeof mainItems = [];
+        if (fcsiRes?.ok) {
+          const fcsiJson = await fcsiRes.json();
+          fcsiItems = Array.isArray(fcsiJson.items) ? fcsiJson.items : [];
         }
-        const json = await res.json();
-        const items = Array.isArray(json.items) ? json.items : [];
+
+        const merged = [...mainItems];
+        const mainIds = new Set(mainItems.map((s: { id: string }) => s.id));
+        for (const site of fcsiItems) {
+          if (!mainIds.has(site.id)) {
+            mainIds.add(site.id);
+            merged.push(site);
+          }
+        }
+
         if (!cancelled) {
-          setSites(items);
-          if (items.length === 0) {
-            setSitesError("No site data found yet. Seed or ingest data to see markers.");
+          setSites(merged);
+          if (merged.length === 0) {
+            setSitesError("No site data found. Seed data or run data:build for FCSI.");
           }
         }
       } catch (error) {
         if (!cancelled) {
           setSitesError(
-            error instanceof Error ? error.message : "Unable to load demo sites.",
+            error instanceof Error ? error.message : "Unable to load sites.",
           );
         }
       } finally {
@@ -97,6 +124,13 @@ export default function MainMap() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (!loadingSites && showLoadingScreen) {
+      const t = setTimeout(() => setShowLoadingScreen(false), LOADING_SCREEN_MIN_MS);
+      return () => clearTimeout(t);
+    }
+  }, [loadingSites, showLoadingScreen]);
 
   const filteredSites = useMemo(() => {
     return sites.filter((site) => {
@@ -128,6 +162,13 @@ export default function MainMap() {
     }
   };
 
+  const handleShowAllCities = () => {
+    setCenter(ALL_CITIES_CENTER);
+    setFilters((prev) => ({ ...prev, city: "" }));
+  };
+
+  const isAllCitiesView = !filters.city;
+
   const handleFiltersChange = (next: FiltersState) => {
     setFilters(next);
   };
@@ -138,10 +179,43 @@ export default function MainMap() {
     setReport(null);
     setReportError(null);
 
+    const listItem = sitesRef.current.find((s) => s.id === siteId);
+
+    function applyMinimalFromListItem(item: SiteListItem) {
+      const minimal: SiteDetail = {
+        ...item,
+        contaminationStatus: item.contaminationStatus ?? null,
+        formerUse: null,
+        areaM2: item.estimatedAreaM2 ?? null,
+        scores: {
+          viability: item.viabilityScore ?? null,
+          soil: item.estimatedSoilScore ?? null,
+          infrastructure: item.estimatedInfraScore ?? null,
+        },
+        estimates: {
+          units: item.estimatedUnits ?? null,
+          remediationCost: item.estimatedRemediationCost ?? null,
+          timelineMonths: item.estimatedTimelineMonths ?? null,
+          costPerTonneMin: item.costPerTonneMin ?? null,
+          costPerTonneMax: item.costPerTonneMax ?? null,
+          costPerTonneAvg: item.costPerTonneAvg ?? null,
+        },
+      };
+      setSelectedSite(minimal);
+      if (item.lat && item.lng) {
+        setCenter({ lat: item.lat, lng: item.lng, name: item.city ?? undefined });
+      }
+    }
+
     try {
       const res = await fetch(`/api/sites/${siteId}`);
       if (!res.ok) {
-        throw new Error(`Failed to load site (${res.status})`);
+        if (listItem) {
+          applyMinimalFromListItem(listItem);
+        } else {
+          setSelectedSite(null);
+        }
+        return;
       }
       const json = (await res.json()) as SiteDetail;
       setSelectedSite(json);
@@ -149,7 +223,11 @@ export default function MainMap() {
         setCenter({ lat: json.lat, lng: json.lng, name: json.city ?? undefined });
       }
     } catch {
-      setSelectedSite(null);
+      if (listItem) {
+        applyMinimalFromListItem(listItem);
+      } else {
+        setSelectedSite(null);
+      }
     } finally {
       setLoadingSiteDetail(false);
     }
@@ -157,19 +235,57 @@ export default function MainMap() {
 
   const handleGenerateReport = async () => {
     if (!selectedSite) return;
+
+    // If we've already generated a report for this site in this session, reuse it.
+    const cached = reportCacheRef.current.get(selectedSite.id);
+    if (cached) {
+      setReport(cached);
+      return;
+    }
+
     setLoadingReport(true);
     setReportError(null);
     try {
-      const res = await fetch(`/api/sites/${selectedSite.id}/report`);
-      if (!res.ok) {
+      const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(
+        selectedSite.id,
+      );
+
+      if (isUuid) {
+        // DB-backed site: first try to load an existing report from Supabase.
+        let res = await fetch(`/api/sites/${selectedSite.id}/report`);
         if (res.status === 404) {
-          setReportError("No report exists for this site yet.");
+          const generateRes = await fetch(
+            `/api/sites/${selectedSite.id}/report/generate`,
+            { method: "POST" },
+          );
+          if (!generateRes.ok) {
+            throw new Error(`Failed to generate report (${generateRes.status})`);
+          }
+          const generated = (await generateRes.json()) as SiteReport;
+          reportCacheRef.current.set(selectedSite.id, generated);
+          setReport(generated);
           return;
         }
-        throw new Error(`Failed to load report (${res.status})`);
+        if (!res.ok) {
+          throw new Error(`Failed to load report (${res.status})`);
+        }
+        const existing = (await res.json()) as SiteReport;
+        reportCacheRef.current.set(selectedSite.id, existing);
+        setReport(existing);
+      } else {
+        // FCSI-only site: generate a transient report via Gemini, no DB.
+        const generateRes = await fetch("/api/sites/fcsi/report", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: selectedSite.id, site: selectedSite }),
+        });
+        if (!generateRes.ok) {
+          throw new Error(`Failed to generate report (${generateRes.status})`);
+        }
+        const generated = (await generateRes.json()) as SiteReport;
+        reportCacheRef.current.set(selectedSite.id, generated);
+        setReport(generated);
       }
-      const json = (await res.json()) as SiteReport;
-      setReport(json);
     } catch (error) {
       setReportError(
         error instanceof Error ? error.message : "Unable to load report for this site.",
@@ -181,53 +297,74 @@ export default function MainMap() {
 
   return (
     <div className={`map-shell ${isPanelOpen ? "panel-open" : ""}`}>
+      <LoadingScreen visible={showLoadingScreen} />
       <div
         className={`absolute inset-x-0 top-0 z-20 flex justify-center pt-10 pointer-events-none transition-all duration-300 ${
           isPanelOpen ? "pr-[440px]" : ""
         }`}
       >
         <div className="flex w-full max-w-4xl flex-col items-center gap-4 px-4 pointer-events-auto">
-          <div className="w-full max-w-3xl rounded-2xl bg-gradient-to-r from-emerald-50/70 via-sky-50/70 to-indigo-50/70 px-6 py-5 shadow-xl border border-slate-200/70 backdrop-blur">
+          <div
+            className="w-full max-w-3xl rounded-2xl px-6 py-5 shadow-xl border border-[var(--divider)] backdrop-blur-sm transition-colors duration-300 ease-out"
+            style={{
+              background: `linear-gradient(135deg, var(--bg-input) 0%, var(--bg-main) 50% 100%)`,
+              boxShadow: "0 0 80px var(--glow-tr), 0 0 40px var(--glow-bl)",
+            }}
+          >
             <div className="flex items-center justify-between gap-3">
-              <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-slate-900">
-                ReZone — Canadian infill explorer
+              <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-[var(--text-heading)]">
+                UCEY — Planning Homes
               </h1>
               <button
                 type="button"
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className="rounded-full border border-emerald-300 bg-white/80 px-3 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-emerald-50"
+                className="rounded-full border border-[var(--border-button)] bg-[var(--bg-input)] px-3 py-1.5 text-sm font-medium text-[var(--text-heading)] shadow-sm transition-colors hover:bg-[var(--text-muted)] hover:text-[var(--text-heading)]"
               >
                 {theme === "light" ? "🌙 Dark mode" : "☀️ Light mode"}
               </button>
             </div>
-            <p className="mt-2 text-center text-sm text-slate-600">
+            <p className="mt-2 text-center text-sm text-[var(--text-description)]">
               Scan underused land across Canada, filter by viability, and open a site panel for
               scores, cost estimates, AI memo, and audio.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-              {CITY_PRESETS.map((city) => (
-                <button
-                  key={city.name}
-                  type="button"
-                  onClick={() => handleCityPresetClick(city)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
-                    filters.city.toLowerCase() === city.name?.toLowerCase()
-                      ? "bg-emerald-500 text-white"
-                      : "bg-white/80 text-slate-800 border border-emerald-200 hover:bg-emerald-50"
-                  }`}
-                >
-                  {city.name}
-                </button>
-              ))}
+              <button
+                type="button"
+                onClick={handleShowAllCities}
+                className={`btn-legible rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
+                  isAllCitiesView
+                    ? "city-btn-selected border-[var(--accent)] bg-[var(--accent)] hover:bg-[var(--accent-hover)]"
+                    : "border-[var(--border-button)] bg-[var(--bg-input)] text-[var(--text-feature)] hover:border-[var(--accent)]"
+                }`}
+              >
+                All cities
+              </button>
+              {CITY_PRESETS.map((city) => {
+                const isSelected = !isAllCitiesView && filters.city.toLowerCase() === city.name?.toLowerCase();
+                return (
+                  <button
+                    key={city.name}
+                    type="button"
+                    onClick={() => handleCityPresetClick(city)}
+                    className={`btn-legible rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
+                      isSelected
+                        ? "city-btn-selected border-[var(--accent)] bg-[var(--accent)] hover:bg-[var(--accent-hover)]"
+                        : "border-[var(--border-button)] bg-[var(--bg-input)] text-[var(--text-feature)] hover:border-[var(--accent)]"
+                    }`}
+                  >
+                    {city.name}
+                  </button>
+                );
+              })}
             </div>
           </div>
           <div className="w-full max-w-3xl flex justify-center">
-            <FilterBar filters={filters} onChange={handleFiltersChange} />
+            <FilterBar filters={filters} onChange={handleFiltersChange} theme={theme} />
           </div>
         </div>
       </div>
 
-      <Map
+      <MapView
         sites={filteredSites}
         loading={loadingSites}
         error={sitesError}
@@ -245,6 +382,7 @@ export default function MainMap() {
         loadingReport={loadingReport}
         reportError={reportError}
         onGenerateReport={handleGenerateReport}
+        theme={theme}
       />
     </div>
   );

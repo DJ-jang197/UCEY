@@ -48,16 +48,17 @@ function getMarkerLabel(siteType: string): string {
   return "S";
 }
 
-export default function Map({
-  sites,
-  loading,
-  error,
-  center,
-  selectedSiteId,
-  onSiteSelect,
-}: MapProps) {
+export default function MapView(props: MapProps) {
+  const {
+    sites = [],
+    loading = false,
+    error = null,
+    center,
+    selectedSiteId = null,
+    onSiteSelect = () => {},
+  } = props ?? {};
+  if (!center) return null;
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const leafletRef = useRef<typeof import("leaflet") | null>(null);
   const mapRef = useRef<import("leaflet").Map | null>(null);
   const markersRef = useRef<import("leaflet").Marker[]>([]);
 
@@ -66,29 +67,40 @@ export default function Map({
 
     async function initMap() {
       if (!mapContainerRef.current || mapRef.current) return;
-
       const L = await import("leaflet");
       if (cancelled || !mapContainerRef.current || mapRef.current) return;
 
-      leafletRef.current = L;
+      const torontoCenter: [number, number] = [43.6532, -79.3832];
       const map = L.map(mapContainerRef.current, {
-        center: [56.1304, -106.3468],
-        zoom: 4,
+        center: torontoCenter,
+        zoom: 6,
         minZoom: 4,
         maxZoom: 18,
         zoomControl: true,
         maxBounds: CANADA_BOUNDS,
         maxBoundsViscosity: 1,
+        preferCanvas: true,
+        markerZoomAnimation: false,
       });
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png", {
         maxZoom: 19,
+        maxNativeZoom: 16,
         noWrap: true,
         bounds: CANADA_BOUNDS,
-        attribution: "&copy; OpenStreetMap contributors",
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        updateWhenZooming: false,
+        keepBuffer: 8,
       }).addTo(map);
 
-      map.fitBounds(CANADA_BOUNDS, { padding: [12, 12] });
+      function updateDragging() {
+        const atMinZoom = map.getZoom() === map.getMinZoom();
+        if (atMinZoom) map.dragging.disable();
+        else map.dragging.enable();
+      }
+      map.on("zoomend", updateDragging);
+      updateDragging();
+
       mapRef.current = map;
     }
 
@@ -100,7 +112,6 @@ export default function Map({
       markersRef.current = [];
       mapRef.current?.remove();
       mapRef.current = null;
-      leafletRef.current = null;
     };
   }, []);
 
@@ -112,48 +123,61 @@ export default function Map({
   }, [center]);
 
   useEffect(() => {
-    const L = leafletRef.current;
     const map = mapRef.current;
-    if (!L || !map) return;
+    if (!map) return;
 
-    markersRef.current.forEach((marker) => marker.remove());
-    markersRef.current = [];
+    void import("leaflet").then((L) => {
+      if (!mapRef.current) return;
+      const m = mapRef.current;
+      markersRef.current.forEach((marker) => marker.remove());
+      markersRef.current = [];
 
-    sites.forEach((site) => {
-      const isSelected = selectedSiteId === site.id;
-      const color = getMarkerColor(site.siteType);
-      const opacity = getOpacity(site.viabilityScore ?? null);
-      const label = getMarkerLabel(site.siteType);
-      const size = isSelected ? 30 : 24;
-      const anchor = isSelected ? 15 : 12;
+      sites.forEach((site) => {
+        const isSelected = selectedSiteId === site.id;
+        const color = getMarkerColor(site.siteType);
+        const opacity = getOpacity(site.viabilityScore ?? null);
+        const label = getMarkerLabel(site.siteType);
+        const size = isSelected ? 30 : 24;
+        const anchor = isSelected ? 15 : 12;
 
-      const marker = L.marker([site.lat, site.lng], {
-        title: site.name,
-        icon: L.divIcon({
-          className: "map-sign-pin",
-          html: `<span class="map-sign" style="background:${color};opacity:${opacity}">${label}</span>`,
-          iconSize: [size, size],
-          iconAnchor: [anchor, anchor],
-          popupAnchor: [0, -anchor],
-        }),
-      }).addTo(map);
+        const marker = L.marker([site.lat, site.lng], {
+          title: site.name,
+          icon: L.divIcon({
+            className: "map-sign-pin",
+            html: `<span class="map-sign" style="background:${color};opacity:${opacity}">${label}</span>`,
+            iconSize: [size, size],
+            iconAnchor: [anchor, anchor],
+            popupAnchor: [0, -anchor],
+          }),
+        }).addTo(m);
 
-      marker.on("click", () => onSiteSelect(site.id));
-      marker.bindTooltip(site.name, { direction: "top", offset: [0, -8] });
+        marker.on("click", () => onSiteSelect(site.id));
+        marker.on("mouseover", () => {
+          marker.setZIndexOffset(2000);
+        });
+        marker.on("mouseout", () => {
+          if (selectedSiteId !== site.id) {
+            marker.setZIndexOffset(0);
+          } else {
+            marker.setZIndexOffset(1000);
+          }
+        });
+        marker.bindTooltip(site.name, { direction: "top", offset: [0, -8] });
 
-      if (isSelected) {
-        marker.setZIndexOffset(1000);
-      }
+        if (isSelected) {
+          marker.setZIndexOffset(1000);
+        }
 
-      markersRef.current.push(marker);
+        markersRef.current.push(marker);
+      });
     });
   }, [sites, selectedSiteId, onSiteSelect]);
 
   return (
     <div className="map-container">
-      <div ref={mapContainerRef} className="w-full h-full" />
+      <div ref={mapContainerRef} className="w-full h-full bg-[var(--bg-main)]" />
       {loading && (
-        <div className="absolute left-4 bottom-4 z-30 max-w-xs rounded-lg bg-black/80 p-3 text-xs text-zinc-200 backdrop-blur pointer-events-none">
+        <div className="absolute left-4 bottom-4 z-30 max-w-xs rounded-lg border border-[var(--divider)] bg-[var(--bg-input)] p-3 text-xs text-[var(--text-feature)] backdrop-blur pointer-events-none">
           <div className="skeleton mb-2 w-24" />
           <div className="space-y-1.5">
             <div className="skeleton w-full" />
@@ -163,7 +187,7 @@ export default function Map({
         </div>
       )}
       {error && (
-        <div className="absolute left-4 bottom-4 z-30 max-w-xs rounded-lg bg-red-900/80 p-3 text-xs text-red-100 backdrop-blur pointer-events-none">
+        <div className="rezone-error absolute left-4 bottom-4 z-30 max-w-xs rounded-lg p-3 text-xs backdrop-blur pointer-events-none">
           {error}
         </div>
       )}
