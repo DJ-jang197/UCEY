@@ -16,12 +16,12 @@ const csvPath =
 const allowedCities = new Set(
   (process.env.ALLOWED_CITIES ?? "Toronto,Vancouver,Montreal")
     .split(",")
-    .map((value) => value.trim().toLowerCase()),
+    .map((value: string) => value.trim().toLowerCase()),
 );
 const allowedProvinceCodes = new Set(
   (process.env.ALLOWED_PROVINCES ?? "ON,BC,QC")
     .split(",")
-    .map((value) => value.trim().toUpperCase()),
+    .map((value: string) => value.trim().toUpperCase()),
 );
 
 if (!url || !key) {
