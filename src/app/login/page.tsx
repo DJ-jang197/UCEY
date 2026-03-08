@@ -35,7 +35,7 @@ export default async function LoginPage() {
             Welcome back
           </h1>
           <p className="text-[#7a6a52] text-sm">
-            Please enter your details to sign in
+            Know your ground before you build.
           </p>
         </div>
 
