@@ -16,3 +16,5 @@ Environment,Copernicus Sentinel-2,https://browser.dataspace.copernicus.eu
 Environment,Google Earth Engine,https://earthengine.google.com
 Environment,ECCC Open Data,https://open.canada.ca/en/open-data
 Soil,CanSIS NSDB,https://sis.agr.gc.ca/cansis/nsdb/index.html
+Land Use,OpenStreetMap Overpass Non-Brownfield Candidate Export,https://overpass-turbo.eu
+Land Use,"Derived Candidate Summary for Parking Lots, Dead Malls, and Rail Corridors",https://overpass-turbo.eu

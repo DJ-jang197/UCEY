@@ -66,7 +66,7 @@ export default function MainMap() {
     root.classList.toggle("dark", theme === "dark");
     try {
       localStorage.setItem("rezone-theme", theme);
-    } catch (_) {}
+    } catch {}
   }, [theme]);
 
   useEffect(() => {
@@ -185,7 +185,7 @@ export default function MainMap() {
       const minimal: SiteDetail = {
         ...item,
         contaminationStatus: item.contaminationStatus ?? null,
-        formerUse: null,
+        formerUse: item.formerUse ?? null,
         areaM2: item.estimatedAreaM2 ?? null,
         scores: {
           viability: item.viabilityScore ?? null,
@@ -252,7 +252,7 @@ export default function MainMap() {
 
       if (isUuid) {
         // DB-backed site: first try to load an existing report from Supabase.
-        let res = await fetch(`/api/sites/${selectedSite.id}/report`);
+        const res = await fetch(`/api/sites/${selectedSite.id}/report`);
         if (res.status === 404) {
           const generateRes = await fetch(
             `/api/sites/${selectedSite.id}/report/generate`,

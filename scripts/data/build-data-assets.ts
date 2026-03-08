@@ -249,6 +249,8 @@ function writeSourceCatalog() {
   const rows = [
     { category: "Contaminated Sites", name: "Federal Contaminated Sites Inventory", url: "https://open.canada.ca/data/en/dataset/1d42f7b9-1549-40aa-8ac6-0e0302ff2902" },
     { category: "Land Use", name: "OpenStreetMap Overpass", url: "https://overpass-turbo.eu" },
+    { category: "Land Use", name: "OpenStreetMap Overpass Non-Brownfield Candidate Export", url: "https://overpass-turbo.eu" },
+    { category: "Land Use", name: "Derived Candidate Summary for Parking Lots, Dead Malls, and Rail Corridors", url: "https://overpass-turbo.eu" },
     { category: "Land Use", name: "Toronto Zoning", url: "https://open.toronto.ca/dataset/zoning-by-law/" },
     { category: "Land Use", name: "Vancouver Open Data", url: "https://opendata.vancouver.ca/pages/home/" },
     { category: "Land Use", name: "Montreal Open Data", url: "https://donnees.montreal.ca" },

@@ -1,0 +1,22 @@
+province_code,province_name,city,site_count,avg_viability_score,min_viability_score,max_viability_score,parking_lot_count,dead_mall_count,rail_corridor_count
+AB,Alberta,Calgary,400,18.29,4,53,377,23,0
+AB,Alberta,Edmonton,400,17.11,4,37,386,14,0
+BC,British Columbia,Kelowna,180,15.02,4,33,176,4,0
+BC,British Columbia,Surrey,180,14.21,4,34,169,11,0
+BC,British Columbia,Vancouver,400,15.63,4,37,389,11,0
+BC,British Columbia,Victoria,180,14.57,4,33,175,5,0
+MB,Manitoba,Winnipeg,350,15.37,4,39,342,6,2
+NL,Newfoundland and Labrador,St John's,180,12.49,4,33,179,1,0
+NS,Nova Scotia,Halifax,350,14.46,4,34,344,6,0
+ON,Ontario,Brampton,180,13.9,4,33,177,3,0
+ON,Ontario,Hamilton,351,14.19,4,37,347,4,0
+ON,Ontario,Kitchener,180,14.7,4,29,177,3,0
+ON,Ontario,London,180,11.66,4,30,177,3,0
+ON,Ontario,Mississauga,180,17.02,4,34,173,7,0
+ON,Ontario,Ottawa,402,16.8,4,37,393,8,1
+ON,Ontario,Toronto,401,18.13,5,47,374,24,3
+QC,Quebec,Laval,180,17.33,4,37,149,31,0
+QC,Quebec,Montreal,400,18.17,4,40,355,45,0
+QC,Quebec,Quebec City,180,15.92,4,37,155,25,0
+SK,Saskatchewan,Regina,180,16.63,5,40,170,10,0
+SK,Saskatchewan,Saskatoon,180,13.06,4,33,173,7,0
