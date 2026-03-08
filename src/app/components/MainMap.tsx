@@ -313,7 +313,7 @@ export default function MainMap() {
           >
             <div className="flex items-center justify-between gap-3">
               <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-[var(--text-heading)]">
-                ReZone — Planning Homes
+                UCEY — Planning Homes
               </h1>
               <button
                 type="button"

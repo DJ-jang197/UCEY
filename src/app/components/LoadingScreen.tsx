@@ -19,7 +19,7 @@ export default function LoadingScreen({ visible }: LoadingScreenProps) {
     >
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-4xl font-bold tracking-tight text-[var(--text-heading)] drop-shadow-lg">
-          ReZone
+          UCEY
         </h1>
         <p className="text-lg font-medium italic text-[var(--text-feature)]">
           Know your ground before you build

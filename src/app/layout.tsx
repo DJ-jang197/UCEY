@@ -9,7 +9,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ReZone — Planning Homes",
+  title: "UCEY — Planning Homes",
   description:
     "Planner-facing map and dashboard for turning Canadian brownfields, parking lots, dead malls, and rail corridors into housing.",
 };

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ReZone palette — dark (default) */
+/* UCEY palette — dark (default) */
 :root,
 html.dark {
   --bg-main: #0d0d0b;
@@ -241,7 +241,7 @@ body {
   }
 }
 
-/* Inputs — ReZone palette */
+/* Inputs — UCEY palette */
 .places-search {
   width: 100%;
   padding: 10px 16px;
