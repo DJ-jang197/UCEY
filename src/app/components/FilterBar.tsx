@@ -1,10 +1,12 @@
 "use client";
 
 export type LandTypeFilter = "all" | "brownfield" | "parking" | "rail" | "mall";
+export type ActivityFilter = "all" | "inactive" | "active";
 
 export type FiltersState = {
   city: string;
   landType: LandTypeFilter;
+  activity: ActivityFilter;
   minViability: number;
   minArea: number;
 };
@@ -43,6 +45,19 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
       </div>
 
       <div className="flex flex-col gap-1">
+        <span className="text-xs uppercase tracking-wide text-[var(--text-label)]">Site status</span>
+        <select
+          value={filters.activity}
+          onChange={(e) => handleChange("activity")(e.target.value as ActivityFilter)}
+          className={inputClass}
+        >
+          <option value="all">All Sites</option>
+          <option value="inactive">Inactive Sites</option>
+          <option value="active">Active Sites</option>
+        </select>
+      </div>
+
+      <div className="flex flex-col gap-1">
         <span className="text-xs uppercase tracking-wide text-[var(--text-label)]">Min. viability</span>
         <div className="flex items-center gap-2">
           <input
@@ -74,4 +89,3 @@ export default function FilterBar({ filters, onChange }: FilterBarProps) {
     </div>
   );
 }
-

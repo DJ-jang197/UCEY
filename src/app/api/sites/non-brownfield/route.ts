@@ -32,6 +32,23 @@ function toInt(value: string | undefined) {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function normalizeActivityStatus(value: string | undefined) {
+  const normalized = (value ?? "").trim().toLowerCase();
+  if (!normalized) return null;
+  if (
+    normalized.includes("inactive") ||
+    normalized.includes("vacant") ||
+    normalized.includes("closed") ||
+    normalized.includes("abandoned")
+  ) {
+    return "inactive";
+  }
+  if (normalized.includes("active")) {
+    return "active";
+  }
+  return normalized;
+}
+
 export async function GET(req: Request) {
   try {
     if (!fs.existsSync(NON_BROWFIELD_CSV)) {
@@ -88,6 +105,7 @@ export async function GET(req: Request) {
         city: row.city ?? null,
         province: row.province_code ?? row.province_name ?? null,
         viabilityScore: toNumber(row.viability_score),
+        activityStatus: normalizeActivityStatus(row.activity_status),
         formerUse: row.former_use ?? null,
         contaminationStatus: row.contamination_level ?? null,
         estimatedAreaM2: toNumber(row.area_sqm),

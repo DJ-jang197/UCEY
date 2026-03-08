@@ -51,6 +51,7 @@ export default function MainMap() {
   const [filters, setFilters] = useState<FiltersState>({
     city: "",
     landType: "all",
+    activity: "all",
     minViability: 0,
     minArea: 0,
   });
@@ -160,6 +161,12 @@ export default function MainMap() {
         }
       }
 
+      if (filters.activity !== "all") {
+        if ((site.activityStatus ?? null) !== filters.activity) {
+          return false;
+        }
+      }
+
       if (filters.minViability > 0) {
         const v = site.viabilityScore ?? 0;
         if (v < filters.minViability) return false;
@@ -199,6 +206,7 @@ export default function MainMap() {
     function applyMinimalFromListItem(item: SiteListItem) {
       const minimal: SiteDetail = {
         ...item,
+        activityStatus: item.activityStatus ?? null,
         contaminationStatus: item.contaminationStatus ?? null,
         formerUse: item.formerUse ?? null,
         areaM2: item.estimatedAreaM2 ?? null,

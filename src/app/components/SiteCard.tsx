@@ -20,10 +20,18 @@ function getBadgeClass(viability: number | null): string {
   return "badge-low";
 }
 
-export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
+function formatActivityStatus(activityStatus: string | null | undefined) {
+  if (!activityStatus) return null;
+  if (activityStatus === "active") return "Active site";
+  if (activityStatus === "inactive") return "Inactive site";
+  return activityStatus.replace(/_/g, " ");
+}
+
+export default function SiteCard({ site }: SiteCardProps) {
   const viability = site.viabilityScore ?? null;
   const soilScore = site.scores.soil;
   const infraScore = site.scores.infrastructure;
+  const activityLabel = formatActivityStatus(site.activityStatus);
 
   return (
     <div className="panel-card space-y-3 rounded-xl border p-4 shadow-sm">
@@ -41,6 +49,11 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
           <p className="panel-label mt-1">
             {formatSiteType(site.siteType)}
           </p>
+          {activityLabel && (
+            <p className="panel-label mt-1">
+              {activityLabel}
+            </p>
+          )}
         </div>
       </div>
 
@@ -80,4 +93,3 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
     </div>
   );
 }
-

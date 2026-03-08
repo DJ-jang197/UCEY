@@ -25,6 +25,7 @@ export type SiteListItem = {
   city: string | null;
   province: string | null;
   viabilityScore: number | null;
+  activityStatus?: string | null;
   formerUse?: string | null;
   /** FCSI: contamination groups/types summary */
   contaminationStatus?: string | null;
