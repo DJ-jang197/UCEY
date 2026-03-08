@@ -26,6 +26,9 @@ html.dark {
   --glow-dot: rgba(200, 137, 30, 0.5);
   --background: var(--bg-main);
   --foreground: var(--text-heading);
+  --badge-on-accent: #0d0d0b;
+  --badge-on-brown: #eae4d8;
+  --city-btn-on-accent: #fff;
 }
 
 /* Light mode */
@@ -53,6 +56,25 @@ html:not(.dark) {
   --glow-dot: rgba(200, 137, 30, 0.4);
   --background: var(--bg-main);
   --foreground: var(--text-heading);
+  --badge-on-accent: #1a1510;
+  --badge-on-brown: #eae4d8;
+  --city-btn-on-accent: #000;
+}
+
+html:not(.dark) .play-btn:not(:disabled) {
+  color: #fff;
+}
+
+/* Selected city buttons: force text color (light = black, dark = white) so it is not overridden */
+html:not(.dark) .city-btn-selected,
+html:not(.dark) .city-btn-selected:hover,
+html:not(.dark) .city-btn-selected:active {
+  color: #000 !important;
+}
+html.dark .city-btn-selected,
+html.dark .city-btn-selected:hover,
+html.dark .city-btn-selected:active {
+  color: #fff !important;
 }
 
 @theme inline {
@@ -141,26 +163,32 @@ body {
   background-size: 200% 100%;
 }
 
-/* Viability badges — accent for high, muted for rest */
+/* Viability badges — accent for high, muted for rest; high-contrast text on brown */
+.badge-high,
+.badge-medium,
+.badge-low {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .badge-high {
   background: var(--accent);
-  color: var(--bg-main);
+  color: var(--badge-on-accent);
   border-radius: 4px;
   padding: 2px 8px;
 }
 
-.badge-medium {
+.badge-medium,
+.badge-low {
   background: var(--text-muted);
-  color: var(--text-heading);
+  color: var(--badge-on-brown);
   border-radius: 4px;
   padding: 2px 8px;
 }
 
 .badge-low {
   background: var(--text-copyright);
-  color: var(--text-heading);
-  border-radius: 4px;
-  padding: 2px 8px;
 }
 
 /* Skeleton loader */
@@ -234,16 +262,24 @@ body {
   border-color: var(--accent);
 }
 
+/* Legible button/control text */
+.play-btn-legible,
+.btn-legible {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 /* Audio player */
 .audio-player {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 12px;
 }
 
 .play-btn {
   background: var(--accent);
-  color: var(--bg-main);
+  color: var(--badge-on-accent);
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
@@ -264,8 +300,14 @@ body {
 .progress-bar {
   flex: 1;
   height: 4px;
+  min-width: 0;
   background: var(--divider);
   border-radius: 2px;
+}
+
+.audio-player .progress-bar {
+  flex: none;
+  width: 100%;
 }
 
 .progress-fill {
@@ -351,6 +393,8 @@ body {
 .map-sign-pin {
   background: transparent;
   border: none;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .map-sign {

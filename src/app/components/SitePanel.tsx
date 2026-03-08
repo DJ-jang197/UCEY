@@ -78,7 +78,7 @@ export default function SitePanel({
                 type="button"
                 onClick={onGenerateReport}
                 disabled={loadingReport}
-                className="rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[var(--bg-main)] hover:bg-[var(--accent-hover)] disabled:cursor-not-allowed disabled:opacity-60"
+                className="btn-legible rounded-lg bg-[var(--accent)] px-4 py-2 text-sm font-semibold text-[var(--bg-main)] hover:bg-[var(--accent-hover)] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {loadingReport ? "Generating…" : "Generate report"}
               </button>
@@ -92,7 +92,11 @@ export default function SitePanel({
 
             <ReportDisplay report={report} loading={loadingReport} error={reportError} theme={theme} />
 
-            <AudioPlayer audioUrl={report?.audioUrl ?? null} theme={theme} />
+            <AudioPlayer
+              audioUrl={report?.audioUrl ?? null}
+              summaryText={report?.summary ?? null}
+              theme={theme}
+            />
           </>
         )}
       </div>

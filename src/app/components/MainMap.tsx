@@ -57,15 +57,8 @@ export default function MainMap() {
 
   // Per-session client-side cache so we don't call Gemini twice for the same site.
   const reportCacheRef = useRef<Map<string, SiteReport>>(new Map());
-
-  useLayoutEffect(() => {
-    const root = document.documentElement;
-    root.style.setProperty("transition", "background-color 0.3s ease, color 0.3s ease");
-    const saved = localStorage.getItem("rezone-theme") as "light" | "dark" | null;
-    const resolved = saved === "dark" || saved === "light" ? saved : "light";
-    setTheme(resolved);
-    root.classList.toggle("dark", resolved === "dark");
-  }, []);
+  const sitesRef = useRef<SiteListItem[]>([]);
+  sitesRef.current = sites;
 
   useLayoutEffect(() => {
     const root = document.documentElement;
@@ -186,7 +179,7 @@ export default function MainMap() {
     setReport(null);
     setReportError(null);
 
-    const listItem = sites.find((s) => s.id === siteId);
+    const listItem = sitesRef.current.find((s) => s.id === siteId);
 
     function applyMinimalFromListItem(item: SiteListItem) {
       const minimal: SiteDetail = {
@@ -338,28 +331,31 @@ export default function MainMap() {
               <button
                 type="button"
                 onClick={handleShowAllCities}
-                className={`rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
+                className={`btn-legible rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
                   isAllCitiesView
-                    ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--bg-main)] hover:bg-[var(--accent-hover)]"
+                    ? "city-btn-selected border-[var(--accent)] bg-[var(--accent)] hover:bg-[var(--accent-hover)]"
                     : "border-[var(--border-button)] bg-[var(--bg-input)] text-[var(--text-feature)] hover:border-[var(--accent)]"
                 }`}
               >
                 All cities
               </button>
-              {CITY_PRESETS.map((city) => (
-                <button
-                  key={city.name}
-                  type="button"
-                  onClick={() => handleCityPresetClick(city)}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-medium text-[var(--text-feature)] transition transform hover:-translate-y-0.5 hover:shadow ${
-                    !isAllCitiesView && filters.city.toLowerCase() === city.name?.toLowerCase()
-                      ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--bg-main)] hover:bg-[var(--accent-hover)]"
-                      : "border-[var(--border-button)] bg-[var(--bg-input)] hover:border-[var(--accent)]"
-                  }`}
-                >
-                  {city.name}
-                </button>
-              ))}
+              {CITY_PRESETS.map((city) => {
+                const isSelected = !isAllCitiesView && filters.city.toLowerCase() === city.name?.toLowerCase();
+                return (
+                  <button
+                    key={city.name}
+                    type="button"
+                    onClick={() => handleCityPresetClick(city)}
+                    className={`btn-legible rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
+                      isSelected
+                        ? "city-btn-selected border-[var(--accent)] bg-[var(--accent)] hover:bg-[var(--accent-hover)]"
+                        : "border-[var(--border-button)] bg-[var(--bg-input)] text-[var(--text-feature)] hover:border-[var(--accent)]"
+                    }`}
+                  >
+                    {city.name}
+                  </button>
+                );
+              })}
             </div>
           </div>
           <div className="w-full max-w-3xl flex justify-center">

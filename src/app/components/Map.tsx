@@ -152,6 +152,16 @@ export default function MapView(props: MapProps) {
         }).addTo(m);
 
         marker.on("click", () => onSiteSelect(site.id));
+        marker.on("mouseover", () => {
+          marker.setZIndexOffset(2000);
+        });
+        marker.on("mouseout", () => {
+          if (selectedSiteId !== site.id) {
+            marker.setZIndexOffset(0);
+          } else {
+            marker.setZIndexOffset(1000);
+          }
+        });
         marker.bindTooltip(site.name, { direction: "top", offset: [0, -8] });
 
         if (isSelected) {
