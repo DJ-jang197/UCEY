@@ -13,8 +13,7 @@ function formatCost(n: number): string {
   return `$${n.toLocaleString("en-CA")} CAD`;
 }
 
-export default function CostChart({ estimates, theme = "light" }: CostChartProps) {
-  const isDark = theme === "dark";
+export default function CostChart({ estimates }: CostChartProps) {
   const costPerTonneMin = estimates.costPerTonneMin ?? null;
   const costPerTonneMax = estimates.costPerTonneMax ?? null;
   const costPerTonneAvg = estimates.costPerTonneAvg ?? null;
@@ -57,29 +56,19 @@ export default function CostChart({ estimates, theme = "light" }: CostChartProps
   ];
 
   return (
-    <div
-      className={`panel-card mt-4 rounded-xl border p-4 ${
-        isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-slate-50/80"
-      }`}
-    >
+    <div className="panel-card mt-4 rounded-xl border p-4">
       <div className="mb-3 flex items-center justify-between gap-2">
         <h3 className="panel-heading">Cost & capacity</h3>
-        <span className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-          Estimates
-        </span>
+        <span className="panel-label">Estimates</span>
       </div>
       {hasAny ? (
         <dl className="space-y-2.5">
           {rows.map(({ label, value }) => (
             <div
               key={label}
-              className={`flex items-center justify-between gap-3 rounded-lg px-3 py-2 ${
-                isDark ? "bg-slate-900/50" : "bg-white/80"
-              }`}
+              className="flex items-center justify-between gap-3 rounded-lg bg-[var(--bg-main)] px-3 py-2"
             >
-              <dt className={`panel-label shrink-0 ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-                {label}
-              </dt>
+              <dt className="panel-label shrink-0">{label}</dt>
               <dd className="panel-value text-right font-medium tabular-nums">
                 {value ?? "N/A"}
               </dd>

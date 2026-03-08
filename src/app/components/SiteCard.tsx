@@ -24,18 +24,13 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
   const viability = site.viabilityScore ?? null;
   const soilScore = site.scores.soil;
   const infraScore = site.scores.infrastructure;
-  const isDark = theme === "dark";
 
   return (
-    <div
-      className={`panel-card space-y-3 rounded-xl border p-4 shadow-sm ${
-        isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-white"
-      }`}
-    >
+    <div className="panel-card space-y-3 rounded-xl border p-4 shadow-sm">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h2 className="panel-heading">{site.name}</h2>
-          <p className={`panel-label mt-0.5 ${isDark ? "text-slate-400" : "text-slate-500"}`}>
+          <p className="panel-label mt-0.5">
             {[site.city, site.province].filter(Boolean).join(", ") || "N/A"}
           </p>
         </div>
@@ -43,7 +38,7 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
           <div className={getBadgeClass(viability)}>
             {viability != null ? `Viability ${viability.toFixed(0)}` : "N/A"}
           </div>
-          <p className={`panel-label mt-1 ${isDark ? "text-slate-400" : "text-slate-500"}`}>
+          <p className="panel-label mt-1">
             {formatSiteType(site.siteType)}
           </p>
         </div>
@@ -51,15 +46,15 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
 
       <div className="grid grid-cols-3 gap-3">
         <div>
-          <p className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>Soil</p>
+          <p className="panel-label">Soil</p>
           <p className="panel-value mt-0.5">{soilScore != null ? soilScore.toFixed(0) : "N/A"}</p>
         </div>
         <div>
-          <p className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>Infrastructure</p>
+          <p className="panel-label">Infrastructure</p>
           <p className="panel-value mt-0.5">{infraScore != null ? infraScore.toFixed(0) : "N/A"}</p>
         </div>
         <div>
-          <p className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>Area (m²)</p>
+          <p className="panel-label">Area (m²)</p>
           <p className="panel-value mt-0.5">
             {site.areaM2 != null ? site.areaM2.toLocaleString("en-CA") : "N/A"}
           </p>
@@ -68,16 +63,16 @@ export default function SiteCard({ site, theme = "light" }: SiteCardProps) {
 
       {site.formerUse && (
         <div>
-          <p className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>Former use</p>
-          <p className={`panel-value mt-0.5 text-sm ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+          <p className="panel-label">Former use</p>
+          <p className="panel-value mt-0.5 text-sm">
             {site.formerUse}
           </p>
         </div>
       )}
       {site.contaminationStatus && (
         <div>
-          <p className={`panel-label ${isDark ? "text-slate-400" : "text-slate-500"}`}>Contamination</p>
-          <p className={`panel-value mt-0.5 text-sm line-clamp-2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+          <p className="panel-label">Contamination</p>
+          <p className="panel-value mt-0.5 text-sm line-clamp-2">
             {site.contaminationStatus}
           </p>
         </div>

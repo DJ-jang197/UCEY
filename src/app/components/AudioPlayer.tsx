@@ -7,8 +7,7 @@ type AudioPlayerProps = {
   theme?: "light" | "dark";
 };
 
-export default function AudioPlayer({ audioUrl, theme = "light" }: AudioPlayerProps) {
-  const isDark = theme === "dark";
+export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -69,16 +68,8 @@ export default function AudioPlayer({ audioUrl, theme = "light" }: AudioPlayerPr
 
   if (!audioUrl) {
     return (
-      <div
-        className={`audio-player mt-4 rounded-xl border p-3 opacity-70 ${
-          isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-slate-100/80"
-        }`}
-      >
-        <button
-          type="button"
-          className="play-btn cursor-not-allowed bg-slate-500 text-slate-200"
-          disabled
-        >
+      <div className="audio-player mt-4 rounded-xl border border-[var(--divider)] bg-[var(--bg-input)] p-3 opacity-70">
+        <button type="button" className="play-btn cursor-not-allowed" disabled>
           🔊 Audio unavailable
         </button>
         <div className="progress-bar">
@@ -89,11 +80,7 @@ export default function AudioPlayer({ audioUrl, theme = "light" }: AudioPlayerPr
   }
 
   return (
-    <div
-      className={`audio-player mt-4 rounded-xl border p-3 ${
-        isDark ? "border-slate-600 bg-slate-800/60" : "border-slate-200 bg-slate-100/80"
-      }`}
-    >
+    <div className="audio-player mt-4 rounded-xl border border-[var(--divider)] bg-[var(--bg-input)] p-3">
       <button type="button" id="play-btn" className="play-btn" onClick={togglePlayback}>
         {isPlaying ? "⏸ Pause" : "🔊 Listen to Report"}
       </button>

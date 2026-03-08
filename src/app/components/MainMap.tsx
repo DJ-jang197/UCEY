@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { SiteDetail, SiteListItem, SiteReport } from "@/lib/types/site";
 import MapView from "./Map";
 import SitePanel from "./SitePanel";
@@ -18,6 +18,9 @@ const defaultCenter: Center = {
   lng: -79.3832,
   name: "Toronto",
 };
+
+/** Geographic center of Canada; used for "All cities" view at zoom 4. */
+const ALL_CITIES_CENTER: Center = { lat: 56, lng: -96 };
 
 const CITY_PRESETS: Center[] = [
   { name: "Montreal", lat: 45.5019, lng: -73.5674 },
@@ -55,18 +58,22 @@ export default function MainMap() {
   // Per-session client-side cache so we don't call Gemini twice for the same site.
   const reportCacheRef = useRef<Map<string, SiteReport>>(new Map());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
     root.style.setProperty("transition", "background-color 0.3s ease, color 0.3s ease");
-    if (theme === "dark") {
-      root.classList.add("dark");
-      root.style.setProperty("--background", "#0f172a");
-      root.style.setProperty("--foreground", "#e2e8f0");
-    } else {
-      root.classList.remove("dark");
-      root.style.setProperty("--background", "#ffffff");
-      root.style.setProperty("--foreground", "#111827");
-    }
+    const saved = localStorage.getItem("rezone-theme") as "light" | "dark" | null;
+    const resolved = saved === "dark" || saved === "light" ? saved : "light";
+    setTheme(resolved);
+    root.classList.toggle("dark", resolved === "dark");
+  }, []);
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty("transition", "background-color 0.3s ease, color 0.3s ease");
+    root.classList.toggle("dark", theme === "dark");
+    try {
+      localStorage.setItem("rezone-theme", theme);
+    } catch (_) {}
   }, [theme]);
 
   useEffect(() => {
@@ -161,6 +168,13 @@ export default function MainMap() {
       setFilters((prev) => ({ ...prev, city: city.name ?? "" }));
     }
   };
+
+  const handleShowAllCities = () => {
+    setCenter(ALL_CITIES_CENTER);
+    setFilters((prev) => ({ ...prev, city: "" }));
+  };
+
+  const isAllCitiesView = !filters.city;
 
   const handleFiltersChange = (next: FiltersState) => {
     setFilters(next);
@@ -298,44 +312,49 @@ export default function MainMap() {
       >
         <div className="flex w-full max-w-4xl flex-col items-center gap-4 px-4 pointer-events-auto">
           <div
-            className={`w-full max-w-3xl rounded-2xl px-6 py-5 shadow-xl border backdrop-blur-sm transition-colors duration-300 ease-out ${
-              theme === "dark"
-                ? "bg-slate-900/45 border-slate-600/50 text-slate-100"
-                : "bg-gradient-to-r from-emerald-50/55 via-sky-50/55 to-indigo-50/55 border-slate-200/60 text-slate-900"
-            }`}
+            className="w-full max-w-3xl rounded-2xl px-6 py-5 shadow-xl border border-[var(--divider)] backdrop-blur-sm transition-colors duration-300 ease-out"
+            style={{
+              background: `linear-gradient(135deg, var(--bg-input) 0%, var(--bg-main) 50% 100%)`,
+              boxShadow: "0 0 80px var(--glow-tr), 0 0 40px var(--glow-bl)",
+            }}
           >
             <div className="flex items-center justify-between gap-3">
-              <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight">
+              <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-[var(--text-heading)]">
                 ReZone — Planning Homes
               </h1>
               <button
                 type="button"
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className={`rounded-full border px-3 py-1.5 text-sm font-medium shadow-sm transition-colors ${
-                  theme === "dark"
-                    ? "border-slate-500 bg-slate-800/80 text-slate-200 hover:bg-slate-700/80"
-                    : "border-emerald-300 bg-white/70 text-slate-800 hover:bg-emerald-50/80"
-                }`}
+                className="rounded-full border border-[var(--border-button)] bg-[var(--bg-input)] px-3 py-1.5 text-sm font-medium text-[var(--text-heading)] shadow-sm transition-colors hover:bg-[var(--text-muted)] hover:text-[var(--text-heading)]"
               >
                 {theme === "light" ? "🌙 Dark mode" : "☀️ Light mode"}
               </button>
             </div>
-            <p className={`mt-2 text-center text-sm ${theme === "dark" ? "text-slate-300" : "text-slate-600"}`}>
+            <p className="mt-2 text-center text-sm text-[var(--text-description)]">
               Scan underused land across Canada, filter by viability, and open a site panel for
               scores, cost estimates, AI memo, and audio.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+              <button
+                type="button"
+                onClick={handleShowAllCities}
+                className={`rounded-full border px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
+                  isAllCitiesView
+                    ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--bg-main)] hover:bg-[var(--accent-hover)]"
+                    : "border-[var(--border-button)] bg-[var(--bg-input)] text-[var(--text-feature)] hover:border-[var(--accent)]"
+                }`}
+              >
+                All cities
+              </button>
               {CITY_PRESETS.map((city) => (
                 <button
                   key={city.name}
                   type="button"
                   onClick={() => handleCityPresetClick(city)}
-                  className={`rounded-full px-3 py-1.5 text-sm font-medium transition transform hover:-translate-y-0.5 hover:shadow ${
-                    filters.city.toLowerCase() === city.name?.toLowerCase()
-                      ? "bg-emerald-500 text-white"
-                      : theme === "dark"
-                        ? "bg-slate-700/80 text-slate-200 border border-slate-500 hover:bg-slate-600/80"
-                        : "bg-white/70 text-slate-800 border border-emerald-200/80 hover:bg-emerald-50/80"
+                  className={`rounded-full border px-3 py-1.5 text-sm font-medium text-[var(--text-feature)] transition transform hover:-translate-y-0.5 hover:shadow ${
+                    !isAllCitiesView && filters.city.toLowerCase() === city.name?.toLowerCase()
+                      ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--bg-main)] hover:bg-[var(--accent-hover)]"
+                      : "border-[var(--border-button)] bg-[var(--bg-input)] hover:border-[var(--accent)]"
                   }`}
                 >
                   {city.name}
