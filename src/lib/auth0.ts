@@ -13,6 +13,10 @@ export function getAuth0Client(): Auth0Client | null {
     return client;
   }
 
-  client = new Auth0Client();
+  client = new Auth0Client({
+    authorizationParameters: {
+      scope: 'openid profile email'
+    }
+  });
   return client;
 }

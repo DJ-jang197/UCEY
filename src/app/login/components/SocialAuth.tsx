@@ -3,7 +3,8 @@
 export default function SocialAuth() {
   const handleGoogleLogin = () => {
     // Redirects to Auth0 /api/auth/login endpoint (NextJS Auth0 SDK implementation)
-    window.location.href = "/api/auth/login";
+    // Passing connection=google-oauth2 bypasses the universal login page
+    window.location.href = "/api/auth/login?connection=google-oauth2";
   };
 
   return (

@@ -9,7 +9,8 @@ export async function POST(request: Request) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        grant_type: 'password',
+        grant_type: 'http://auth0.com/oauth/grant-type/password-realm',
+        realm: 'Username-Password-Authentication',
         username: email,
         password,
         client_id: process.env.AUTH0_CLIENT_ID,
