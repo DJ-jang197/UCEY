@@ -76,9 +76,10 @@ export default function MainMap() {
       setLoadingSites(true);
       setSitesError(null);
       try {
-        const [sitesRes, fcsiRes] = await Promise.all([
+        const [sitesRes, fcsiRes, nonBrownfieldRes] = await Promise.all([
           fetch("/api/sites?limit=300"),
           fetch("/api/sites/fcsi").catch(() => null),
+          fetch("/api/sites/non-brownfield?limit=7000").catch(() => null),
         ]);
 
         const mainJson = sitesRes.ok ? await sitesRes.json() : { items: [] };
@@ -90,9 +91,23 @@ export default function MainMap() {
           fcsiItems = Array.isArray(fcsiJson.items) ? fcsiJson.items : [];
         }
 
+        let nonBrownfieldItems: typeof mainItems = [];
+        if (nonBrownfieldRes?.ok) {
+          const nonBrownfieldJson = await nonBrownfieldRes.json();
+          nonBrownfieldItems = Array.isArray(nonBrownfieldJson.items)
+            ? nonBrownfieldJson.items
+            : [];
+        }
+
         const merged = [...mainItems];
         const mainIds = new Set(mainItems.map((s: { id: string }) => s.id));
         for (const site of fcsiItems) {
+          if (!mainIds.has(site.id)) {
+            mainIds.add(site.id);
+            merged.push(site);
+          }
+        }
+        for (const site of nonBrownfieldItems) {
           if (!mainIds.has(site.id)) {
             mainIds.add(site.id);
             merged.push(site);

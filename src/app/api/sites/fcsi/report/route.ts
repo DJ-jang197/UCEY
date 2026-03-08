@@ -2,9 +2,10 @@ import { z } from "zod";
 import { fail, ok } from "@/lib/http/response";
 import { logApiRequest } from "@/lib/http/logging";
 import { generateSiteReport } from "@/lib/ai/gemini";
+import { synthesizeReportAudio } from "@/lib/ai/elevenlabs";
 import type { SiteDetail, SiteReport } from "@/lib/types/site";
 
-const fcsiReportInputSchema = z.object({
+const transientReportInputSchema = z.object({
   id: z.string().min(1),
   site: z.object({
     id: z.string().min(1),
@@ -33,26 +34,26 @@ const fcsiReportInputSchema = z.object({
 });
 
 // Simple in-memory cache for the current server process.
-const fcsiReportCache = new Map<string, SiteReport>();
+const transientReportCache = new Map<string, SiteReport>();
 
 export async function POST(req: Request) {
   logApiRequest("POST", "/api/sites/fcsi/report");
 
   const body = await req.json().catch(() => null);
-  const parsed = fcsiReportInputSchema.safeParse(body);
+  const parsed = transientReportInputSchema.safeParse(body);
 
   if (!parsed.success) {
     return fail(400, {
-      code: "INVALID_FCSI_REPORT_INPUT",
-      message: "Invalid FCSI report payload",
+      code: "INVALID_TRANSIENT_REPORT_INPUT",
+      message: "Invalid transient site report payload",
       details: parsed.error.flatten(),
     });
   }
 
   const { id, site } = parsed.data;
 
-  if (fcsiReportCache.has(id)) {
-    return ok(fcsiReportCache.get(id));
+  if (transientReportCache.has(id)) {
+    return ok(transientReportCache.get(id));
   }
 
   try {
@@ -76,24 +77,29 @@ export async function POST(req: Request) {
     } as SiteDetail;
 
     const { summary, rawJson } = await generateSiteReport(detail);
+    let audioUrl: string | null = null;
+    try {
+      audioUrl = await synthesizeReportAudio(summary, id);
+    } catch {
+      audioUrl = null;
+    }
 
     const report: SiteReport = {
       siteId: id,
       status: "ready",
       summary,
-      audioUrl: null,
+      audioUrl,
       imageUrls: [],
       rawJson,
     };
 
-    fcsiReportCache.set(id, report);
+    transientReportCache.set(id, report);
     return ok(report);
   } catch (error) {
     return fail(500, {
-      code: "FCSI_REPORT_GENERATION_FAILED",
-      message: "Could not generate FCSI site report",
+      code: "TRANSIENT_REPORT_GENERATION_FAILED",
+      message: "Could not generate site report",
       details: error instanceof Error ? error.message : "Unknown error",
     });
   }
 }
-
