@@ -1,135 +1,108 @@
-# ZonaViva Backend
+# UCEY
 
-Backend scaffold for HackCanada 2026.
+**Know your ground before you build.**
 
-This branch is focused on:
+UCEY is a planner-facing map and dashboard for turning Canadian underused land into housing: brownfields, parking lots, dead malls, and rail corridors. Built for urban planners, architects, and municipal governments. Filter by city and viability, open a site for scores and cost estimates, and generate an AI memo with optional text-to-speech.
 
-- geospatial-ready schema and ingestion
-- site discovery and detail APIs
-- report and score persistence endpoints
-- auth-gated save/project endpoints
-- demo fallback mode when Supabase is not configured
+---
+
+## What you need to know
+
+**Data**
+
+- **Primary:** Sites stored in Supabase (schema in `supabase/migrations/`). Seed demo sites with `npm run db:seed:demo`.
+- **Federal contaminated sites (FCSI):** Optional CSV-based layer. Place the federal contaminated sites CSV at `./data/raw/federal_contaminated_sites.csv` (or set `BROWNFIELD_CSV_PATH`), then run `npm run data:build` and `npm run ingest:brownfields`. The app merges FCSI with DB sites when `/api/sites/fcsi` is available.
+- **Demo coverage:** Seed data includes Montreal, Ottawa, Toronto, and Vancouver with brownfield, parking lot, rail corridor, and dead mall examples so the map and reports work out of the box.
+
+**Integrations**
+
+- **AI memos:** Gemini (set `GEMINI_API_KEY` in `.env.local`).
+- **Audio reports:** ElevenLabs text-to-speech (set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID`). If unset, the report is text-only and the "Generate and play audio" flow is disabled.
+- **Auth:** Optional Auth0; header-based `x-user-id` / `x-user-role` remains for local and teammate testing.
+
+---
 
 ## Stack
 
-- Next.js 16 App Router
-- TypeScript
-- Supabase + PostGIS
-- Tailwind (included from scaffold; frontend styling is out of scope here)
+- Next.js 16 (App Router), TypeScript
+- Supabase (sites, reports, scores)
+- Tailwind CSS, Leaflet for the map
+- Google Gemini, ElevenLabs (optional)
 
-## Local Setup
+---
 
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Create local env:
+## Quick start
 
 ```bash
 cp .env.example .env.local
-```
+# Edit .env.local: add NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY at minimum.
 
-3. Fill Supabase keys in `.env.local`:
-
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `SUPABASE_SERVICE_ROLE_KEY`
-- `PROVIDER_TIMEOUT_MS` (optional, defaults to `6000`)
-
-For signed Cloudinary uploads, also set:
-
-- `CLOUDINARY_CLOUD_NAME`
-- `CLOUDINARY_API_KEY`
-- `CLOUDINARY_API_SECRET`
-
-4. Start dev server:
-
-```bash
+npm install
 npm run dev
 ```
 
-5. Verify health:
+Open [http://localhost:3000](http://localhost:3000). Health check: `GET /api/health`.
+
+**Optional:** Apply migrations from `supabase/migrations/`, then:
 
 ```bash
-curl http://localhost:3000/api/health
-```
-
-## Database Setup
-
-Migration SQL is in:
-
-- `supabase/migrations/20260307090000_init.sql`
-
-Apply migration using Supabase SQL editor or CLI.
-
-Optional commands:
-
-```bash
-npm run db:verify
 npm run db:seed:demo
-npm run ingest:brownfields
-npm run data:build
 ```
 
-## Ingestion Notes
+For FCSI brownfield data: run `npm run data:build` and `npm run ingest:brownfields` (see [Data](#data) below).
 
-Brownfield ingestion expects a CSV at:
+---
 
-- `./data/raw/federal_contaminated_sites.csv`
+## Environment
 
-Override path with:
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | Required for DB-backed sites and reports. |
+| `GEMINI_API_KEY` | AI-generated site memos. |
+| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | Text-to-speech for report summaries. |
+| `BROWNFIELD_CSV_PATH` | Override path to federal contaminated sites CSV (default: `./data/raw/federal_contaminated_sites.csv`). |
+| `ALLOWED_PROVINCES`, `ALLOWED_CITIES` | Ingestion filters (e.g. `ON,BC,QC` and `Toronto,Vancouver,Montreal`). |
 
-- `BROWNFIELD_CSV_PATH`
+---
 
-City/province filter defaults:
+## Data
 
-- `ALLOWED_PROVINCES=ON,BC,QC`
-- `ALLOWED_CITIES=Toronto,Vancouver,Montreal`
+- **Seeded sites:** `scripts/seed-demo-sites.ts` upserts from `src/lib/demo/demo-data.ts` into Supabase (sites + scores + reports). Covers four cities and multiple site types.
+- **FCSI pipeline:** `scripts/data/build-data-assets.ts` and `scripts/ingest-brownfields.ts` read the federal CSV, filter by province/city, derive scores and cost estimates, and write filtered CSVs and DB rows. Generated artifacts live under `data/raw/` and `data/raw/fcsi/`.
+- **APIs:** `GET /api/sites` returns DB sites; `GET /api/sites/fcsi` returns FCSI-derived sites from the built CSVs. The frontend merges both and deduplicates by id.
 
-Soil suitability score used during ingestion:
+---
 
-- `score = (sand_score * 0.30) + (clay_score * 0.25) + (drainage_score * 0.25) + (organic_score * 0.20)`
-- `final_percentage = score * 100`
+## API overview
 
-Generated data artifacts:
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/health` | Service and integration status. |
+| `GET /api/sites` | List sites (bbox, city, province, site_type, limit). |
+| `GET /api/sites/fcsi` | FCSI-derived sites (when data is built). |
+| `GET /api/sites/:id` | Site detail. |
+| `GET /api/sites/:id/report` | Stored report; 404 if none. |
+| `POST /api/sites/:id/report/generate` | Generate and store report (Gemini + optional ElevenLabs). |
+| `POST /api/audio/synthesize` | Body `{ text }`; returns ElevenLabs TTS audio URL. |
+| `POST /api/sites/fcsi/report` | Generate report for an FCSI site (no DB site required). |
 
-- `data/raw/fcsi/fcsi_contamination_filtered.csv`
-- `data/raw/fcsi/fcsi_sites_filtered.csv`
-- `data/raw/fcsi/soil_score_input_template.csv`
-- `data/raw/contaminant_cost_reference_2026.csv`
-- `data/raw/city_disposal_rate_reference_2026.csv`
-- `data/raw/source_catalog.csv`
+Auth-gated: save, projects, media (see code for `x-user-id` / Auth0 usage).
 
-## API Endpoints
+---
 
-- `GET /api/health`
-- `GET /api/sites`
-- `GET /api/sites/:id`
-- `GET /api/sites/top?province=ON&limit=10`
-- `GET /api/sites/:id/report`
-- `POST /api/sites/:id/report`
-- `POST /api/sites/:id/score`
-- `GET /api/sites/:id/media`
-- `POST /api/sites/:id/save`
-- `GET /api/projects`
-- `POST /api/projects`
-- `POST /api/projects/:id/sites`
-- `POST /api/media/cloudinary/signature`
+## Scripts
 
-### Auth behavior in this branch
+```bash
+npm run dev          # Start dev server
+npm run build        # Production build
+npm run db:seed:demo # Seed demo sites into Supabase
+npm run ingest:brownfields  # Ingest brownfields from CSV
+npm run data:build   # Build FCSI data assets
+npm run db:verify    # Verify DB connection and schema
+```
 
-Protected endpoints currently use request headers:
+---
 
-- `x-user-id`
-- `x-user-role` (optional: `planner`, `architect`, `developer`)
+*UCEY — Planning Homes. HackCanada 2026.*
 
-If Auth0 env vars are configured, endpoints use the Auth0 session first and auto-provision users into the `users` table on first request.
-Header auth remains as a fallback for local integration and teammate testing.
-
-## Deployment Decision
-
-Current decision for speed:
-
-- single Next.js service for API + frontend app shell
-- optional separate worker can be introduced later for heavy ingestion jobs
+*Made by Daniel, Adhyan, Yeshi, and Bora.*
