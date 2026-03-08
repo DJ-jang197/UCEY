@@ -16,6 +16,9 @@ function site(
   areaM2: number,
   contamination: string = "low",
 ): SiteDetail {
+  const activityStatus =
+    siteType === "brownfield" || siteType === "dead_mall" ? "inactive" : "active";
+
   return {
     id,
     name,
@@ -25,6 +28,7 @@ function site(
     city,
     province,
     viabilityScore: viability,
+    activityStatus,
     contaminationStatus: contamination,
     formerUse,
     areaM2,

@@ -154,6 +154,7 @@ export async function GET() {
         city,
         province: provinceCode ?? provinceName,
         viabilityScore: viability,
+        activityStatus: "inactive",
         contaminationStatus: contaminationStatus || null,
         costPerTonneMin: costMin ?? undefined,
         costPerTonneMax: costMax ?? undefined,

@@ -119,6 +119,24 @@ function toNumber(value: unknown): number | null {
   return null;
 }
 
+function normalizeActivityStatus(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+  const normalized = value.trim().toLowerCase();
+  if (!normalized) return null;
+  if (
+    normalized.includes("inactive") ||
+    normalized.includes("vacant") ||
+    normalized.includes("closed") ||
+    normalized.includes("abandoned")
+  ) {
+    return "inactive";
+  }
+  if (normalized.includes("active")) {
+    return "active";
+  }
+  return normalized;
+}
+
 function toSiteListItem(row: Record<string, unknown>): SiteListItem {
   return {
     id: String(row.id),
@@ -129,6 +147,7 @@ function toSiteListItem(row: Record<string, unknown>): SiteListItem {
     city: row.city ? String(row.city) : null,
     province: row.province ? String(row.province) : null,
     viabilityScore: toNumber(row.viability_score ?? row.viabilityScore),
+    activityStatus: normalizeActivityStatus(row.activity_status ?? row.status),
   };
 }
 
@@ -168,6 +187,7 @@ export async function listSites(params: ListSitesParams) {
       city: site.city,
       province: site.province,
       viabilityScore: site.viabilityScore,
+      activityStatus: site.activityStatus ?? null,
     }));
 
     if (params.city) {
@@ -196,7 +216,7 @@ export async function listSites(params: ListSitesParams) {
   const bbox = parseBbox(params.bbox);
   let query = db
     .from("sites")
-    .select("id,name,lat,lng,site_type,city,province,viability_score")
+    .select("id,name,lat,lng,site_type,city,province,viability_score,status")
     .limit(params.limit ?? 300);
 
   if (params.city) query = query.eq("city", params.city);
@@ -232,7 +252,7 @@ export async function getSiteById(id: string): Promise<SiteDetail | null> {
     db
       .from("sites")
       .select(
-        "id,name,lat,lng,site_type,city,province,contamination_status,former_use,area_m2,viability_score",
+        "id,name,lat,lng,site_type,city,province,status,contamination_status,former_use,area_m2,viability_score",
       )
       .eq("id", id)
       .maybeSingle(),
@@ -314,6 +334,7 @@ export async function getTopSites(
         city: site.city,
         province: site.province,
         viabilityScore: site.viabilityScore,
+        activityStatus: site.activityStatus ?? null,
       }));
     cache.byKey.set(cacheKey, demoItems);
     cache.expiresAt = Date.now() + TOP_SITES_CACHE_TTL_MS;
@@ -323,7 +344,7 @@ export async function getTopSites(
   const { data, error } = await withTimeout(
     db
       .from("sites")
-      .select("id,name,lat,lng,site_type,city,province,viability_score")
+      .select("id,name,lat,lng,site_type,city,province,viability_score,status")
       .eq("province", province)
       .order("viability_score", { ascending: false, nullsFirst: false })
       .limit(limit),

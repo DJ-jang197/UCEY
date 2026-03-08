@@ -9,9 +9,13 @@ export async function GET(request: NextRequest) {
 
   const connection = request.nextUrl.searchParams.get("connection");
   const returnTo = request.nextUrl.searchParams.get("returnTo") || "/";
+  const prompt = request.nextUrl.searchParams.get("prompt") || "login";
 
   return client.startInteractiveLogin({
     returnTo,
-    authorizationParameters: connection ? { connection } : undefined,
+    authorizationParameters: {
+      ...(connection ? { connection } : {}),
+      prompt,
+    },
   });
 }

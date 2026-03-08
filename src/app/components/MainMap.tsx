@@ -195,6 +195,10 @@ export default function MainMap() {
     setFilters(next);
   };
 
+  const handleLogout = () => {
+    window.location.assign("/api/auth/logout");
+  };
+
   const handleSiteSelect = async (siteId: string) => {
     setIsPanelOpen(true);
     setLoadingSiteDetail(true);
@@ -338,13 +342,22 @@ export default function MainMap() {
               <h1 className="flex-1 text-center text-3xl font-semibold tracking-tight text-[var(--text-heading)]">
                 UCEY — Planning Homes
               </h1>
-              <button
-                type="button"
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className="rounded-full border border-[var(--border-button)] bg-[var(--bg-input)] px-3 py-1.5 text-sm font-medium text-[var(--text-heading)] shadow-sm transition-colors hover:bg-[var(--text-muted)] hover:text-[var(--text-heading)]"
-              >
-                {theme === "light" ? "🌙 Dark mode" : "☀️ Light mode"}
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                  className="rounded-full border border-[var(--border-button)] bg-[var(--bg-input)] px-3 py-1.5 text-sm font-medium text-[var(--text-heading)] shadow-sm transition-colors hover:bg-[var(--text-muted)] hover:text-[var(--text-heading)]"
+                >
+                  {theme === "light" ? "🌙 Dark mode" : "☀️ Light mode"}
+                </button>
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="rounded-full border border-[var(--border-button)] bg-[var(--bg-input)] px-3 py-1.5 text-sm font-medium text-[var(--text-heading)] shadow-sm transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                >
+                  Logout
+                </button>
+              </div>
             </div>
             <p className="mt-2 text-center text-sm text-[var(--text-description)]">
               Scan underused land across Canada, filter by viability, and open a site panel for
