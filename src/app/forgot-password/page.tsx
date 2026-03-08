@@ -2,8 +2,8 @@ import Link from "next/link";
 import ForgotPasswordForm from "./components/ForgotPasswordForm";
 
 export const metadata = {
-  title: "Reset Password | ZonaViva",
-  description: "Reset your ZonaViva account password",
+  title: "Reset Password | UCEY",
+  description: "Reset your UCEY account password",
 };
 
 export default function ForgotPasswordPage() {
@@ -18,7 +18,7 @@ export default function ForgotPasswordPage() {
         {/* Logo / Header */}
         <div className="mb-8 text-center">
           <Link href="/" className="inline-block text-[#c8891e] text-3xl font-bold tracking-tight mb-2 hover:text-[#d9991e] transition-colors">
-            ZonaViva
+            UCEY
           </Link>
           <h1 className="text-[#e8d9c0] text-2xl font-semibold mb-1">
             Reset Password
@@ -45,7 +45,7 @@ export default function ForgotPasswordPage() {
             API: https://dev-gu8jzunz8mgxow8a.ca.auth0.com/api/v2/
           </p>
           <p className="text-xs text-[#2e2820] mt-12">
-            &copy; {new Date().getFullYear()} ZonaViva. All rights reserved.
+            &copy; {new Date().getFullYear()} UCEY. All rights reserved.
           </p>
         </div>
       </div>

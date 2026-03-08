@@ -194,3 +194,239 @@ body {
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
 }
+
+/* Goose assistant sticker */
+.goose-sticker {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: #fefce8;
+  border: 2px solid #fbbf24;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transform-origin: center;
+  animation: goose-bob 1.2s ease-in-out infinite alternate;
+  z-index: 2000;
+}
+
+.goose-body {
+  width: 18px;
+  height: 14px;
+  border-radius: 999px 999px 70% 70%;
+  background: #f9fafb;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.12);
+}
+
+.goose-body::before {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 4px;
+  width: 8px;
+  height: 6px;
+  border-radius: 999px;
+  background: #f97316;
+}
+
+.goose-body::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: #0f172a;
+}
+
+@keyframes goose-bob {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Beaver face under UCEY title — cartoon style, tan/orange */
+.loon-character {
+  position: relative;
+  width: 108px;
+  height: 96px;
+  margin: 0 auto 0;
+  margin-top: 0.5rem;
+  pointer-events: none;
+}
+
+.loon-face-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 84px;
+  height: 84px;
+  margin-left: -42px;
+  margin-top: -42px;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+}
+
+.loon-face {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  background: linear-gradient(165deg, #c97d38 0%, #bf6f2a 40%, #a85d22 100%);
+  border: 3px solid #f5ecd8;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(130, 70, 30, 0.12),
+    0 4px 14px rgba(90, 50, 20, 0.2),
+    inset 0 2px 0 rgba(255, 248, 235, 0.35),
+    inset 0 -1px 4px rgba(70, 35, 10, 0.12);
+  backface-visibility: hidden;
+}
+
+.loon-face::before,
+.loon-face::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(145deg, #b36526 0%, #9d5620 100%);
+  border: 2px solid #f5ecd8;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 0 rgba(255, 248, 235, 0.3);
+}
+
+.loon-face::before {
+  left: -7px;
+}
+
+.loon-face::after {
+  right: -7px;
+  left: auto;
+}
+
+.loon-eyes-group {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  margin-top: 0;
+  transform-origin: 50% 50%;
+  transition: transform 0.12s ease-out;
+}
+
+.loon-eye {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  background: #331904;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.loon-eye-left {
+  left: -22px;
+  margin-left: -5px;
+}
+
+.loon-eye-right {
+  right: -27px;
+  left: auto;
+  margin-left: -5px;
+}
+
+.loon-nose-mouth-group {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: transform 0.12s ease-out;
+}
+
+.loon-nose {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  width: 0;
+  height: 0;
+  margin-left: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #1a1510;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.loon-mouth {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  width: 18px;
+  height: 10px;
+  margin-left: -9px;
+  border: 2px solid #2a2218;
+  border-top: none;
+  border-radius: 0 0 50% 50%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.loon-mouth::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 7px;
+  height: 5px;
+  margin-left: -3.5px;
+  background: #e8a0a0;
+  border-radius: 50%;
+}
+
+.loon-whiskers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.loon-whisker {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 1px;
+  background: #2a2218;
+  margin-top: -0.5px;
+}
+
+.loon-whisker-l1 { left: -10px; transform: rotate(-8deg);  }
+.loon-whisker-l2 { left: -10px; transform: rotate(0deg);   }
+.loon-whisker-l3 { left: -10px; transform: rotate(8deg);   }
+.loon-whisker-r1 { right: -10px; left: auto; transform: rotate(8deg);   }
+.loon-whisker-r2 { right: -10px; left: auto; transform: rotate(0deg);   }
+.loon-whisker-r3 { right: -10px; left: auto; transform: rotate(-8deg);  }
+
+/* Make buttons feel interactive */
+button {
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.25);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.2);
+}

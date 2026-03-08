@@ -127,7 +127,7 @@ export default function ResetPasswordPage() {
         {/* Logo / Header */}
         <div className="mb-8 text-center">
           <Link href="/" className="inline-block text-[#c8891e] text-3xl font-bold tracking-tight mb-2 hover:text-[#d9991e] transition-colors">
-            ZonaViva
+            UCEY
           </Link>
           <h1 className="text-[#e8d9c0] text-2xl font-semibold mb-1">
             Create New Password

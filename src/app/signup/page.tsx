@@ -3,8 +3,8 @@ import SignupForm from "./components/SignupForm";
 import SocialAuth from "@/app/login/components/SocialAuth";
 
 export const metadata = {
-  title: "Sign Up | ZonaViva",
-  description: "Create your ZonaViva account",
+  title: "Sign Up | UCEY",
+  description: "Create your UCEY account",
 };
 
 export default function SignupPage() {
@@ -19,7 +19,7 @@ export default function SignupPage() {
         {/* Logo / Header */}
         <div className="mb-8 text-center">
           <Link href="/" className="inline-block text-[#c8891e] text-3xl font-bold tracking-tight mb-2 hover:text-[#d9991e] transition-colors">
-            ZonaViva
+            UCEY
           </Link>
           <h1 className="text-[#e8d9c0] text-2xl font-semibold mb-1">
             Create an account
@@ -55,7 +55,7 @@ export default function SignupPage() {
             API: https://dev-gu8jzunz8mgxow8a.ca.auth0.com/api/v2/
           </p>
           <p className="text-xs text-[#2e2820] mt-12">
-            &copy; {new Date().getFullYear()} ZonaViva. All rights reserved.
+            &copy; {new Date().getFullYear()} UCEY. All rights reserved.
           </p>
         </div>
       </div>
